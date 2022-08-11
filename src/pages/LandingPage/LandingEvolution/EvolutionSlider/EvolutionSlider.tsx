@@ -30,14 +30,22 @@ const CARDS = [
 ]  
 
 const EvolutionSlider = () => {
-    const [currentCardIndex, setCurrentCardIndex] = useState<number>(0)
+  const [currentCardIndex, setCurrentCardIndex] = useState<number>(0)
+
+  const handleSelect = (index: number) => {
+    setCurrentCardIndex(index)
+  }
 
   return (
     <>
         <div className={styles.wrapper}>
             <div className={styles.inner} style={{ left: currentCardIndex === 0 ? undefined : `-${(820 + 40) * currentCardIndex - 119}px`}}>
                 {CARDS.map((card, i) => (
-                    <EvolutionCard key={i} {...card} />
+                    <EvolutionCard 
+                      key={i} 
+                      {...card}
+                      onClick={() => handleSelect(i)}
+                    />
                 ))}
             </div>
         </div>
@@ -47,7 +55,7 @@ const EvolutionSlider = () => {
                 <span 
                     key={i} 
                     className={cx(currentCardIndex === i && styles.active)}
-                    onClick={() => setCurrentCardIndex(i)}
+                    onClick={() => handleSelect(i)}
                 />
             ))}
         </Container>
