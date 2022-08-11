@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+BRANCH="$(git branch --show-current)"
+if [[ "$BRANCH" == "master" ]]; then
+  yarn version --patch;
+fi
