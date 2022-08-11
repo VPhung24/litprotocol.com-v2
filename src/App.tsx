@@ -1,9 +1,13 @@
+import { BasicTemplate } from 'src/templates'
+
+import { LandingPage } from 'src/pages'
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
-  );
+    <BasicTemplate>
+      <LandingPage />
+    </BasicTemplate>
+  )
 }
 
 export default App

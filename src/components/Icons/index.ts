@@ -1,0 +1,1 @@
+export { ReactComponent as Arrow } from './svgs/arrow.svg'

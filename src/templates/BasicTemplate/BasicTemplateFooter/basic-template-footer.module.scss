@@ -1,0 +1,8 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 362px;
+    color: $basicColor;
+}

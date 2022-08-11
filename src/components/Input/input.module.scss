@@ -1,0 +1,22 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    input {
+        padding: 0;
+        font-size: 20px;
+        line-height: 32.5px;
+        color: $basicColor;
+        border: none;
+        border-bottom: 1px solid $basicColor;
+        outline: none;
+    }
+
+    input::placeholder {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        color: $basicColor;
+    }
+}
+

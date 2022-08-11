@@ -1,0 +1,41 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+
+    .form {
+        position: relative;
+        margin-left: 43px;
+
+        > div {
+            input {
+                width: 405px;
+                margin-bottom: 49px;
+            }
+
+            &:last-of-type {
+                input {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 29px;
+            height: 29px;
+            color: $basicColor;
+            background-color: transparent;
+            border: 1px solid $basicColor;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+}

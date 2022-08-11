@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Favorit';
+    src:  url('./ABCFavorit-Regular.woff2') format('woff2'),
+          url('./ABCFavorit-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Favorit';
+    font-weight: bold;
+    src:  url('./ABCFavorit-Bold.woff2') format('woff2'),
+          url('./ABCFavorit-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Favorit';
+    font-weight: 300;
+    src:  url('./ABCFavorit-Light.woff2') format('woff2'),
+          url('./ABCFavorit-Light.woff') format('woff');
+}
