@@ -1,0 +1,17 @@
+@import 'src/styles/colors.scss';
+
+.button {
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42.5px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &.white {
+        color: $basicWhite;
+        border-color: $basicWhite;
+    }
+}

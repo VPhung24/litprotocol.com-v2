@@ -1,0 +1,10 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    color: $basicWhite;
+    background-color: #555;
+}

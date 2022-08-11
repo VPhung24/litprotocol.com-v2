@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Favorit';
-    font-weight: bold;
+    font-weight: 700;
     src:  url('./ABCFavorit-Bold.woff2') format('woff2'),
           url('./ABCFavorit-Bold.woff') format('woff');
 }

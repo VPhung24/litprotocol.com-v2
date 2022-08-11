@@ -1,0 +1,26 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    > div {
+        font-size: 25px;
+        font-weight: 700;
+        margin-right: 44px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $basicWhite;
+        }
+    }
+
+    .button {
+        margin-left: 44px;
+    }
+}
