@@ -1,0 +1,33 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 726px;
+    padding-bottom: 163px;
+    
+    .inner {
+        display: flex;
+        color: $basicColor;
+
+        .titleWrapper {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin-right: 100px;
+        }
+
+        .descriptionWrapper {
+            display: flex;
+            width: 50%;
+
+            .description {
+                width: 687px;
+                font-size: 30px;
+                line-height: 42px;
+            }
+        }
+    }
+}
