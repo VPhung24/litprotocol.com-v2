@@ -1,0 +1,40 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: 1080px;
+    padding-top: 152px;
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .inner {
+        width: 1059px;
+        padding-bottom: 147px;
+        color: $basicWhite;
+
+        .title {
+            width: 100%;
+            margin: 0;
+            padding-bottom: 30px;
+            font-size: 150px;
+            line-height: 140px;
+            border-bottom: 2px solid $basicWhite;
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 56px;
+            
+            .description {
+                font-size: 30px;
+                line-height: 42px;
+            }
+        }
+    }
+}

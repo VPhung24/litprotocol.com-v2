@@ -1,10 +1,10 @@
-import React from 'react'
+import LandingHero from './LandingHero'
 
 const LandingPage = () => {
   return (
-    <div>
-        <h1>Hello world!</h1>
-    </div>
+    <>
+      <LandingHero />
+    </>
   )
 }
 
