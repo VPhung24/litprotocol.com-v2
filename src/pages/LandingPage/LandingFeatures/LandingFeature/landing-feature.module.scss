@@ -7,6 +7,11 @@
     height: 984px;
     color: $basicColor;
     background-color: $basicCreme;
+    border-bottom: 1px solid $basicColor;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
 
     &.reverse {
         flex-direction: row-reverse;

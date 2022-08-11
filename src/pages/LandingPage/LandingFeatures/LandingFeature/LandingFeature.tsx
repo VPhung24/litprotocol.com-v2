@@ -1,5 +1,7 @@
 import cx from 'classnames'
 
+import { Container } from 'src/components'
+
 import styles from './landing-feature.module.scss'
 
 interface LandingFeatureProps {
@@ -19,7 +21,7 @@ const LandingFeature = (props: LandingFeatureProps) => {
   const ImageComponent = image
 
   return (
-    <div className={cx(styles.wrapper, reverse && styles.reverse)}>
+    <Container className={cx(styles.wrapper, reverse && styles.reverse)}>
         <ImageComponent />
 
         <div className={styles.inner} style={{ width: width ? `${width}px` : undefined}}>
@@ -27,7 +29,7 @@ const LandingFeature = (props: LandingFeatureProps) => {
           <div className={styles.description}>{description}</div>
           <a className={styles.link} href="#">{url.label}</a>
         </div>
-    </div>
+    </Container>
   )
 }
 
