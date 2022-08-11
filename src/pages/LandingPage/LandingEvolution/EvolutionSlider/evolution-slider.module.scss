@@ -1,0 +1,41 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/sizes.scss';
+
+.wrapper {
+    position: relative;
+    margin-top: 163px;
+    height: 654px;
+    overflow: hidden;
+
+    .inner {
+        position: absolute;
+        top: 0;
+        left: $containerPadding;
+        width: max-content;
+        transition: .5s;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+
+    > span {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        border: 1px solid $basicWhite;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: .5s;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: $basicWhite;
+        }
+    }
+}

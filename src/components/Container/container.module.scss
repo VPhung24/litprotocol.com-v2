@@ -1,4 +1,6 @@
+@import 'src/styles/sizes.scss';
+
 .wrapper {
     width: 100%;
-    padding: 0 119px;
+    padding: 0 $containerPadding;
 }

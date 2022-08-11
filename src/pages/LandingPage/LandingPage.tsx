@@ -1,5 +1,6 @@
 import LandingHero from './LandingHero'
 import LandingWorkWith from './LandingWorkWith'
+import LandingEvolution from './LandingEvolution'
 
 const LandingPage = () => {
   return (
@@ -7,6 +8,8 @@ const LandingPage = () => {
       <LandingHero />
 
       <LandingWorkWith />
+
+      <LandingEvolution />
     </>
   )
 }

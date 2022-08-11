@@ -1,0 +1,23 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    height: 1588px;
+    padding-top: 200px;
+    background-color: $basicColor;
+    color: $basicWhite;
+
+    .subtitle {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 105px;
+        font-size: 30px;
+        line-height: 52px;
+    }
+}
