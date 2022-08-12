@@ -22,11 +22,19 @@ const LandingFeature = (props: LandingFeatureProps) => {
 
   return (
     <Container className={cx(styles.wrapper, reverse && styles.reverse)}>
-        <ImageComponent />
+        <div className={styles.desktopImage}>
+          <ImageComponent />
+        </div>
 
         <div className={styles.inner} style={{ width: width ? `${width}px` : undefined}}>
           <h2 className={styles.title}>{title}</h2>
+
+          <div className={styles.image}>
+            <ImageComponent />
+          </div>
+
           <div className={styles.description}>{description}</div>
+
           <a className={styles.link} href="#">{url.label}</a>
         </div>
     </Container>
