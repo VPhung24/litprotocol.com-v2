@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import cx from 'classnames'
-
-import { Container } from 'src/components'
+import { Slider } from 'src/components'
 
 import EvolutionCard from './EvolutionCard'
 
@@ -30,36 +27,12 @@ const CARDS = [
 ]  
 
 const EvolutionSlider = () => {
-  const [currentCardIndex, setCurrentCardIndex] = useState<number>(0)
-
-  const handleSelect = (index: number) => {
-    setCurrentCardIndex(index)
-  }
-
   return (
-    <>
-        <div className={styles.wrapper}>
-            <div className={styles.inner} style={{ left: currentCardIndex === 0 ? undefined : `-${(820 + 40) * currentCardIndex - 119}px`}}>
-                {CARDS.map((card, i) => (
-                    <EvolutionCard 
-                      key={i} 
-                      {...card}
-                      onClick={() => handleSelect(i)}
-                    />
-                ))}
-            </div>
-        </div>
-
-        <Container className={styles.buttons}>
-            {CARDS.map((card, i) => (
-                <span 
-                    key={i} 
-                    className={cx(currentCardIndex === i && styles.active)}
-                    onClick={() => handleSelect(i)}
-                />
-            ))}
-        </Container>
-    </>
+    <Slider className={styles.slider} gap={40} color="white">
+      {CARDS.map((card, i) => (
+        <EvolutionCard key={i} {...card} />
+      ))}
+    </Slider>
   )
 }
 

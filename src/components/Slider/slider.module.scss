@@ -1,0 +1,60 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/sizes.scss';
+
+:export {
+    containerPadding: $containerPadding;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: max-content;
+
+    .inner {
+        position: absolute;
+        top: 0;
+        left: $containerPadding;
+        display: flex;
+        width: max-content;
+        transition: .5s;
+
+        .child {
+            display: inline-flex;
+            cursor: pointer;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+
+    > span {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        border: 1px solid $basicColor;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: .5s;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: $basicColor;
+        }
+    }
+
+    &.white {
+        > span {
+            border-color: $basicWhite;
+
+            &.active {
+                background-color: $basicWhite;
+            }
+        }
+    }
+}

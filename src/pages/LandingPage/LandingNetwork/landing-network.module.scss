@@ -1,0 +1,24 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    padding-top: 232px;
+    padding-bottom: 185px;
+
+    .inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: $basicColor;
+
+        .content {
+            width: 544px;
+
+            .subtitle {
+                margin-top: 85px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+    }
+}

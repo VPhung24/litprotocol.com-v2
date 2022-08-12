@@ -1,20 +1,15 @@
 @import 'src/styles/colors.scss';
 
 .wrapper {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     width: 820px;
     height: 654px;
-    margin-right: 40px;
     overflow: hidden;
     background-color: $basicWhite;
     border: 2px solid $basicWhite;
     border-radius: 35px;
     cursor: pointer;
-
-    &:last-of-type {
-        margin-right: 0;
-    }
 
     .header {
         padding-top: 40px;

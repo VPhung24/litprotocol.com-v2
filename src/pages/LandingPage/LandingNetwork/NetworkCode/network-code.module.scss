@@ -1,0 +1,48 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 920px;
+    height: 495px;
+    overflow: hidden;
+    background-color: $basicColor;
+    border: 2px solid $basicColor;
+    border-radius: 31px;
+
+    .title {
+        padding: 27px;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $basicColor;
+        background-color: $basicWhite;
+    }
+
+    textarea {
+        flex: 1;
+        display: block;
+        width: 100%;
+        padding-top: 25px;
+        padding-left: 65px;
+        font-family: "Courier New",monospace;
+        font-size: 1rem;
+        color: $basicWhite;
+        background-color: $basicColor;
+        border: none;
+        resize: none;
+    }
+}
+
+.action {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid $basicColor;
+}
