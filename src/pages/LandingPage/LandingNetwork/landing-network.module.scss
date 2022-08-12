@@ -1,5 +1,6 @@
 @import 'src/styles/common.scss';
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     padding-top: 232px;
@@ -12,12 +13,32 @@
         color: $basicColor;
 
         .content {
+            order: 2;
             width: 544px;
 
             .subtitle {
                 margin-top: 85px;
                 font-size: 20px;
                 line-height: 26px;
+            }
+        }
+    }
+
+    @include max-small {
+        padding-top: 58px;
+        padding-bottom: 55px;
+
+        .inner {
+            display: block;
+
+            .content {
+                width: 100%;
+
+                .subtitle {
+                    margin-top: 20px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
             }
         }
     }

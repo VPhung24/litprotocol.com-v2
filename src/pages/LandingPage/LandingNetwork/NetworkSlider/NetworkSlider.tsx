@@ -2,6 +2,8 @@ import { Slider } from 'src/components'
 
 import NetworkCard from './NetworkCard'
 
+import { useWindowSize } from 'src/hooks'
+
 import styles from './network-slider.module.scss'
 
 import { ReactComponent as KeysSvg } from './assets/keys.svg'
@@ -34,8 +36,10 @@ const CARDS = [
 ]
 
 const NetworkSlider = () => {
+  const windowSize = useWindowSize()
+
   return (
-    <Slider className={styles.wrapper} gap={25}>
+    <Slider className={styles.wrapper} gap={windowSize.width > Number(styles.breakpoint.replace('px', '')) ? 25 : 5}>
       {CARDS.map((card, i) => (
         <NetworkCard 
           key={i} 

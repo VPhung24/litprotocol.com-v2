@@ -3,6 +3,8 @@ import cx from 'classnames'
 
 import { Container } from 'src/components'
 
+import { useWindowSize } from 'src/hooks'
+
 import styles from './slider.module.scss'
 
 interface SliderProps {
@@ -14,6 +16,8 @@ interface SliderProps {
 
 const Slider = (props: React.PropsWithChildren<SliderProps>) => {
     const { className, gap = 0, color, disabled, children } = props
+
+    const windowSize = useWindowSize()
 
     const [currentHeight, setCurrentHeight] = useState<number | null>(null)
     const [currentWidth, setCurrentWidth] = useState<number | null>(null)
@@ -44,10 +48,19 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
             return undefined
         }
 
-        const containerOffset = Number(styles.containerPadding.replace('px', ''))
+        const containerOffset = (() => {
+            let paddingName = 'containerPadding'
+
+            if (windowSize.width < Number(styles.breakpointSmall.replace('px', ''))) {
+                paddingName = 'containerPaddingSmall'
+            }
+            
+            return Number(styles[paddingName].replace('px', ''))
+        })()
+
         return currentCardIndex !== 0 ? (`-${((currentWidth || 0) + gap) * currentCardIndex - containerOffset}px`) : undefined
-    })()
-    
+    })() //TODO better
+
     return useMemo(() => (
       <>
           <div 

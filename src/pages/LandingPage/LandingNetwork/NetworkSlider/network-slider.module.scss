@@ -1,3 +1,13 @@
+@import 'src/styles/mixins.scss';
+
+:export {
+    breakpoint: $sm;
+}
+
 .wrapper {
     margin-top: 200px;
+
+    @include max-small {
+        margin-top: 50px;
+    }
 }

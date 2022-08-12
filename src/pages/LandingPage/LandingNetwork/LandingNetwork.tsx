@@ -9,8 +9,6 @@ const LandingNetwork = () => {
   return (
     <div className={styles.wrapper}>
         <Container className={styles.inner}>
-            <NetworkCode />
-
             <div className={styles.content}>
                 <h2 className={styles.title}>The Lit Network</h2>
 
@@ -19,6 +17,8 @@ const LandingNetwork = () => {
                     In order to produce a full signature or decryption key, more than a threshold (⅔ of nodes) of the signing or decryption shares must be combined. 
                 </div>
             </div>
+
+            <NetworkCode />
         </Container> 
 
         <NetworkSlider />

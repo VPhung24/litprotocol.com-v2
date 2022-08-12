@@ -3,7 +3,10 @@
 @import 'src/styles/mixins.scss';
 
 :export {
+    breakpointSmall: $sm;
+
     containerPadding: $containerPadding;
+    containerPaddingSmall: $containerPadding-small;
 }
 
 .wrapper {
@@ -18,6 +21,10 @@
         display: flex;
         width: max-content;
         transition: .5s;
+
+        @include max-small {
+            left: $containerPadding-small;
+        }
 
         .child {
             display: inline-flex;
@@ -60,7 +67,7 @@
         transition: .5s;
 
         &:last-of-type {
-            margin-right: 0;
+            margin-right: 0 !important;
         }
 
         &.active {
@@ -75,6 +82,16 @@
             &.active {
                 background-color: $basicWhite;
             }
+        }
+    }
+
+    @include max-small {
+        margin-top: 15px;
+        
+        > span {
+            width: 7.5px;
+            height: 7.5px;
+            margin-right: 5px;
         }
     }
 }
