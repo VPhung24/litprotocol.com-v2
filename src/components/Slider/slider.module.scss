@@ -1,5 +1,6 @@
 @import 'src/styles/colors.scss';
 @import 'src/styles/sizes.scss';
+@import 'src/styles/mixins.scss';
 
 :export {
     containerPadding: $containerPadding;
@@ -21,6 +22,25 @@
         .child {
             display: inline-flex;
             cursor: pointer;
+        }
+    }
+
+    &.disabled {
+        height: auto;
+
+        .inner {
+            position: unset;
+            display: block;
+            width: 100%;
+            padding: 0 $containerPadding;
+
+            @include max-small {
+                padding: 0 $containerPadding-small;
+
+                .child {
+                    width: 100%;
+                }
+            }
         }
     }
 }

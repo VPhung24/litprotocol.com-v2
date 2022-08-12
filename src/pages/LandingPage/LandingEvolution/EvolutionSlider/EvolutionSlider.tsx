@@ -2,6 +2,8 @@ import { Slider } from 'src/components'
 
 import EvolutionCard from './EvolutionCard'
 
+import { useWindowSize } from 'src/hooks'
+
 import styles from './evolution-slider.module.scss'
 
 import webToday from './assets/webToday.png'
@@ -27,8 +29,15 @@ const CARDS = [
 ]  
 
 const EvolutionSlider = () => {
+  const windowSize = useWindowSize()
+
   return (
-    <Slider className={styles.slider} gap={40} color="white">
+    <Slider 
+      className={styles.slider} 
+      gap={40} 
+      color="white"
+      disabled={windowSize.width <= Number((styles.breakpoint.replace('px', '')))}
+    >
       {CARDS.map((card, i) => (
         <EvolutionCard key={i} {...card} />
       ))}

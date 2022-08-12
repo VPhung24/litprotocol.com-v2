@@ -1,4 +1,14 @@
+@import 'src/styles/sizes.scss';
+@import 'src/styles/mixins.scss';
+
+:export {
+    breakpoint: $sm;
+}
+
 .slider {
     margin-top: 163px;
-    //height: 654px;
+
+    @include max-small {
+        margin-top: 45px;
+    }
 }
