@@ -1,6 +1,13 @@
+@import 'src/styles/mixins.scss';
+
 .title {
     margin: 0;
     font-weight: 700;
     font-size: 90px;
     line-height: 87px;
+
+    @include max-small {
+        font-size: 25px;
+        line-height: 15px;
+    }
 }

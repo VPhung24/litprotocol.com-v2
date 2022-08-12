@@ -1,5 +1,6 @@
 @import 'src/styles/common.scss';
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     display: flex;
@@ -26,6 +27,33 @@
                 width: 687px;
                 font-size: 30px;
                 line-height: 42px;
+            }
+        }
+    }
+
+    @include max-small {
+        height: auto;
+        padding-bottom: 59px;
+
+        .inner {
+            display: block;
+            margin-top: 48px;
+
+            .titleWrapper {
+                display: block;
+                width: 100%;
+            }
+
+            .descriptionWrapper {
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+
+                .description {
+                    width: 88%;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
             }
         }
     }
