@@ -1,0 +1,7 @@
+@import 'src/styles/sizes.scss';
+
+@mixin max-small {
+    @media only screen and (max-width: $sm) {
+        @content;
+    }
+}

@@ -1,6 +1,12 @@
 @import 'src/styles/sizes.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     width: 100%;
     padding: 0 $containerPadding;
+
+    @include max-small {
+        padding: 0 $containerPadding-small;
+    }
 }
+

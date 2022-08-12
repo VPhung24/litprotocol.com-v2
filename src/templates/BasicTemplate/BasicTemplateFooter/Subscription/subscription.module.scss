@@ -1,10 +1,12 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
+    order: 3;
     display: flex;
     align-items: flex-start;
     margin-left: auto;
-
+    
     .form {
         position: relative;
         margin-left: 43px;
@@ -36,6 +38,29 @@
             border: 1px solid $basicColor;
             border-radius: 100%;
             cursor: pointer;
+        }
+    }
+
+    @include max-small {
+        display: block;
+        margin-top: 48px;
+
+        .text {
+            br {
+                display: none;
+            }
+        }
+
+        .form {
+            margin-top: 38px;
+            margin-left: 0;
+
+            > div {
+                input {
+                    width: 100%;
+                    margin-bottom: 34px;
+                }
+            }
         }
     }
 }

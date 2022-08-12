@@ -15,7 +15,7 @@ const Subscription = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div>Join our mailing list for<br/> updates on all things Lit</div>
+      <div className={styles.text}>Join our mailing list for<br/> updates on all things Lit</div>
 
       <Form className={styles.form} providerValue={formik}>
         <Input name="name" placeholder="Full Name" />

@@ -1,4 +1,4 @@
-import { Container } from 'src/components'
+import { Container, Icons } from 'src/components'
 
 import HeaderMenu from './HeaderMenu'
 
@@ -9,9 +9,15 @@ import { ReactComponent as Logo } from './assets/logo.svg'
 const BasicTemplateHeader = () => {
   return (
     <Container className={styles.wrapper}>
-      <Logo />
+      <div className={styles.logo}>
+        <a href="/"><Logo /></a>
+      </div>
 
       <HeaderMenu />
+
+      <div className={styles.burger}>
+        <Icons.Burger />
+      </div>
     </Container>
   )
 }
