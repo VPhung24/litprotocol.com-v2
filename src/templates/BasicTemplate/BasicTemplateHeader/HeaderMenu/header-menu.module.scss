@@ -7,7 +7,6 @@
     margin-left: auto;
 
     > div {
-        font-size: 25px;
         font-weight: 700;
         margin-right: 44px;
 
@@ -30,5 +29,9 @@
 
     @include max-large {
         display: none;
+    }
+
+    @include min-huge {
+        font-size: 25px;
     }
 }

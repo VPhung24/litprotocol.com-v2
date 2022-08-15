@@ -11,3 +11,15 @@
         @content;
     }
 }
+
+@mixin min-large {
+    @media only screen and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin min-huge {
+    @media only screen and (min-width: $hg) {
+        @content;
+    }    
+}

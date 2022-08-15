@@ -4,8 +4,8 @@
 .wrapper {
     display: flex;
     align-items: center;
-    height: 362px;
     color: $basicColor;
+    padding: 46px;
 
     .logo {
         order: 1;
@@ -24,5 +24,11 @@
                 height: 110px;
             } 
         }
+    }
+
+    @include min-huge {
+        height: 362px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

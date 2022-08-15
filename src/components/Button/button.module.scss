@@ -2,14 +2,14 @@
 @import 'src/styles/mixins.scss';
 
 .button {
-    padding: 8px 32px;
-    font-size: 25px;
-    line-height: 42px;
+    padding: 6px 22px;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 28px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background-color: transparent;
     border: 1px solid;
-    border-radius: 50px;
     cursor: pointer;
 
     &.white {
@@ -17,10 +17,14 @@
         border-color: $basicWhite;
     }
 
-    @include max-large {
-        padding: 6px 22px;
-        font-size: 15px;
-        line-height: 24px;
-        border-radius: 28px;
+    @include min-large {
+        font-size: 20px;
+    }
+
+    @include min-huge {
+        padding: 8px 32px;
+        font-size: 25px;
+        line-height: 42px;
+        border-radius: 50px;
     }
 }
