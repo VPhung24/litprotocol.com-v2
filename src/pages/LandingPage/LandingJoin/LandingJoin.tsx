@@ -31,7 +31,11 @@ const LandingJoin = () => {
             </div>
         </div>
 
-        <div className={styles.image} />
+        <div className={styles.image}>
+            <video autoPlay muted loop>
+                <source src="/video/bottom.mp4" type="video/mp4" />
+            </video>
+        </div>
     </Container>
   )
 }
