@@ -2,13 +2,13 @@
 @import 'src/styles/mixins.scss';
 
 :export {
-    breakpoint: $sm;
+    breakpoint: $lg;
 }
 
 .slider {
     margin-top: 163px;
 
-    @include max-small {
+    @include max-large {
         margin-top: 45px;
     }
 }

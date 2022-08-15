@@ -28,7 +28,7 @@
         letter-spacing: unset;
     }
 
-    @include max-small {
+    @include max-large {
         display: none;
     }
 }

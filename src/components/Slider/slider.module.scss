@@ -3,7 +3,7 @@
 @import 'src/styles/mixins.scss';
 
 :export {
-    breakpointSmall: $sm;
+    breakpointLarge: $lg;
 
     containerPadding: $containerPadding;
     containerPaddingSmall: $containerPadding-small;
@@ -22,7 +22,7 @@
         width: max-content;
         transition: .5s;
 
-        @include max-small {
+        @include max-large {
             left: $containerPadding-small;
         }
 
@@ -41,7 +41,7 @@
             width: 100%;
             padding: 0 $containerPadding;
 
-            @include max-small {
+            @include max-large {
                 padding: 0 $containerPadding-small;
 
                 .child {
@@ -85,7 +85,7 @@
         }
     }
 
-    @include max-small {
+    @include max-large {
         margin-top: 15px;
         
         > span {

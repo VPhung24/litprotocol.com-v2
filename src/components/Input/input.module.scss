@@ -20,7 +20,7 @@
         color: $basicColor;
     }
 
-    @include max-small {
+    @include max-large {
         input {
             font-size: 15px;
         }

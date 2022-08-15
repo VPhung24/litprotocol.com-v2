@@ -13,13 +13,13 @@ const LandingHero = () => {
 
         <div className={styles.inner}>
             <h1 className={styles.title}>
-                Automate &<br/> 
+                Automate & <br/> 
                 Free the Web
             </h1>
 
             <div className={styles.bottom}>
                 <div className={styles.description}>
-                    Lit is Decentralized Cryptography for<br/>
+                    Lit is Decentralized Cryptography for <br/>
                     Access Control, Compute, and Encryption
                 </div>
 

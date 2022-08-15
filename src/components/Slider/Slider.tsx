@@ -51,7 +51,7 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
         const containerOffset = (() => {
             let paddingName = 'containerPadding'
 
-            if (windowSize.width < Number(styles.breakpointSmall.replace('px', ''))) {
+            if (windowSize.width < Number(styles.breakpointLarge.replace('px', ''))) {
                 paddingName = 'containerPaddingSmall'
             }
             

@@ -29,7 +29,7 @@
         display: none;
     }
 
-    @include max-small {
+    @include max-large {
         padding-top: 15px;
         padding-bottom: 15px;
         background-color: $basicWhite;
