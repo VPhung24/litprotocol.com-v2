@@ -31,7 +31,17 @@
         display: none;
     }
 
+    @include min-large {
+        .button {
+            font-size: 20px;
+        }
+    }
+
     @include min-huge {
         font-size: 25px;
+
+        .button {
+            font-size: 25px;
+        }
     }
 }

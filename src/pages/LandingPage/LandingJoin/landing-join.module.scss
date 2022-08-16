@@ -23,8 +23,7 @@
             margin: 0;
             margin-top: 38px;
             font-weight: 700;
-            font-size: 120px;
-            line-height: 119px;
+            font-size: 80px
         }
 
         .links {
@@ -105,6 +104,14 @@
             height: 400px;
             margin-left: -$containerPadding-small;
             background-position: center;
+        }
+    }
+
+    @include min-huge {
+        .inner {
+            .title {
+                font-size: 120px;
+            }
         }
     }
 }
