@@ -6,27 +6,30 @@
     z-index: 10;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
     padding-top: 46px;
     padding-bottom: 46px;
     color: $basicWhite;
     background-color: transparent;
 
-    .logo {
-        a {
-            display: block;
-            height: 100%;
-            color: $basicWhite;
-
-            svg {
+    .inner {
+        display: flex;
+        align-items: center;
+        
+        .logo {
+            a {
+                display: block;
                 height: 100%;
+                color: $basicWhite;
+    
+                svg {
+                    height: 100%;
+                }
             }
         }
-    }
-
-    .burger {
-        display: none;
+    
+        .burger {
+            display: none;
+        }
     }
 
     @include max-large {
@@ -34,20 +37,22 @@
         padding-bottom: 15px;
         background-color: $basicWhite;
 
-        .logo {
-            height: 24px;
-            
-            a {
-                color: $basicColor;
+        .inner {
+            .logo {
+                height: 24px;
+                
+                a {
+                    color: $basicColor;
+                }
             }
-        }
 
-        .burger {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            color: $basicColor;
-            cursor: pointer;
+            .burger {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                color: $basicColor;
+                cursor: pointer;
+            }
         }
     }
 }

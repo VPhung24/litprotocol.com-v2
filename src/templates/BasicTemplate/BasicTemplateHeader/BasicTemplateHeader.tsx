@@ -8,7 +8,7 @@ import { ReactComponent as Logo } from './assets/logo.svg'
 
 const BasicTemplateHeader = () => {
   return (
-    <Container className={styles.wrapper}>
+    <Container className={styles.wrapper} innerClassName={styles.inner}>
       <div className={styles.logo}>
         <a href="/"><Logo /></a>
       </div>

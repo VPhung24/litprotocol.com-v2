@@ -4,7 +4,7 @@
 .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     height: 984px;
     color: $basicColor;
     background-color: $basicCreme;
@@ -13,86 +13,96 @@
     &:last-of-type {
         border-bottom: none;
     }
+    
+    .containerInner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
 
-    &.reverse {
-        flex-direction: row-reverse;
-    }
-
-    .inner {
-        width: 598px;
-
-        .title {
-            margin: 0;
-            font-weight: 700;
-            font-size: 90px;
-            line-height: 87px;
-        }
-
-        .image {
-            display: none;
-        }
-
-        .description {
-            margin-top: 75px;
-            font-size: 20px;
-            line-height: 26px;
-        }
-
-        .link {
-            display: block;
-            width: max-content;
-            margin-top: 85px;
-            padding-bottom: 2px;
-            font-size: 25px;
-            line-height: 38px;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: $basicColor;
-            border-bottom: 1px solid $basicColor;
-        }
-    }
-
-    @include max-large {
-        display: block;
-        height: auto;
-
-        .desktopImage {
-            display: none;
+        &.reverse {
+            flex-direction: row-reverse;
         }
 
         .inner {
-            width: 100% !important;
-            margin-top: 55px;
+            width: 598px;
 
             .title {
-                font-size: 35px;
-                line-height: 34px;
+                margin: 0;
+                font-weight: 700;
+                font-size: 90px;
+                line-height: 87px;
             }
 
             .image {
-                display: block;
-                margin-top: 65px;
-
-                svg {
-                    display: block;
-                    width: 75%;
-                    height: auto;
-                    margin: 0 auto;
-                }
+                display: none;
             }
 
             .description {
-                margin-top: 60px;
-                font-size: 12px;
-                line-height: 18px;
+                margin-top: 75px;
+                font-size: 20px;
+                line-height: 26px;
             }
 
             .link {
-                margin-top: 45px;
-                margin-bottom: 75px;
-                font-size: 12px;
-                line-height: 24px;
+                display: block;
+                width: max-content;
+                margin-top: 85px;
+                padding-bottom: 2px;
+                font-size: 25px;
+                line-height: 38px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $basicColor;
+                border-bottom: 1px solid $basicColor;
+            }
+        }
+
+    }
+
+    @include max-large {
+        height: auto;
+
+        .containerInner {
+            display: block;
+
+            .desktopImage {
+                display: none;
+            }
+
+            .inner {
+                width: 100% !important;
+                margin-top: 55px;
+
+                .title {
+                    font-size: 35px;
+                    line-height: 34px;
+                }
+
+                .image {
+                    display: block;
+                    margin-top: 65px;
+
+                    svg {
+                        display: block;
+                        width: 75%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
+                }
+
+                .description {
+                    margin-top: 60px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                .link {
+                    margin-top: 45px;
+                    margin-bottom: 75px;
+                    font-size: 12px;
+                    line-height: 24px;
+                }
             }
         }
     }

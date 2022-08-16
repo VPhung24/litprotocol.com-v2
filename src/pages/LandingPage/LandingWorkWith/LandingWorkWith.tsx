@@ -5,7 +5,7 @@ import styles from './landing-work-with.module.scss'
 const LandingWorkWith = () => {
   return (
     <div className={styles.wrapper}>
-        <Container className={styles.inner}>
+        <Container innerClassName={styles.inner}>
             <div className={styles.titleWrapper}>
                 <h2 className={styles.title}>Works With</h2>
             </div>

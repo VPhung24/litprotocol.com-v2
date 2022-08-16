@@ -8,7 +8,7 @@ import styles from './landing-network.module.scss'
 const LandingNetwork = () => {
   return (
     <div className={styles.wrapper}>
-        <Container className={styles.inner}>
+        <Container innerClassName={styles.inner}>
             <div className={styles.content}>
                 <h2 className={styles.title}>The Lit Network</h2>
 

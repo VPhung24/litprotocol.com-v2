@@ -21,7 +21,7 @@ const LandingFeature = (props: LandingFeatureProps) => {
   const ImageComponent = image
 
   return (
-    <Container className={cx(styles.wrapper, reverse && styles.reverse)}>
+    <Container className={cx(styles.wrapper)} innerClassName={cx(styles.containerInner, reverse && styles.reverse)}>
         <div className={styles.desktopImage}>
           <ImageComponent />
         </div>

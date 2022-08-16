@@ -83,7 +83,7 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
           </div>
         
           {!disabled ?
-            <Container className={cx(styles.buttons, color && styles[color])}>
+            <Container innerClassName={cx(styles.buttons, color && styles[color])}>
                 {Array(React.Children.count(children)).fill(1).map((card, i) => (
                     <span 
                         key={i} 
