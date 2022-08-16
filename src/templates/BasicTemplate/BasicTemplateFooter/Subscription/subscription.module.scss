@@ -7,7 +7,9 @@
     margin-left: auto;
 
     .text {
-        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 15px;
 
         br {
             display: none;
@@ -67,14 +69,16 @@
         display: flex;
 
         .text {
+            margin-right: 125px;
+            font-size: 20px;
+            line-height: 32px;
+            
             br {
                 display: initial;
             }
         }
 
-        form {
-            margin-left: 43px;
-
+        .form {
             > div {
                 input {
                     width: 405px;

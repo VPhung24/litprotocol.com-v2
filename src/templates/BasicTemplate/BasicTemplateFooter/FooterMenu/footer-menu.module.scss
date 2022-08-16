@@ -13,8 +13,8 @@
     
     > div {
         font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 15px;
+        line-height: 30px;
         text-transform: uppercase;
 
         a {
@@ -27,10 +27,12 @@
         margin-top: 57px;
         margin-left: 0;
         margin-bottom: 64px;
+    }
 
+    @include min-huge {
         > div {
-            font-size: 15px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 32px;
         }
     }
 }
