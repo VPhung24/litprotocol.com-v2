@@ -4,8 +4,7 @@
 .wrapper {
     display: flex;
     align-items: center;
-    
-    height: 984px;
+    padding-bottom: 50px;
     color: $basicColor;
     background-color: $basicCreme;
     border-bottom: 1px solid $basicColor;
@@ -15,32 +14,42 @@
     }
     
     .containerInner {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        display: block;
 
         &.reverse {
             flex-direction: row-reverse;
         }
 
+        .desktopImage {
+            display: none;
+        }
+
         .inner {
-            width: 598px;
+            width: 100% !important;
+            margin-top: 55px;
 
             .title {
                 margin: 0;
                 font-weight: 700;
-                font-size: 90px;
-                line-height: 87px;
+                font-size: 55px;
+                line-height: 52px;
             }
 
             .image {
-                display: none;
+                display: block;
+                margin-top: 65px;
+
+                svg {
+                    display: block;
+                    max-height: 300px;
+                    width: 75%;
+                    height: auto;
+                    margin: 0 auto;
+                }
             }
 
             .description {
-                margin-top: 75px;
-                font-size: 20px;
-                line-height: 26px;
+                margin-top: 50px;
             }
 
             .link {
@@ -64,31 +73,10 @@
         height: auto;
 
         .containerInner {
-            display: block;
-
-            .desktopImage {
-                display: none;
-            }
-
             .inner {
-                width: 100% !important;
-                margin-top: 55px;
-
                 .title {
                     font-size: 35px;
                     line-height: 34px;
-                }
-
-                .image {
-                    display: block;
-                    margin-top: 65px;
-
-                    svg {
-                        display: block;
-                        width: 75%;
-                        height: auto;
-                        margin: 0 auto;
-                    }
                 }
 
                 .description {
@@ -102,6 +90,40 @@
                     margin-bottom: 75px;
                     font-size: 12px;
                     line-height: 24px;
+                }
+            }
+        }
+    }
+
+    @include min-huge {
+        height: 984px;
+        padding-bottom: unset;
+
+        .containerInner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .desktopImage {
+                display: block;
+            }
+
+            .inner {
+                width: 598px !important;
+
+                .title {
+                    font-size: 90px;
+                    line-height: 87px;
+                }
+                
+                .image {
+                    display: none;
+                }
+
+                .description {
+                    margin-top: 75px;
+                    font-size: 20px;
+                    line-height: 26px;
                 }
             }
         }
