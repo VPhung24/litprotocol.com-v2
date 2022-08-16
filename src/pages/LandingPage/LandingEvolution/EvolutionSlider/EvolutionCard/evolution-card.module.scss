@@ -40,7 +40,9 @@
 
     @include max-large {
         width: 100%;
+        max-width: 300px;
         height: 235px;
+        margin: 0 auto;
         margin-bottom: 25px;
         border-width: 1px;
         border-radius: 12px;
