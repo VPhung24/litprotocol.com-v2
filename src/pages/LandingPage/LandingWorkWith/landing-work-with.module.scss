@@ -6,53 +6,61 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 726px;
-    padding-bottom: 163px;
+    height: auto;
+    padding-bottom: 59px;
     
     .inner {
-        display: flex;
+        display: block;
+        margin-top: 48px;
         color: $basicColor;
 
         .titleWrapper {
-            display: flex;
-            justify-content: center;
-            width: 50%;
+            display: block;
+            width: 100%;
         }
 
         .descriptionWrapper {
-            display: flex;
-            width: 50%;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
 
             .description {
-                width: 687px;
-                font-size: 30px;
-                line-height: 42px;
+                width: 88%;
             }
         }
     }
 
     @include max-large {
-        height: auto;
-        padding-bottom: 59px;
-
         .inner {
-            display: block;
-            margin-top: 48px;
+            .descriptionWrapper {
+                .description {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    @include min-huge {
+        height: 726px;
+        padding-bottom: 163px;
+        
+        .inner {
+            display: flex;
 
             .titleWrapper {
-                display: block;
-                width: 100%;
+                display: flex;
+                justify-content: center;
             }
 
             .descriptionWrapper {
-                display: block;
-                width: 100%;
-                margin-top: 20px;
+                display: flex;
+                width: 50%;
 
                 .description {
-                    width: 88%;
-                    font-size: 12px;
-                    line-height: 18px;
+                    width: 687px;
+                    font-size: 30px;
+                    line-height: 42px;
                 }
             }
         }
