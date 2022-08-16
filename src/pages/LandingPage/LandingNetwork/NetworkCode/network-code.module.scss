@@ -4,16 +4,18 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 920px;
+    width: 100%;
+    max-width: 640px;
     height: 495px;
+    margin: 0 auto;
+    margin-top: 75px;
     overflow: hidden;
     background-color: $basicColor;
     border: 2px solid $basicColor;
     border-radius: 31px;
 
     .title {
-        padding: 27px;
-        font-size: 30px;
+        padding: 15px;
         text-align: center;
         text-transform: uppercase;
         color: $basicColor;
@@ -23,7 +25,6 @@
     textarea {
         flex: 1;
         display: block;
-        width: 100%;
         padding-top: 25px;
         padding-left: 65px;
         font-family: "Courier New",monospace;
@@ -36,8 +37,9 @@
 
     @include max-large {
         width: 100%;
+        max-width: 320px;
         height: 200px;
-        margin-top: 46px;
+        margin-top: 15px;
         border-width: 1px;
         border-radius: 10px;
 
@@ -51,6 +53,20 @@
             padding-top: 5px;
             padding-left: 15px;
             font-size: 0.45rem;
+        }
+    }
+
+    @include min-huge {
+        width: 920px;
+        margin: unset;
+
+        .title {
+            padding: 27px;
+            font-size: 30px;
+        }
+
+        textarea {
+            width: 100%;
         }
     }
 }
@@ -69,5 +85,6 @@
 
     @include max-large {
         margin-top: 20px;
+        font-size: 12px;
     }
 }

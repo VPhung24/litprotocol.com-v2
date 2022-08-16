@@ -1,7 +1,8 @@
+@import 'src/styles/sizes.scss';
 @import 'src/styles/mixins.scss';
 
 :export {
-    breakpoint: $sm;
+    breakpoint: $lg;
 }
 
 .wrapper {

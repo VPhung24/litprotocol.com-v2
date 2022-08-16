@@ -7,15 +7,12 @@
     padding-bottom: 185px;
 
     .inner {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        display: block;
         color: $basicColor;
 
         .content {
             order: 2;
-            width: 544px;
-
+            
             .subtitle {
                 margin-top: 85px;
                 font-size: 20px;
@@ -29,8 +26,6 @@
         padding-bottom: 55px;
 
         .inner {
-            display: block;
-
             .content {
                 width: 100%;
 
@@ -39,6 +34,18 @@
                     font-size: 12px;
                     line-height: 18px;
                 }
+            }
+        }
+    }
+
+    @include min-huge {
+        .inner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .content {
+                width: 544px;
             }
         }
     }
