@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: auto;
-    padding-bottom: 59px;
+    height: 726px;
+    padding-bottom: 163px;
     
     .inner {
         display: block;
@@ -31,6 +31,9 @@
     }
 
     @include max-large {
+        height: auto;
+        padding-bottom: 59px;
+        
         .inner {
             .descriptionWrapper {
                 .description {
@@ -42,9 +45,6 @@
     }
 
     @include min-huge {
-        height: 726px;
-        padding-bottom: 163px;
-        
         .inner {
             display: flex;
 

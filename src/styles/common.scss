@@ -3,11 +3,16 @@
 .title {
     margin: 0;
     font-weight: 700;
-    font-size: 90px;
-    line-height: 87px;
+    font-size: 70px;
+    line-height: 65px;
 
     @include max-large {
         font-size: 25px;
         line-height: 15px;
+    }
+
+    @include min-huge {
+        font-size: 90px;
+        line-height: 87px;
     }
 }
