@@ -1,47 +1,11 @@
-@import 'src/styles/colors.scss';
 @import 'src/styles/mixins.scss';
 
 .wrapper {
     display: flex;
     align-items: center;
     margin-left: auto;
-
-    > div {
-        font-weight: 700;
-        margin-right: 44px;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: $basicWhite;
-        }
-    }
-
-    .button {
-        margin-left: 44px;
-        font-weight: 700;
-        text-transform: unset;
-        letter-spacing: unset;
-    }
-
+    
     @include max-large {
         display: none;
-    }
-
-    @include min-large {
-        .button {
-            font-size: 20px;
-        }
-    }
-
-    @include min-huge {
-        font-size: 25px;
-
-        .button {
-            font-size: 25px;
-        }
     }
 }
