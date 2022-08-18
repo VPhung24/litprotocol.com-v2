@@ -1,7 +1,7 @@
 import LandingFeature from './LandingFeature'
 
 import { ReactComponent as Wallets } from './assets/wallets.svg'
-import { ReactComponent as Encryption } from './assets/encryption.svg'
+import { ReactComponent as Encryption } from './assets/encrypt.svg'
 import { ReactComponent as AccessControl } from './assets/access-control.svg'
 
 const FEATURES = [
