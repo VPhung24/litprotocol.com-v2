@@ -6,7 +6,7 @@ const LandingHero = () => {
   return (
     <Container className={styles.wrapper}>
         <div className={styles.videoBackground}>
-            <video autoPlay muted loop>
+            <video autoPlay muted loop playsInline>
                 <source src="/video/background.mp4" type="video/mp4" />
             </video>
         </div>
