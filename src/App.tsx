@@ -1,13 +1,7 @@
-import { BasicTemplate } from 'src/templates'
-
-import { LandingPage } from 'src/pages'
+import { renderPublicRoutes } from 'src/routing'
 
 const App = () => {
-  return (
-    <BasicTemplate>
-      <LandingPage />
-    </BasicTemplate>
-  )
+  return renderPublicRoutes()
 }
 
 export default App

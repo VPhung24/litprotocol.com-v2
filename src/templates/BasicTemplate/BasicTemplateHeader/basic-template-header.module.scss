@@ -56,3 +56,19 @@
         }
     }
 }
+
+.basic {
+    background-color: $basicWhite;
+
+    .inner {
+        .logo {
+            a {
+                color: $basicColor;
+            }
+        }
+
+        .burger {
+            color: $basicColor;
+        }
+    }   
+}

@@ -1,3 +1,5 @@
+import { BasicTemplate } from 'src/templates'
+
 import LandingHero from './LandingHero'
 import LandingWorkWith from './LandingWorkWith'
 import LandingEvolution from './LandingEvolution'
@@ -7,7 +9,7 @@ import LandingJoin from './LandingJoin'
 
 const LandingPage = () => {
   return (
-    <>
+    <BasicTemplate>
       <LandingHero />
 
       <LandingWorkWith />
@@ -19,7 +21,7 @@ const LandingPage = () => {
       <LandingFeatures />
 
       <LandingJoin />
-    </>
+    </BasicTemplate>
   )
 }
 

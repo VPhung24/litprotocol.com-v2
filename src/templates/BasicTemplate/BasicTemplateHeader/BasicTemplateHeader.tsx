@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import cx from 'classnames'
 
 import { Container, Icons } from 'src/components'
 
@@ -8,18 +10,26 @@ import BasicMenu from './BasicMenu'
 
 import styles from './basic-template-header.module.scss'
 
+import { PATHS } from 'src/config'
+
 import { ReactComponent as Logo } from './assets/logo.svg'
 
-const BasicTemplateHeader = () => {
+interface BasicTemplateHeaderProps {
+  color?: string
+}
+
+const BasicTemplateHeader = (props: BasicTemplateHeaderProps) => {
+  const { color } = props
+
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false)
 
   const MobileMenuIcon = Icons[showMobileMenu ? 'Close' : 'Burger']
 
   return (
     <>
-      <Container className={styles.wrapper} innerClassName={styles.inner}>
+      <Container className={cx(styles.wrapper, color && styles[color])} innerClassName={styles.inner}>
         <div className={styles.logo}>
-          <a href="/"><Logo /></a>
+          <Link to={PATHS.LANDING}><Logo /></Link>
         </div>
 
         <HeaderMenu />
@@ -31,7 +41,7 @@ const BasicTemplateHeader = () => {
 
       <MobileMenu show={showMobileMenu} />
 
-      <BasicMenu />
+      <BasicMenu color={color} />
     </>
   )
 }

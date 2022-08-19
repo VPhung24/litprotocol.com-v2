@@ -3,12 +3,16 @@ import BasicTemplateFooter from './BasicTemplateFooter'
 
 import styles from './basic-template.module.scss'
 
-const BasicTemplate = (props: React.PropsWithChildren<{}>) => {
-    const { children } = props
+interface BasicTemplateProps {
+  color?: string
+}
+
+const BasicTemplate = (props: React.PropsWithChildren<BasicTemplateProps>) => {
+  const { color, children } = props
 
   return (
     <div className={styles.wrapper}>
-        <BasicTemplateHeader />
+        <BasicTemplateHeader color={color} />
         
         <div className={styles.inner}>{children}</div>
 
