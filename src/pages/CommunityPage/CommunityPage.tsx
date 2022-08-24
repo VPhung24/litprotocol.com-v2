@@ -2,6 +2,7 @@ import { BasicTemplate } from 'src/templates'
 
 import CommunityProjects from './CommunityProjects'
 import CommunityQuote from './CommunityQuote'
+import CommunityReady from './CommunityReady'
 import CommunitySlider from './CommunitySlider'
 
 import styles from './community-page.module.scss'
@@ -12,6 +13,8 @@ const CommunityPage = () => {
       <CommunityProjects/>
 
       <CommunityQuote />
+
+      <CommunityReady />
       
       <CommunitySlider />
     </BasicTemplate>

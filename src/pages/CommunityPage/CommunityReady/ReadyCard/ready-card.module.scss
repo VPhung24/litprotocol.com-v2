@@ -1,0 +1,33 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    flex: 1;
+
+    .title {
+        padding: 48px 48px 35px 48px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 34px;
+        text-transform: uppercase;
+        text-align: center ;
+        color: $basicWhite;
+        background-color: $basicColor;
+        border-radius: 46px 46px 0 0;
+    }
+
+    .inner {
+        padding: 50px 80px 45px 80px;
+        text-align: center;
+        background-color: $basicGrey;
+        border-radius: 0 0 46px 46px;
+
+        a {
+            display: block;
+            margin-top: 37px;
+            font-size: 25px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: $basicColor;
+        }
+    }
+}

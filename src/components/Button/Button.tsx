@@ -8,7 +8,11 @@ interface ButtonProps {
 }
 
 const Button = (props: React.PropsWithChildren<ButtonProps>) => {
-    const { className, color, children } = props
+    const { 
+      className, 
+      color = 'basic', 
+      children 
+    } = props
   return (
     <button className={cx(
       styles.button,

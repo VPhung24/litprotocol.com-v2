@@ -12,6 +12,11 @@
     border: 1px solid;
     cursor: pointer;
 
+    &.basic {
+        color: $basicColor;
+        border-color: $basicColor;
+    }
+
     &.white {
         color: $basicWhite;
         border-color: $basicWhite;

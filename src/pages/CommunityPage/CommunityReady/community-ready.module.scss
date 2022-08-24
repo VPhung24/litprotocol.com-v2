@@ -1,0 +1,25 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    padding: 210px 0;
+    color: $basicColor;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .button {
+            margin-top: 58px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 90px;
+        margin-top: 165px;
+    }
+}
