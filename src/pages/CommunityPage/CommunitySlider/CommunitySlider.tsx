@@ -40,11 +40,6 @@ const CARDS = [
       image: ChainSvg
     },
     {
-      title: 'Connect decentralized systems to each other',
-      subtitle: 'Cross chain oracles',
-      image: ChainSvg
-    },
-    {
         title: 'Next wave tools for artists, musicians, and creatives',
         subtitle: 'Unlock songs and stems based on trigger actions and NFT ownership',
         image: MusicSvg

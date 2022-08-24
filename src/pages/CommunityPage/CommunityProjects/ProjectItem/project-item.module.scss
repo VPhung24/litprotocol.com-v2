@@ -6,24 +6,38 @@
     justify-content: space-between;
     max-width: 1430px;
     margin: 0 auto;
-    padding: 42px 0 52px 0;
+    padding: 45px 0;
     border-top: 2px solid $basicColor;
+
+    &:last-of-type {
+        border-bottom: 2px solid $basicColor;
+    }
 
     .name {
         flex: 1;
+        width: 25%;
         font-size: 30px;
         line-height: 87px;
         text-transform: uppercase;
+        cursor: pointer;
+
+        svg {
+            width: 25px;
+            height: 25px;
+            margin-left: 15px;
+            transform: rotate(-45deg);
+        }
     }
 
     .logo {
         display: flex;
+        width: 25%;
         align-items: center;
         justify-content: center;
         margin-right: auto;
     }
 
     .description {
-        flex: 1;
+        width: 50%;
     }
 }

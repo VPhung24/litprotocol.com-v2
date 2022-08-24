@@ -1,3 +1,5 @@
+import { Icons } from 'src/components'
+
 import styles from './project-item.module.scss'
 
 interface ProjectItemProps {
@@ -13,6 +15,7 @@ const ProjectItem = (props: ProjectItemProps) => {
     <div className={styles.wrapper}>
         <div className={styles.name}>
             {name}
+            <Icons.Arrow />
         </div>
 
         <div className={styles.logo}>
