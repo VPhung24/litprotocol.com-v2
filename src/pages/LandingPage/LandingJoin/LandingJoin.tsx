@@ -1,4 +1,4 @@
-import { Container } from 'src/components'
+import { Container, VideoBackground } from 'src/components'
 
 import styles from './landing-join.module.scss'
 
@@ -32,9 +32,7 @@ const LandingJoin = () => {
         </div>
 
         <div className={styles.image}>
-            <video autoPlay muted loop playsInline>
-                <source src="/video/bottom.mp4" type="video/mp4" />
-            </video>
+            <VideoBackground name="join" />
         </div>
     </Container>
   )

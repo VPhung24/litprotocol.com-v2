@@ -1,16 +1,12 @@
-import { Container, Button } from 'src/components'
+import { Container, VideoBackground, Button } from 'src/components'
 
 import styles from './landing-hero.module.scss'
 
 const LandingHero = () => {
   return (
     <Container className={styles.wrapper}>
-        <div className={styles.videoBackground}>
-            <video autoPlay muted loop playsInline>
-                <source src="/video/background.mp4" type="video/mp4" />
-            </video>
-        </div>
-
+        <VideoBackground name="hero" />
+        
         <div className={styles.inner}>
             <h1 className={styles.title}>
                 Automate & <br/> 
