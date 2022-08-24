@@ -1,0 +1,29 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 42px 0 52px 0;
+    border-top: 2px solid $basicColor;
+
+    .name {
+        flex: 1;
+        font-size: 30px;
+        line-height: 87px;
+        text-transform: uppercase;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    .description {
+        flex: 1;
+    }
+}

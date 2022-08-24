@@ -1,2 +1,29 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
 .wrapper {
+    padding: 50px 0 115px 0;
+    color: $basicColor;
+    
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            display: block;
+            padding-bottom: 1px;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $basicColor;
+            border-bottom: 2px solid $basicColor;
+        }
+    }
+
+    .projects {
+        margin-top: 150px;
+    }
 }
