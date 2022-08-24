@@ -7,9 +7,11 @@ import LandingNetwork from './LandingNetwork'
 import LandingFeatures from './LandingFeatures'
 import LandingJoin from './LandingJoin'
 
+import styles from './landing-page.module.scss'
+
 const LandingPage = () => {
   return (
-    <BasicTemplate>
+    <BasicTemplate innerClassName={styles.template}>
       <LandingHero />
 
       <LandingWorkWith />

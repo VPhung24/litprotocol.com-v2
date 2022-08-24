@@ -1,0 +1,42 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 55px 45px 55px;
+    width: 545px;
+    height: 545px;
+    color: $basicColor;
+    background-color: $basicWhite;
+    border-radius: 46px;
+
+    .image {
+       //height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            height: 200px;
+        }
+    }
+
+    .text {
+        flex: 1;
+        margin-top: 85px;
+
+        .title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 120%;
+        }
+
+        .subtitle { 
+            margin-top: 20px;
+        }
+    }
+}

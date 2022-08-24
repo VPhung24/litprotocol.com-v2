@@ -1,0 +1,13 @@
+@import 'src/styles/common.scss';
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    background-color: $basicColor;
+    color: $basicWhite;
+    padding-top: 177px;
+    padding-bottom: 209px;
+
+    .slider {
+        margin-top: 160px;
+    }
+}
