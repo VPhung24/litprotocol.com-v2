@@ -51,6 +51,15 @@
     }
 }
 
-.basic {
-    color: $basicColor !important;
+a,
+.button {
+    &.basic {
+        color: $basicColor;
+        border-color: $basicColor;
+    }
+
+    &.white {
+        color: $basicWhite;
+        border-color: $basicWhite;
+    }
 }

@@ -11,7 +11,7 @@ import styles from './landing-page.module.scss'
 
 const LandingPage = () => {
   return (
-    <BasicTemplate innerClassName={styles.template}>
+    <BasicTemplate innerClassName={styles.template} color="white">
       <LandingHero />
 
       <LandingWorkWith />

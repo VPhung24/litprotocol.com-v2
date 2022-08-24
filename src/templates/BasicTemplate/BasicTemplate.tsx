@@ -11,7 +11,7 @@ interface BasicTemplateProps {
 }
 
 const BasicTemplate = (props: React.PropsWithChildren<BasicTemplateProps>) => {
-  const { innerClassName, color, children } = props
+  const { innerClassName, color = 'basic', children } = props
 
   return (
     <div className={styles.wrapper}>

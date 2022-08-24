@@ -24,6 +24,9 @@ interface BasicMenuProps {
 const BasicMenu = (props: BasicMenuProps) => {
   const { color } = props
 
+  console.log('COLOR~~~~~~~~~`')
+  console.log(color)
+
   return (
     <Portal.Wrapper id="basicMenu" width={992}>
         {MENU_ITEMS.map((item, i) => (
