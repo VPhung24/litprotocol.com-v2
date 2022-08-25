@@ -1,8 +1,9 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     position: relative;
-    padding: 195px 0 115px 0;
+    padding: 75px 0 55px 0;
     color: $basicWhite;
     
     .inner {
@@ -14,18 +15,35 @@
             max-width: 1205px;
             margin: 0 auto;
             font-weight: 500;
-            font-size: 50px;
-            line-height: 108.8%;
+            font-size: 15px;
+            line-height: 19px;
             letter-spacing: 0.02em;
         }
 
         .source {
-            margin-top: 50px;
+            margin-top: 20px;
             font-weight: 500;
-            font-size: 35px;
-            line-height: 108.8%;
+            font-size: 13px;
+            line-height: 19px;
             letter-spacing: 0.02em;
             text-transform: uppercase;
+        }
+    }
+
+    @include min-middle {
+        padding: 195px 0 115px 0;
+
+        .inner {
+            .quote {
+                font-size: 50px;
+                line-height: 108.8%;
+            }
+
+            .source {
+                margin-top: 50px;
+                font-size: 35px;
+                line-height: 108.8%;
+            }
         }
     }
 }
