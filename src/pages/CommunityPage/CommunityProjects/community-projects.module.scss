@@ -16,6 +16,8 @@
             width: max-content;
             margin: 0 auto;
             margin-top: 50px;
+            font-size: 13px;
+            line-height: 16px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: $basicColor;
@@ -26,22 +28,41 @@
         margin-top: 50px;
     }
 
-    @include min-middle {
-        padding: 75px 0 115px 0;
+    @include max-large {
+        .title {
+            font-size: 35px;
+            line-height: 100%;
+        }
+    }
 
+    @include min-middle {
         .top {
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             .title {
-                font-size: 70px;
-                line-height: 65px;
+                font-size: 40px;
+                line-height: 100%;
             }
 
             a {
                 width: unset;
                 margin: unset;
+            }
+        }
+    }
+
+    @include min-huge {
+        padding: 75px 0 115px 0;
+
+        .top {
+            .title {
+                font-size: 70px;
+                line-height: 65px;
+            }
+
+            a {
                 padding-bottom: 1px;
                 font-size: 25px;
                 line-height: 38px;
@@ -52,13 +73,6 @@
 
         .projects {
             margin-top: 150px;
-        }
-    }
-
-    @include max-large {
-        .title {
-            font-size: 35px;
-            line-height: 100%;
         }
     }
 }

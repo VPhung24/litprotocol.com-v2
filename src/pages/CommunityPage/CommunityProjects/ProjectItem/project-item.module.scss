@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    max-width: 1430px;
     margin: 0 auto;
     padding: 25px 0;
     border-top: 1px solid $basicColor;
@@ -52,12 +51,41 @@
 
     @include min-middle {
         flex-wrap: unset;
-        padding: 45px 0;
+        max-width: 620px;
+        padding: 15px 0;
         border-top-width: 2px;
 
         &:last-of-type {
             border-bottom-width: 2px;
         }
+
+        .name {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 38px;
+
+            svg {
+                width: 15px;
+                height: 15px;
+                margin-top: -2px;
+                margin-left: 5px;
+            }
+        }
+
+        .logo {
+            width: 25%;
+            height: 25px;
+        }
+
+        .description {
+            width: 50%;
+            margin-top: unset;
+        }
+    }
+
+    @include min-huge {
+        max-width: 1430px;
+        padding: 45px 0;
 
         .name {
             font-size: 30px;
@@ -72,13 +100,7 @@
         }
 
         .logo {
-            width: 25%;
             height: unset;
-        }
-
-        .description {
-            width: 50%;
-            margin-top: unset;
         }
     }
 }
