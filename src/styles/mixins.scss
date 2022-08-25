@@ -6,6 +6,12 @@
     }
 }
 
+@mixin min-middle {
+    @media only screen and (min-width: $md) {
+        @content;
+    }
+}
+
 @mixin max-large {
     @media only screen and (max-width: $lg) {
         @content;

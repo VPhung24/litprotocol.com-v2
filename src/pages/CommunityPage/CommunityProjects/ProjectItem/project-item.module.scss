@@ -1,43 +1,84 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 1430px;
     margin: 0 auto;
-    padding: 45px 0;
-    border-top: 2px solid $basicColor;
+    padding: 25px 0;
+    border-top: 1px solid $basicColor;
 
     &:last-of-type {
-        border-bottom: 2px solid $basicColor;
+        border-bottom: 1px solid $basicColor;
     }
 
     .name {
         flex: 1;
+        display: flex;
+        align-items: center;
         width: 25%;
-        font-size: 30px;
-        line-height: 87px;
+        font-size: 20px;
         text-transform: uppercase;
         cursor: pointer;
 
         svg {
-            width: 25px;
-            height: 25px;
-            margin-left: 15px;
+            width: 18px;
+            height: 18px;
+            margin-top: -2.5px;
+            margin-left: 7.5px;
             transform: rotate(-45deg);
         }
     }
 
     .logo {
         display: flex;
-        width: 25%;
         align-items: center;
         justify-content: center;
+        height: 35px;
         margin-right: auto;
+
+        img {
+            height: inherit;
+        }
     }
 
     .description {
-        width: 50%;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    @include min-middle {
+        flex-wrap: unset;
+        padding: 45px 0;
+        border-top-width: 2px;
+
+        &:last-of-type {
+            border-top-width: 2px;
+        }
+
+        .name {
+            font-size: 30px;
+            line-height: 87px;
+
+            svg {
+                width: 25px;
+                height: 25px;
+                margin-top: -5px;
+                margin-left: 15px;
+            }
+        }
+
+        .logo {
+            width: 25%;
+            height: unset;
+        }
+
+        .description {
+            width: 50%;
+            margin-top: unset;
+        }
     }
 }

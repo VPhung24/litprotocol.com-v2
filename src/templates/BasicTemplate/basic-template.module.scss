@@ -1,3 +1,5 @@
+@import 'src/styles/mixins.scss';
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -12,5 +14,11 @@
         padding-top: 146px;
         overflow: hidden;
         background: #fff;
+    }
+
+    @include max-large {
+        .inner {
+            padding-top: 54px;
+        }
     }
 }

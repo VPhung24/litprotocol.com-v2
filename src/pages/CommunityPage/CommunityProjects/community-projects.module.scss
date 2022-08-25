@@ -1,29 +1,65 @@
 @import 'src/styles/common.scss';
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
-    padding: 75px 0 115px 0;
+    padding: 35px 0 65px 0;
     color: $basicColor;
     
     .top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .title {
+            @extend .title;
+        }
 
         a {
             display: block;
-            padding-bottom: 1px;
-            font-size: 25px;
-            line-height: 38px;
+            width: max-content;
+            margin: 0 auto;
+            margin-top: 50px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            text-decoration: none;
             color: $basicColor;
-            border-bottom: 2px solid $basicColor;
         }
     }
 
     .projects {
-        margin-top: 150px;
+        margin-top: 50px;
+    }
+
+    @include min-middle {
+        padding: 75px 0 115px 0;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                font-size: 70px;
+                line-height: 65px;
+            }
+
+            a {
+                width: unset;
+                margin: unset;
+                padding-bottom: 1px;
+                font-size: 25px;
+                line-height: 38px;
+                text-decoration: none;
+                border-bottom: 2px solid $basicColor;
+            }
+        }
+
+        .projects {
+            margin-top: 150px;
+        }
+    }
+
+    @include max-large {
+        .title {
+            font-size: 35px;
+            line-height: 100%;
+        }
     }
 }
+
