@@ -12,6 +12,11 @@
     padding-top: 50px;
     background-color: $basicWhite;
 
+    a, button {
+        color: $basicColor !important;
+        border-color: $basicColor !important;
+    }
+
     &.show {
         @include max-large {
             display: block;
