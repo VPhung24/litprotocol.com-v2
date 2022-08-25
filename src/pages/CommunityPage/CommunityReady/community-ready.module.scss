@@ -1,25 +1,70 @@
 @import 'src/styles/common.scss';
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
-    padding: 210px 0;
+    padding: 65px 0;
     color: $basicColor;
 
     .top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        text-align: center;
 
-        .button {
-            margin-top: 58px;
+        .title {
+            @extend .title;
+        }
+
+        .description {
+            margin-top: 25px;
+
+            br {
+                display: none;
+            }
+
+            .button {
+                margin-top: 35px;
+            }
         }
     }
 
     .cards {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        column-gap: 90px;
-        margin-top: 165px;
+        margin-top: 60px;
+    }
+
+    @include min-middle {
+        padding: 210px 0;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: unset;
+
+            .description {
+                margin-top: unset;
+    
+                br {
+                    display: block;
+                }
+    
+                .button {
+                    margin-top: 58px;
+                }
+            }
+        }
+        
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 90px;
+            margin-top: 165px;
+        }
+    }
+
+    @include max-large {
+        .title {
+            font-size: 35px;
+            line-height: 39px;
+        }
     }
 }
