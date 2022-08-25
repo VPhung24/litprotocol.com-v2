@@ -7,36 +7,63 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 85px 55px 45px 55px;
-    width: 545px;
-    height: 545px;
+    margin-bottom: 15px;
+    padding: 50px 30px 30px 30px;
     color: $basicColor;
     background-color: $basicWhite;
-    border-radius: 46px;
+    border-radius: 25px;
 
     .image {
-       //height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
         svg {
-            height: 200px;
+            height: 100px;
         }
     }
 
     .text {
-        flex: 1;
-        margin-top: 85px;
+        margin-top: 45px;
 
         .title {
             font-weight: 700;
-            font-size: 30px;
-            line-height: 120%;
+            font-size: 17px;
+            line-height: 19px;
         }
 
         .subtitle { 
-            margin-top: 20px;
+            margin-top: 11px;
+        }
+    }
+
+    @include min-middle {
+        width: 545px;
+        height: 545px;
+        margin-bottom: unset;
+        padding: 85px 55px 45px 55px;
+        border-radius: 46px;
+
+        .image {
+            svg {
+                height: 200px;
+            }
+        }
+
+        .text {
+            flex: 1;
+            margin-top: 85px;
+
+            .title {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 120%;
+            }
+
+            .subtitle { 
+                margin-top: 20px;
+            }
         }
     }
 }

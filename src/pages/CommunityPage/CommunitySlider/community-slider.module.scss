@@ -1,13 +1,47 @@
 @import 'src/styles/common.scss';
 @import 'src/styles/colors.scss';
+@import 'src/styles/sizes.scss';
+@import 'src/styles/mixins.scss';
+
+:export {
+    breakpoint: $md;
+}
 
 .wrapper {
     background-color: $basicColor;
     color: $basicWhite;
-    padding-top: 177px;
-    padding-bottom: 209px;
+    padding: 55px 0;
+
+    .title {
+        @extend .title;
+
+        br {
+            display: none;
+        }
+    }
 
     .slider {
-        margin-top: 160px;
+        margin-top: 75px;
+    }
+
+    @include min-middle {
+        padding: 177px 0 209px 0;
+
+        .title {
+            br {
+                display: block;
+            }
+        }
+
+        .slider {
+            margin-top: 160px;
+        }
+    }
+
+    @include max-large {
+        .title {
+            font-size: 35px;
+            line-height: 100%;
+        }
     }
 }

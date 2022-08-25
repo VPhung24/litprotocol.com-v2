@@ -2,6 +2,8 @@ import { Container, Slider } from 'src/components'
 
 import CommunityCard from './CommunityCard'
 
+import { useWindowSize } from 'src/hooks'
+
 import styles from './community-slider.module.scss'
 
 import { ReactComponent as GamesSvg } from './assets/games.svg'
@@ -57,6 +59,8 @@ const CARDS = [
 ] 
 
 const CommunitySlider = () => {
+  const windowSize = useWindowSize()
+
   return (
     <div className={styles.wrapper}>
         <Container>
@@ -67,6 +71,7 @@ const CommunitySlider = () => {
             className={styles.slider} 
             gap={25}
             color="white"
+            disabled={windowSize.width <= Number((styles.breakpoint.replace('px', '')))}
         >
             {CARDS.map((card, i) => (
                 <CommunityCard key={i} {...card} />

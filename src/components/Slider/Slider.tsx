@@ -71,7 +71,7 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
                   {React.Children.map(children, (child, i) => (
                     <div 
                         key={i}
-                        className={styles.child} 
+                        className={cx(styles.child, disabled && styles.disabled)} 
                         ref={!i ? childRef : undefined}
                         style={{ marginRight: !disabled ? `${gap}px` : undefined }}
                         onClick={() => handleSelect(i)}

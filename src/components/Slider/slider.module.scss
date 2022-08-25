@@ -29,6 +29,10 @@
         .child {
             display: inline-flex;
             cursor: pointer;
+
+            &.disabled {
+                display: block;
+            }
         }
     }
 
