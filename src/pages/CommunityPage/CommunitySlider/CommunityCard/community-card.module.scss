@@ -39,9 +39,38 @@
     }
 
     @include min-middle {
+        width: 235px;
+        height: 235px;
+        margin-bottom: unset;
+        padding: 40px 20px 15px 20px;
+        border-radius: 20px;
+
+        .image {
+            svg {
+                height: 85px;
+            }
+        }
+
+        .text {
+            flex: 1;
+            margin-top: 35px;
+
+            .title {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 110%;
+            }
+
+            .subtitle { 
+                font-size: 10px;
+                line-height: 110%;
+            }
+        }
+    }
+
+    @include min-huge {
         width: 545px;
         height: 545px;
-        margin-bottom: unset;
         padding: 85px 55px 45px 55px;
         border-radius: 46px;
 
@@ -52,16 +81,14 @@
         }
 
         .text {
-            flex: 1;
             margin-top: 85px;
 
             .title {
-                font-weight: 700;
                 font-size: 30px;
                 line-height: 120%;
             }
 
-            .subtitle { 
+            .subtitle {
                 margin-top: 20px;
             }
         }

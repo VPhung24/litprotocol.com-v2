@@ -69,7 +69,7 @@ const CommunitySlider = () => {
 
         <Slider 
             className={styles.slider} 
-            gap={25}
+            gap={windowSize.width <= Number((styles.gapBreakpoint.replace('px', ''))) ? 10 : 25}
             color="white"
             disabled={windowSize.width <= Number((styles.breakpoint.replace('px', '')))}
         >

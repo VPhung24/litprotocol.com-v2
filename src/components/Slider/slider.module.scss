@@ -59,12 +59,12 @@
 .buttons {
     display: flex;
     align-items: center;
-    margin-top: 48px;
+    margin-top: 15px;
 
     > span {
-        width: 25px;
-        height: 25px;
-        margin-right: 15px;
+        width: 7.5px;
+        height: 7.5px;
+        margin-right: 5px;
         border: 1px solid $basicColor;
         border-radius: 100%;
         cursor: pointer;
@@ -89,13 +89,23 @@
         }
     }
 
-    @include max-large {
-        margin-top: 15px;
-        
+    @include min-middle {
+        margin-top: 32px;
+
         > span {
-            width: 7.5px;
-            height: 7.5px;
-            margin-right: 5px;
+            width: 11px;
+            height: 11px;
+            margin-right: 6.5px;
+        }
+    }
+
+    @include min-huge {
+        margin-top: 48px;
+
+        > span {
+            width: 25px;
+            height: 25px;
+            margin-right: 15px;
         }
     }
 }
