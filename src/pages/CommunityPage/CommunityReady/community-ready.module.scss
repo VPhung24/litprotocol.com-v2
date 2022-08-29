@@ -73,10 +73,24 @@
         }
     }
 
+    @include min-large {
+        .top {
+            .description {
+                font-size: unset;
+                line-height: unset;
+            }
+        }
+    }
+
     @include min-huge {
         padding: 210px 0;
 
         .top {
+            .title {
+                font-size: 90px;
+                line-height: 87px;
+            }
+
             .description {
                 .button {
                     margin-top: 58px;
