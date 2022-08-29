@@ -32,6 +32,22 @@
         }
     }
 
+    &.showMobile {
+        background-color: $basicColor !important;
+
+        .inner {
+            .logo {
+                a {
+                    color: $basicWhite !important;
+                }
+            }
+
+            .burger {
+                color: $basicWhite !important;
+            }
+        }
+    }
+
     @include max-large {
         padding-top: 15px;
         padding-bottom: 15px;

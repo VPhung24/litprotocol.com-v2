@@ -15,7 +15,7 @@ const MENU_ITEMS = [
         name: PATHS.COMMUNITY,
         label: 'Community'
     }
-  ]
+]
 
 interface BasicMenuProps {
   color?: string
@@ -23,9 +23,6 @@ interface BasicMenuProps {
 
 const BasicMenu = (props: BasicMenuProps) => {
   const { color } = props
-
-  console.log('COLOR~~~~~~~~~`')
-  console.log(color)
 
   return (
     <Portal.Wrapper id="basicMenu" width={992}>

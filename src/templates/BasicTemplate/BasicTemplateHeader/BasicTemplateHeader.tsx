@@ -27,7 +27,7 @@ const BasicTemplateHeader = (props: BasicTemplateHeaderProps) => {
 
   return (
     <>
-      <Container className={cx(styles.wrapper, color && styles[color])} innerClassName={styles.inner}>
+      <Container className={cx(styles.wrapper, color && styles[color], showMobileMenu && styles.showMobile)} innerClassName={styles.inner}>
         <div className={styles.logo}>
           <Link to={PATHS.LANDING}><Logo /></Link>
         </div>
