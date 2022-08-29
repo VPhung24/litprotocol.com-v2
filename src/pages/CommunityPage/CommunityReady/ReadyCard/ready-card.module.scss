@@ -37,6 +37,33 @@
         margin-top: unset;
         
         .title {
+            padding: 20px 48px 15px 48px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 15px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .inner {
+            padding: 25px 25px 30px 25px;
+            border-radius: 0 0 20px 20px;
+            font-size: 12px;
+            line-height: 14px;
+
+            .description {
+                min-height: 42px;
+            }
+
+            a {
+                margin-top: 18px;
+                font-size: 13px;
+                line-height: 12px;
+            }
+        }
+    }
+
+    @include min-huge {
+        .title {
             padding: 48px 48px 35px 48px;
             font-weight: 500;
             font-size: 40px;
@@ -46,8 +73,10 @@
 
         .inner {
             padding: 50px 80px 45px 80px;
+            font-size: unset;
+            line-height: unset;
             border-radius: 0 0 46px 46px;
-
+            
             a {
                 margin-top: 37px;
                 font-size: 25px;

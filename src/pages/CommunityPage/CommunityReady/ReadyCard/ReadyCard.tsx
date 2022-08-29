@@ -13,7 +13,7 @@ const ReadyCard = (props: ReadyCardProps) => {
         <div className={styles.title}>{title}</div>
         
         <div className={styles.inner}>
-            <div>{description}</div>
+            <div className={styles.description}>{description}</div>
 
             <a href="#">Read more</a>
         </div>
