@@ -53,6 +53,15 @@
         }
     }
 
+    @include min-large {
+        .top {
+            a {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
     @include min-huge {
         padding: 75px 0 115px 0;
 

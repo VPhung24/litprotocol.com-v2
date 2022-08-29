@@ -84,6 +84,27 @@
         }
     }
 
+    @include min-large {
+        max-width: 1024px;
+
+        .name {
+            font-size: 25px;
+            line-height: 65px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                margin-top: -5px;
+                margin-left: 15px;
+            }
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
     @include min-huge {
         max-width: 1430px;
         padding: 45px 0;
@@ -102,6 +123,11 @@
 
         .logo {
             height: unset;
+        }
+
+        .description {
+            font-size: 22px;
+            line-height: 24px;
         }
     }
 }

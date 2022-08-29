@@ -50,13 +50,13 @@
         }
     }
 
-    @include min-huge {
+    @include min-large {
         padding: 195px 0 115px 0;
 
         .inner {
             max-width: unset;
             margin: unset;
-            
+
             .quote {
                 font-size: 50px;
                 line-height: 108.8%;
