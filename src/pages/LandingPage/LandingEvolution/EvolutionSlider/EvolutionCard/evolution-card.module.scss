@@ -4,7 +4,6 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 820px;
     height: 654px;
     overflow: hidden;
     background-color: $basicWhite;
@@ -72,5 +71,10 @@
                 height: calc(100% - 54px);
             }
         }
+    }
+
+    @include min-huge {
+        width: 820px;
+        height: 654px;
     }
 }

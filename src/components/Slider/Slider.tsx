@@ -19,19 +19,11 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
 
     const windowSize = useWindowSize()
 
-    const [currentHeight, setCurrentHeight] = useState<number | null>(null)
-    const [currentWidth, setCurrentWidth] = useState<number | null>(null)
+    const [refNode, setRefNode] = useState<HTMLDivElement | null>(null)
 
     const childRef = useCallback((node: HTMLDivElement | null) => {
         if (node){
-            const { scrollHeight, scrollWidth } = node
-            if (scrollHeight) {
-                setCurrentHeight(scrollHeight)
-            }
-
-            if (scrollWidth) {
-                setCurrentWidth(scrollWidth)
-            }
+            setRefNode(node)
         }
     }, [])
 
@@ -42,6 +34,9 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
         setCurrentCardIndex(index)
       }
     }
+
+    const currentWidth = refNode?.scrollWidth
+    const currentHeight = refNode?.scrollHeight
 
     const leftOffset = (() => {
         if (disabled){
@@ -60,6 +55,9 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
 
         return currentCardIndex !== 0 ? (`-${((currentWidth || 0) + gap) * currentCardIndex - containerOffset}px`) : undefined
     })() //TODO better
+
+    console.log('LEFT OFFSET')
+    console.log(leftOffset)
 
     return useMemo(() => (
       <>
