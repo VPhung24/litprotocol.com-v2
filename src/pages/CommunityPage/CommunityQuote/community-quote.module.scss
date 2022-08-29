@@ -31,9 +31,32 @@
     }
 
     @include min-middle {
+        padding: 90px 0 65px 0;
+
+        .inner {
+            max-width: 570px;
+            margin: 0 auto;
+
+            .quote {
+                font-size: 22px;
+                line-height: 108.8%;
+            }
+
+            .source {
+                margin-top: 25px;
+                font-size: 15px;
+                line-height: 25.5px;
+            }
+        }
+    }
+
+    @include min-huge {
         padding: 195px 0 115px 0;
 
         .inner {
+            max-width: unset;
+            margin: unset;
+            
             .quote {
                 font-size: 50px;
                 line-height: 108.8%;
