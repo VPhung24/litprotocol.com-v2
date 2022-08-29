@@ -9,6 +9,7 @@ import styles from './basic-menu.module.scss'
 
 const MENU_ITEMS = [
     {
+        name: PATHS.BLOG,
         label: 'Blog'
     },
     {

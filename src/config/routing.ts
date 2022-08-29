@@ -2,7 +2,8 @@ export const PRIVATE_PATHS = {}
 
 export const PUBLIC_PATHS = {
   LANDING: '/',
-  COMMUNITY: '/community'
+  COMMUNITY: '/community',
+  BLOG: '/blog',
 }
 
 export const PATHS = {
