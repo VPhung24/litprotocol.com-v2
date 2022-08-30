@@ -2,6 +2,8 @@ import { Container } from 'src/components'
 
 import styles from './landing-work-with.module.scss'
 
+import * as logos from './logos'
+
 const LandingWorkWith = () => {
   return (
     <div className={styles.wrapper}>
@@ -16,6 +18,12 @@ const LandingWorkWith = () => {
                 </div>
             </div>
         </Container>
+
+        <div className={styles.logos}>
+            {Object.values(logos).map((Logo, i) => (
+                <Logo key={i} />
+            ))}
+        </div>
     </div>
   )
 }

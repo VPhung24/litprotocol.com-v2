@@ -56,9 +56,6 @@ const Slider = (props: React.PropsWithChildren<SliderProps>) => {
         return currentCardIndex !== 0 ? (`-${((currentWidth || 0) + gap) * currentCardIndex - containerOffset}px`) : undefined
     })() //TODO better
 
-    console.log('LEFT OFFSET')
-    console.log(leftOffset)
-
     return useMemo(() => (
       <>
           <div 

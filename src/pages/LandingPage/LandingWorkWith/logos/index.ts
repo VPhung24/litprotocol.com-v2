@@ -1,0 +1,6 @@
+export { ReactComponent as IPFSLogo } from './ipfs.svg'
+export { ReactComponent as BitcoinLogo } from './bitcoin.svg'
+export { ReactComponent as EthereumLogo } from './ethereum.svg'
+export { ReactComponent as SolanaLogo } from './solana.svg'
+export { ReactComponent as PolygonLogo } from './polygon.svg'
+export { ReactComponent as CosmosLogo } from './cosmos.svg'

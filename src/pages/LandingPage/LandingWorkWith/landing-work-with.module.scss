@@ -5,13 +5,12 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    height: 726px;
+    justify-content: start;
     padding-bottom: 163px;
     
     .inner {
         display: block;
-        margin-top: 48px;
+        margin-top: 55px;
         color: $basicColor;
 
         .titleWrapper {
@@ -30,6 +29,16 @@
         }
     }
 
+    .logos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 55px;
+    }
+
     @include max-large {
         height: auto;
         padding-bottom: 59px;
@@ -44,9 +53,20 @@
         }
     }
 
+    @include min-middle {
+        .inner {
+            margin-top: 85px;
+        }
+
+        .logos {
+            margin-top: 85px;
+        }
+    }
+
     @include min-huge {
         .inner {
             display: flex;
+            margin-top: 178px;
 
             .titleWrapper {
                 display: flex;
@@ -63,6 +83,10 @@
                     line-height: 42px;
                 }
             }
+        }
+
+        .logos {
+            margin-top: 173px;
         }
     }
 }
