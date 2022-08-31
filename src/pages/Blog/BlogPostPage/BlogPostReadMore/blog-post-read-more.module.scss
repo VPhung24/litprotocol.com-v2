@@ -36,6 +36,29 @@
 
             .preview {
                 width: 100%;
+
+                &:nth-child(2){
+                    border-width: 0;
+                }
+            }
+        }
+    }
+
+    @include min-huge {
+        .title {
+            width: 263px;
+            font-size: 20px;
+            line-height: 29px;
+            border-width: 2px;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 263px - 21px);
+
+            .preview {
+                width: calc((100% - 37px) / 2);
             }
         }
     }

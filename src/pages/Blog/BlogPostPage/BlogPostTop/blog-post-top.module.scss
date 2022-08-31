@@ -2,6 +2,7 @@
 @import 'src/styles/mixins.scss';
 
 .wrapper {
+    width: 100%;
     margin-top: 25px;
     color: $basicColor;
 
@@ -91,6 +92,52 @@
                 padding-top: 27px;
                 line-height: unset;
                 border-top: 1px solid $basicColor;
+            }
+        }
+    }
+
+    @include min-huge {
+        max-width: 1380px;
+        margin: 0 auto;
+        margin-top: 75px;
+
+        .title {
+            font-size: 90px;
+        }
+
+        .inner {
+            .time,
+            .read {
+                width: 263px;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            .description,
+            .demo {
+                width: calc(100% - 263px - 21px);
+            }
+
+            .description {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 130%;
+                letter-spacing: unset;
+            }
+
+            .read,
+            .demo {
+                border-width: 2px !important;
+            }
+
+            .demo {
+                font-size: 17px;
+                line-height: 140%;
+
+                .demoTitle {
+                    font-size: 40px;
+                    line-height: 143.8%;
+                }
             }
         }
     }

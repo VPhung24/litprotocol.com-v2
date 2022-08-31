@@ -2,102 +2,106 @@
 @import 'src/styles/mixins.scss';
 
 .wrapper {
+    width: 100%;
     padding-bottom: 40px;
     color: $basicColor;
     border-bottom: 1px solid $basicColor;
+    .inner {
+        width: 100%;
 
-    h2 {
-        margin: unset;
-        margin-top: 50px;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 110%;
-        text-transform: uppercase;
-    }
-
-    p {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 143.8%;
-        letter-spacing: 0.02em;
-    }
-
-    figure {
-        margin-top: 40px;
-        margin-bottom: 40px;
-
-        blockquote {
+        h2 {
             margin: unset;
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 110%;
+            text-transform: uppercase;
+        }
+
+        p {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 143.8%;
             letter-spacing: 0.02em;
         }
 
-        figcaption {
-            margin-top: 12px;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 143%;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-        }
+        figure {
+            margin-top: 40px;
+            margin-bottom: 40px;
 
-        ul, ol {
-            margin: unset;
-            padding: unset;
+            blockquote {
+                margin: unset;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 143.8%;
+                letter-spacing: 0.02em;
+            }
 
-            li {
-                margin-top: 10px;
+            figcaption {
+                margin-top: 12px;
                 font-weight: 500;
                 font-size: 12px;
+                line-height: 143%;
                 letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
 
-                &:first-of-type {
+            ul, ol {
+                margin: unset;
+                padding: unset;
+
+                li {
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    letter-spacing: 0.02em;
+
+                    &:first-of-type {
+                        margin-top: unset;
+                    }
+                }
+            }
+
+            &.imageWrapper {
+                margin: unset;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding: unset;
+                padding: 15px 12.5px 30px 12.5px;
+                box-shadow: 1.82286px 1.51905px 6.07621px rgba(0, 0, 0, 0.15);
+                border-radius: 9px;
+
+                figcaption {
                     margin-top: unset;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                    font-size: 9px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
 
-        &.imageWrapper {
-            margin: unset;
+        code {
+            display: block;
+            width: 100%;
             margin-top: 40px;
             margin-bottom: 40px;
-            padding: unset;
-            padding: 15px 12.5px 30px 12.5px;
-            box-shadow: 1.82286px 1.51905px 6.07621px rgba(0, 0, 0, 0.15);
-            border-radius: 9px;
-
-            figcaption {
-                margin-top: unset;
-                margin-bottom: 25px;
-                font-weight: 700;
-                font-size: 9px;
-            }
-
-            img {
-                width: 100%;
-                height: auto;
-            }
+            padding: 40px 15px 40px 30px;
+            font-family: "Courier New", monospace;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 143%;
+            letter-spacing: 0.02em;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+            background: $basicWhite;
+            border: 1px solid $basicColor;
+            border-radius: 31px;
         }
-    }
-
-    code {
-        display: block;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 40px 15px 40px 30px;
-        font-family: "Courier New", monospace;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 143%;
-        letter-spacing: 0.02em;
-        white-space: pre-line;
-        overflow-wrap: break-word;
-        background: $basicWhite;
-        border: 1px solid $basicColor;
-        border-radius: 31px;
     }
 
     @include min-middle {
@@ -105,36 +109,112 @@
         margin-top: 45px;
         margin-left: auto;
         border-bottom: unset;
+        .inner {
+            figure {
+                blockquote,
+                figcaption,
+                ul,
+                ol {
+                    max-width: 346px;
+                    margin: 0 auto;
+                }
 
-        figure {
-            blockquote,
-            figcaption,
-            ul,
-            ol {
-                max-width: 346px;
-                margin: 0 auto;
-            }
-
-            blockquote {
-                font-size: 17px;
-                line-height: 131%;
-            }
-
-            figcaption {
-                margin-top: 20px;
-                font-size: 13px;
-                line-height: 143%;
-            }
-
-            &.imageWrapper {
-                padding: 20px 30px 40px 30px;
+                blockquote {
+                    font-size: 17px;
+                    line-height: 131%;
+                }
 
                 figcaption {
-                    font-size: 11px;
-                    max-width: unset;
-                    margin: unset;
-                    margin-bottom: 30px;
+                    margin-top: 20px;
+                    font-size: 13px;
+                    line-height: 143%;
                 }
+
+                &.imageWrapper {
+                    padding: 20px 30px 40px 30px;
+
+                    figcaption {
+                        font-size: 11px;
+                        max-width: unset;
+                        margin: unset;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include min-huge {
+        max-width: 1380px;
+        margin: 0 auto;
+
+        .inner {
+            width: calc(100% - 263px - 21px);
+            margin-left: auto;
+
+            h2 {
+                margin-top: 75px;
+                font-size: 40px;
+                line-height: 143.8%;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 140%;
+            }
+
+            figure {
+                blockquote,
+                figcaption,
+                ul,
+                ol {
+                    max-width: 691px;
+                    margin: 0 auto;
+                }
+
+                blockquote {
+                    font-size: 30px;
+                    line-height: 143%;
+                }
+    
+                figcaption {
+                    margin-top: 25px;
+                    font-size: 20px;
+                    line-height: 143%;
+                }
+
+                ul, ol {
+                    li {
+                        margin-top: 25px;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 140%;
+                        letter-spacing: 0.02em;
+    
+                        &:first-of-type {
+                            margin-top: unset;
+                        }
+                    }
+                }
+    
+                &.imageWrapper {
+                    padding: 32px 42px 60px 42px;
+    
+                    figcaption {
+                        font-size: 20px;
+                        max-width: unset;
+                        margin: unset;
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+
+            code {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 140%;
             }
         }
     }

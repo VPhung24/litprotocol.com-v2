@@ -7,7 +7,9 @@ import accessImg from './assets/access.png'
 
 const BlogPostContent = () => {
   return (
-    <Container className={styles.wrapper}>
+    <Container>
+    <div className={styles.wrapper}>
+        <div className={styles.inner}>
         <h2>How do we utilize both technologies, and why?</h2>
 
         <p>Let’s say that you want to share private content with members of your DAO and they hold a given NFT, with Lit Protocol and Bundlr, you can encrypt and store an image that can be viewed by anyone that holds the NFT from the DAO’s.</p>
@@ -60,8 +62,7 @@ const BlogPostContent = () => {
           </ol>
         </figure>
 
-        <code>{`
-          const chain = 'ethereum';
+        <code>{`const chain = 'ethereum';
 
           const authSig = await LitJsSdk.checkAndSignAuthMessage({chain})
           
@@ -81,6 +82,8 @@ const BlogPostContent = () => {
 
         <p>In this example, we will be encrypting an image (static content) with access control conditions using Lit Protocol, permanently store on Arweave using Bundlr APIs, downloading the encrypted image, and finally decrypting the image that was locked behind an on-chain condition.</p>
         <p>There are a lot of APIs in both technologies, but in this example, we will only focus on the essential parts, encrypting the data and uploading to Arweave. In this example, we will be encrypting an image (static content) with access control conditions using Lit Protocol, permanently store on Arweave using Bundlr APIs, downloading the encrypted image, and finally decrypting the image that was locked behind an on-chain condition.</p>
+      </div>
+      </div>
     </Container>
   )
 }
