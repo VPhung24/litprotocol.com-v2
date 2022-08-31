@@ -1,14 +1,15 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     display: flex;
     column-gap: 16px;
     padding: 10px 0 15px 0;
     color: $basicColor;
-    border-top: 1px solid $basicColor;
+    border-bottom: 1px solid $basicColor;
 
-    &:last-of-type {
-        border-bottom: 1px solid $basicColor;
+    &:first-of-type {
+        border-top: 1px solid $basicColor;
     }
 
     .inner {
@@ -46,6 +47,36 @@
     }
 
     .image {
-        width: 125px;
+        height: 134px;
+    }
+
+    @include min-middle {
+        width: calc((100% - 45px) / 2);
+        padding: 16px 0 25px 0;
+
+        &:nth-child(2) {
+            border-top: 1px solid $basicColor;
+        }
+
+        .inner {
+            .time {
+                font-size: 9px;
+                line-height: 15px;
+            }
+
+            .title {
+                font-size: 18px;
+                line-height: 110%;
+            }
+
+            .description {
+                font-size: 9px;
+                line-height: 120%;
+            }
+        }
+
+        .image {
+            height: 149px;
+        }
     }
 }
