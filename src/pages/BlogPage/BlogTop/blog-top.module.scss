@@ -39,4 +39,20 @@
             }
         }
     }
+
+    @include min-huge {
+        .title {
+            font-size: 150px;
+        }
+
+        .filters {
+            column-gap: 35px;
+
+            button {
+                padding: 8px 35px;
+                font-size: 25px;
+                line-height: 42px;
+            }
+        }
+    }
 }
