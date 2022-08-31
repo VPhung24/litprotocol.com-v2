@@ -1,0 +1,101 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    padding-bottom: 40px;
+    color: $basicColor;
+    border-bottom: 1px solid $basicColor;
+
+    h2 {
+        margin: unset;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 143.8%;
+        letter-spacing: 0.02em;
+    }
+
+    figure {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        blockquote {
+            margin: unset;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 143.8%;
+            letter-spacing: 0.02em;
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 143%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        ul, ol {
+            margin: unset;
+            padding: unset;
+
+            li {
+                margin-top: 10px;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+
+                &:first-of-type {
+                    margin-top: unset;
+                }
+            }
+        }
+
+        &.imageWrapper {
+            margin: unset;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: unset;
+            padding: 15px 12.5px 30px 12.5px;
+            box-shadow: 1.82286px 1.51905px 6.07621px rgba(0, 0, 0, 0.15);
+            border-radius: 9px;
+
+            figcaption {
+                margin-top: unset;
+                margin-bottom: 25px;
+                font-weight: 700;
+                font-size: 9px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    code {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 40px 15px 40px 30px;
+        font-family: "Courier New", monospace;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 143%;
+        letter-spacing: 0.02em;
+        white-space: pre-line;
+        overflow-wrap: break-word;
+        background: $basicWhite;
+        border: 1px solid $basicColor;
+        border-radius: 31px;
+    }
+}
