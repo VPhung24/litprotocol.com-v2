@@ -1,8 +1,15 @@
+import { Link, generatePath } from 'react-router-dom'
+
+import { PATHS } from 'src/config'
+
 import styles from './blog-preview.module.scss'
 
 import mockImg from './assets/mock.png'
 
 const BlogPreview = () => {
+
+  const postUrl = generatePath( PATHS.BLOG_POST, { slug: 'test-post' })
+
   return (
     <div className={styles.wrapper}>
         <div className={styles.inner}>
@@ -17,7 +24,7 @@ const BlogPreview = () => {
 
             <div className={styles.description}>
                 Read this guide on how to encrypt data using Lit Protocol, upload it to Arwea...
-                <a href="#">Read More</a>
+                <Link to={postUrl}>Read More</Link>
             </div>
         </div>
 

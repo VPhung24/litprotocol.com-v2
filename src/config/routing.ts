@@ -4,6 +4,7 @@ export const PUBLIC_PATHS = {
   LANDING: '/',
   COMMUNITY: '/community',
   BLOG: '/blog',
+  BLOG_POST: '/blog/:slug',
 }
 
 export const PATHS = {
