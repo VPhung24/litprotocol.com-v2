@@ -1,0 +1,51 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    column-gap: 16px;
+    padding: 10px 0 15px 0;
+    color: $basicColor;
+    border-top: 1px solid $basicColor;
+
+    &:last-of-type {
+        border-bottom: 1px solid $basicColor;
+    }
+
+    .inner {
+        .time {
+            font-weight: 500;
+            font-size: 7px;
+            line-height: 12px;
+            text-transform: uppercase;
+
+            span {
+                margin-left: 7.5px;
+            }
+        }
+
+        .title {
+            margin-top: 37px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 100%;
+            text-transform: uppercase;
+        }
+
+        .description {
+            margin-top: 14px;
+            font-weight: 500;
+            font-size: 9px;
+            line-height: 110%;
+
+            a {
+                margin-left: 5px;
+                text-transform: uppercase;
+                color: $basicColor;
+            }
+        }
+    }
+
+    .image {
+        width: 125px;
+    }
+}

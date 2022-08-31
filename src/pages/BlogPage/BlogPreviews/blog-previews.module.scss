@@ -1,0 +1,12 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    margin-top: 20px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid $basicColor;
+
+    .moreButton {
+        display: block;
+        margin: 45px auto 0 auto;
+    }
+}

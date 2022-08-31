@@ -1,10 +1,15 @@
 import { BasicTemplate } from 'src/templates'
 
-import styles from './blog-page.module.scss'
+import BlogTop from './BlogTop'
+import BlogPreviews from './BlogPreviews'
 
 const BlogPage = () => {
   return (
-    <BasicTemplate color="basic">BlogPage</BasicTemplate>
+    <BasicTemplate color="basic">
+      <BlogTop />
+
+      <BlogPreviews />
+    </BasicTemplate>
   )
 }
 

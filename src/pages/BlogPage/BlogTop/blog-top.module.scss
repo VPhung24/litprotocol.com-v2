@@ -1,0 +1,25 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    .title {
+        font-size: 50px;
+        color: $basicColor;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 8px;
+
+        button {
+            padding: 4px 16px;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 13px;
+            letter-spacing: unset;
+            text-transform: unset;
+        }
+    }
+}
