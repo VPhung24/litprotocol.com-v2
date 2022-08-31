@@ -1,0 +1,18 @@
+@import 'src/styles/colors.scss';
+
+.wrapper {
+    margin-top: 27px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid $basicColor;
+    color: $basicColor;
+
+    .title {
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .inner {
+        margin-top: 27px;
+    }
+}

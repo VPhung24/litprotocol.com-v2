@@ -2,6 +2,7 @@ import { BasicTemplate } from 'src/templates'
 
 import BlogPostTop from './BlogPostTop'
 import BlogPostContent from './BlogPostContent'
+import BlogPostReadMore from './BlogPostReadMore'
 
 const BlogPostPage = () => {
   return (
@@ -9,6 +10,8 @@ const BlogPostPage = () => {
         <BlogPostTop />
 
         <BlogPostContent />
+
+        <BlogPostReadMore />
     </BasicTemplate>
   )
 }

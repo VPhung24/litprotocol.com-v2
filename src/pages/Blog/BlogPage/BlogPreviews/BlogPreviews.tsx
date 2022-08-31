@@ -1,6 +1,6 @@
 import { Container, Button } from 'src/components'
 
-import BlogPreview from './BlogPreview'
+import { BlogPreview } from 'src/pages/Blog/components'
 
 import styles from './blog-previews.module.scss'
 
