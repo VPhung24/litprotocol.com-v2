@@ -1,4 +1,5 @@
 @import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
 
 .wrapper {
     padding-bottom: 40px;
@@ -97,5 +98,44 @@
         background: $basicWhite;
         border: 1px solid $basicColor;
         border-radius: 31px;
+    }
+
+    @include min-middle {
+        width: calc(100% - 144px - 28px);
+        margin-top: 45px;
+        margin-left: auto;
+        border-bottom: unset;
+
+        figure {
+            blockquote,
+            figcaption,
+            ul,
+            ol {
+                max-width: 346px;
+                margin: 0 auto;
+            }
+
+            blockquote {
+                font-size: 17px;
+                line-height: 131%;
+            }
+
+            figcaption {
+                margin-top: 20px;
+                font-size: 13px;
+                line-height: 143%;
+            }
+
+            &.imageWrapper {
+                padding: 20px 30px 40px 30px;
+
+                figcaption {
+                    font-size: 11px;
+                    max-width: unset;
+                    margin: unset;
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
 }

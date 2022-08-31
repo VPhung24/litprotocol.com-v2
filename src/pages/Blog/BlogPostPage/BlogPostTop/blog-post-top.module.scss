@@ -38,20 +38,59 @@
 
         .demo {
             margin-top: 25px;
+            font-weight: 500;
             font-size: 12px;
             line-height: 144%;
             letter-spacing: 0.02em;
 
             .demoTitle {
                 margin-bottom: 20px;
+                font-weight: 700;
                 font-size: 25px;
-                line-height: 12%;
                 letter-spacing: unset;
                 text-transform: uppercase;
             }
 
             a {
                 color: $basicColor;
+            }
+        }
+    }
+
+    @include min-middle {
+        .title {
+            font-size: 40px;
+        }
+
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .time,
+            .read {
+                width: 140px;
+                font-size: 13px;
+                line-height: 18px;
+            }
+
+            .description,
+            .demo {
+                width: calc(100% - 140px - 28px)
+            }
+
+            .description {
+                margin-top: unset;
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            .read,
+            .demo {
+                margin-top: 50px;
+                padding-top: 27px;
+                line-height: unset;
+                border-top: 1px solid $basicColor;
             }
         }
     }

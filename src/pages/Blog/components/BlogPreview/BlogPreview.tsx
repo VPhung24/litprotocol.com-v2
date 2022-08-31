@@ -1,4 +1,5 @@
 import { Link, generatePath } from 'react-router-dom'
+import cx from 'classnames'
 
 import { PATHS } from 'src/config'
 
@@ -6,12 +7,17 @@ import styles from './blog-preview.module.scss'
 
 import mockImg from './assets/mock.png'
 
-const BlogPreview = () => {
+interface BlogPreviewProps {
+    className?: string
+}
+
+const BlogPreview = (props: BlogPreviewProps) => {
+  const { className } = props
 
   const postUrl = generatePath( PATHS.BLOG_POST, { slug: 'test-post' })
 
   return (
-    <div className={styles.wrapper}>
+    <div className={cx(styles.wrapper, className)}>
         <div className={styles.inner}>
             <div className={styles.time}>
                 03.29.22
