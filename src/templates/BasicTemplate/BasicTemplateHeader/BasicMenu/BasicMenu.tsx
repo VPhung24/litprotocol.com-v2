@@ -8,14 +8,14 @@ import { PATHS } from 'src/config'
 import styles from './basic-menu.module.scss'
 
 const MENU_ITEMS = [
-    {
-        name: PATHS.BLOG,
-        label: 'Blog'
-    },
-    {
-        name: PATHS.COMMUNITY,
-        label: 'Community'
-    }
+  {
+    name: PATHS.BLOG,
+    label: 'Blog',
+  },
+  {
+    name: PATHS.COMMUNITY,
+    label: 'Community',
+  },
 ]
 
 interface BasicMenuProps {
@@ -27,12 +27,19 @@ const BasicMenu = (props: BasicMenuProps) => {
 
   return (
     <Portal.Wrapper id="basicMenu" width={992}>
-        {MENU_ITEMS.map((item, i) => (
-              <div className={styles.menuItem} key={i}>
-                  <Link className={cx(color && styles[color])} to={item.name || '#'}>{item.label}</Link>
-              </div>
-        ))}
-        <Button className={cx(styles.button, color && styles[color])}>Start Building</Button>
+      {MENU_ITEMS.map((item, i) => (
+        <div className={styles.menuItem} key={i}>
+          <Link className={cx(color && styles[color])} to={item.name || '#'}>
+            {item.label}
+          </Link>
+        </div>
+      ))}
+      <Button
+        className={cx(styles.button, color && styles[color])}
+        href="https://developer.litprotocol.com/"
+      >
+        Start Building
+      </Button>
     </Portal.Wrapper>
   )
 }

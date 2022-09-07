@@ -2,33 +2,49 @@
 @import 'src/styles/mixins.scss';
 
 .button {
-    padding: 8px 32px;
-    font-size: 15px;
-    line-height: 24px;
-    border-radius: 28px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background-color: transparent;
-    border: 1px solid;
-    cursor: pointer;
+  padding: 8px 32px;
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
 
-    &.basic {
-        color: $basicColor;
-        border-color: $basicColor;
-    }
+  &.basic {
+    color: $basicColor;
+    border-color: $basicColor;
+  }
 
-    &.white {
-        color: $basicWhite;
-        border-color: $basicWhite;
-    }
+  &.white {
+    color: $basicWhite;
+    border-color: $basicWhite;
+  }
 
-    @include max-small {
-        padding: 6px 22px;
-    }
+  @include max-small {
+    padding: 6px 22px;
+  }
 
-    @include min-huge {
-        font-size: 25px;
-        line-height: 42px;
-        border-radius: 50px;
-    }
+  @include min-huge {
+    font-size: 25px;
+    line-height: 42px;
+    border-radius: 50px;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
