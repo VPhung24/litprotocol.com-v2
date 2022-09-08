@@ -5,8 +5,8 @@
 .wrapper {
     height: auto;
     padding-top: 102px;
-    padding-bottom: 108px;
-    text-align: center;
+    padding-bottom: 168px;
+    //text-align: center;
     background-color: $basicColor;
     color: $basicWhite;
 
@@ -21,8 +21,8 @@
     }
 
     @include max-large {
-        padding-top: 56px;
-        padding-bottom: 54px;
+        padding-top: 59px;
+        padding-bottom: 59px;
 
         .subtitle {
             margin-top: 12px;

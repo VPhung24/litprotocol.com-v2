@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 163px;
-    
+
     .inner {
         display: block;
         margin-top: 55px;
@@ -36,7 +36,8 @@
         justify-content: space-around;
         column-gap: 40px;
         row-gap: 40px;
-        margin-top: 55px;
+        margin: 55px auto 0;
+        width: 95vw;
     }
 
     @include max-large {

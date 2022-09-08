@@ -3,8 +3,8 @@
 @import 'src/styles/mixins.scss';
 
 .wrapper {
-    padding-top: 232px;
-    padding-bottom: 185px;
+    padding-top: 102px;
+    padding-bottom: 168px;
 
     .inner {
         display: block;
@@ -22,8 +22,8 @@
     }
 
     @include max-large {
-        padding-top: 58px;
-        padding-bottom: 55px;
+        padding-top: 59px;
+        padding-bottom: 59px;
 
         .inner {
             .content {
