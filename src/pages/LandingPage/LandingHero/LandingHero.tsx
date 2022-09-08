@@ -5,23 +5,25 @@ import styles from './landing-hero.module.scss'
 const LandingHero = () => {
   return (
     <Container className={styles.wrapper}>
-        <VideoBackground name="hero" />
-        
-        <div className={styles.inner}>
-            <h1 className={styles.title}>
-                Automate & <br/> 
-                Free the Web
-            </h1>
+      <VideoBackground name="hero" />
 
-            <div className={styles.bottom}>
-                <div className={styles.description}>
-                    Lit is Decentralized Cryptography for <br/>
-                    Access Control, Compute, and Encryption
-                </div>
+      <div className={styles.inner}>
+        <h1 className={styles.title}>
+          Automate & <br />
+          Free the Web
+        </h1>
 
-                <Button color="white">Start Building</Button>
-            </div>
+        <div className={styles.bottom}>
+          <div className={styles.description}>
+            Lit is Decentralized Cryptography for <br />
+            Access Control, Compute, and Encryption
+          </div>
+
+          <Button color="white" href="https://developer.litprotocol.com/">
+            Start Building
+          </Button>
         </div>
+      </div>
     </Container>
   )
 }
