@@ -13,6 +13,7 @@ const Subscription = () => {
     onSubmit: () => {}
   })
 
+  console.log('subscription')
   return (
     <div className={styles.wrapper}>
       <div className={styles.text}>Join our mailing list for<br/> updates on all things Lit</div>
