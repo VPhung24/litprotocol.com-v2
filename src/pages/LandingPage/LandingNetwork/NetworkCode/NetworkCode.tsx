@@ -50,10 +50,9 @@ const NetworkCode = () => {
   return (
     <div>
         <div className={styles.wrapper}>
-            <div className={styles.title} onClick={() => toggleShowShareModal()}>Create an access control requirement</div>
-          <textarea rows={35} value={unifiedAccessControlConditions} onChange={(e) => setUnifiedAccessControlConditions(e.target.value)}/>
-        </div>
-
+          <div className={styles.title} onClick={() => toggleShowShareModal()}>Create an access control requirement</div>
+            <textarea rows={35} value={unifiedAccessControlConditions} onChange={(e) => setUnifiedAccessControlConditions(e.target.value)}/>
+          </div>
       {showShareModal && (
         <div id={'share-modal-container'} className={styles.modalBackSplash}>
           <div className={styles.shareModal}>
@@ -67,7 +66,7 @@ const NetworkCode = () => {
           </div>
         </div>
       )}
-      <Button onClick={() => toggleShowShareModal()} className={styles.action}>Create Requirement</Button>
+      <Button className={styles.action} onClick={() => toggleShowShareModal()}>Create Requirement</Button>
     </div>
   )
 }
