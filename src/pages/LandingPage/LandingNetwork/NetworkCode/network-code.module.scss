@@ -88,3 +88,24 @@
         font-size: 12px;
     }
 }
+
+.shareModal {
+    width: 500px;
+    height: 700px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+}
+
+.modalBackSplash {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 10;
+}
