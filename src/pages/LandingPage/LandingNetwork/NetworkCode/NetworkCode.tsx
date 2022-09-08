@@ -24,12 +24,6 @@ const initialTextArea = [
 const NetworkCode = () => {
   const [showShareModal, setShowShareModal] = useState(false)
   const [unifiedAccessControlConditions, setUnifiedAccessControlConditions] = useState('')
-  const [scrollY, setScrollY] = useState(0);
-
-  // useEffect(() => {
-  //   document.body.style.overflow = 'hidden';
-  //   return ()=> document.body.style.overflow = 'unset';
-  // }, []);
 
   const onUnifiedAccessControlConditionsSelected = (shareModalOutput: any) => {
     setShowShareModal(false);
