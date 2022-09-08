@@ -19,6 +19,7 @@ const LINKS = [
   },
   {
     label: 'Newsletter',
+    href: 'https://litproject.substack.com/'
   },
 ]
 
