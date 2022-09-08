@@ -1,6 +1,8 @@
 import { Container, VideoBackground } from 'src/components'
 
 import styles from './landing-join.module.scss'
+import { PATHS } from "../../../config";
+import { Link } from "react-router-dom";
 
 const LINKS = [
   {
@@ -8,6 +10,7 @@ const LINKS = [
     href: 'https://litgateway.com/discord',
   },
   {
+    name: PATHS.CALENDAR,
     label: 'Community Calendar',
   },
   {
@@ -28,9 +31,15 @@ const LandingJoin = () => {
 
         <div className={styles.links}>
           {LINKS.map((link, i) => (
-            <a key={i} className={styles.link} href={link.href}>
-              {link.label}
-            </a>
+            <div key={i}>
+              {link.href ? (
+              <a key={i} className={styles.link} href={link.href}>
+                {link.label}
+              </a>
+              ) : (
+                <Link to={link.name || '#'}>{link.label}</Link>
+              )}
+            </div>
           ))}
         </div>
       </div>

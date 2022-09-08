@@ -5,6 +5,7 @@ export const PUBLIC_PATHS = {
   COMMUNITY: '/community',
   BLOG: '/blog',
   BLOG_POST: '/blog/:slug',
+  CALENDAR: '/calendar'
 }
 
 export const PATHS = {
