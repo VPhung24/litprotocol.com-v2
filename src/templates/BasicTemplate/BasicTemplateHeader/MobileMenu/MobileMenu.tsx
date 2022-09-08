@@ -17,10 +17,12 @@ const MOBILE_MENU_ITEMS = [
       label: 'Community'
   },
   {
-    label: 'Use Cases'
+    label: 'Use Cases',
+    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
   },
   {
-    label: 'Contact'
+    label: 'Contact',
+    href: 'https://airtable.com/shr2NWJbH1Y6Y3kOU'
   }
 ]
 

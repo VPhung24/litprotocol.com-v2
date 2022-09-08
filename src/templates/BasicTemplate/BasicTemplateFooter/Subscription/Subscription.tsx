@@ -17,14 +17,15 @@ const Subscription = () => {
     <div className={styles.wrapper}>
       <div className={styles.text}>Join our mailing list for<br/> updates on all things Lit</div>
 
-      <Form className={styles.form} providerValue={formik}>
-        <Input name="name" placeholder="Full Name" />
-        <Input name="name" type="email" placeholder="Email" />
+      {/*<Form className={styles.form} providerValue={formik}>*/}
+      {/*  <Input name="name" placeholder="Full Name" />*/}
+      {/*  <Input name="name" type="email" placeholder="Email" />*/}
 
-        <button type="submit">
-          <Icons.Arrow />
-        </button>
-      </Form>
+      {/*  <button type="submit">*/}
+      {/*    <Icons.Arrow />*/}
+      {/*  </button>*/}
+      {/*</Form>*/}
+      <div id="custom-substack-embed" className={styles.customSubstackEmbed}></div>
     </div>
   )
 }

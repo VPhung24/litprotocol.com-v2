@@ -3,6 +3,10 @@
 @mixin max-small {
     @media only screen and (max-width: $sm) {
         @content;
+
+        .csw-substack-gradient-custom {
+            width: 65vw !important;
+        }
     }
 }
 
