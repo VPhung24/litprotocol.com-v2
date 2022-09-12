@@ -40,10 +40,14 @@
         width: 95vw;
     }
 
+    .logos>* {
+        flex: 0 0 30%;
+    }
+
     @include max-large {
         height: auto;
         padding-bottom: 59px;
-        
+
         .inner {
             .descriptionWrapper {
                 .description {
@@ -52,6 +56,11 @@
                 }
             }
         }
+
+        .logos>* {
+            flex: unset;
+        }
+
     }
 
     @include min-middle {
@@ -66,7 +75,22 @@
 
     @include min-large {
         .logos {
+            flex-wrap: wrap;
+            //width: 90vw;
+        }
+
+        .logos>* {
+            flex: 0 0 30%;
+        }
+    }
+
+    @include min-xlarge {
+        .logos {
             flex-wrap: nowrap;
+        }
+
+        .logos>* {
+            flex: unset;
         }
 
         logo {

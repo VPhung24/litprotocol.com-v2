@@ -34,6 +34,18 @@
     }
 }
 
+@mixin max-xlarge {
+    @media only screen and (max-width: $xl) {
+        @content;
+    }
+}
+
+@mixin min-xlarge {
+    @media only screen and (min-width: $xl) {
+        @content;
+    }
+}
+
 @mixin min-huge {
     @media only screen and (min-width: $hg) {
         @content;
