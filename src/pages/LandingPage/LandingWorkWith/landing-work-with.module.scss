@@ -64,6 +64,16 @@
         }
     }
 
+    @include min-large {
+        .logos {
+            flex-wrap: nowrap;
+        }
+
+        logo {
+            width: 14%;
+        }
+    }
+
     @include min-huge {
         .inner {
             display: flex;

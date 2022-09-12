@@ -21,7 +21,7 @@ const LandingWorkWith = () => {
 
         <div className={styles.logos}>
             {Object.values(logos).map((Logo, i) => (
-                <Logo key={i} />
+                <Logo className={styles.logo} key={i} />
             ))}
         </div>
     </div>

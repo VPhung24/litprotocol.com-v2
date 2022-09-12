@@ -1,4 +1,5 @@
 import { BasicTemplate } from 'src/templates'
+import React from "react";
 
 import LandingHero from './LandingHero'
 import LandingWorkWith from './LandingWorkWith'
