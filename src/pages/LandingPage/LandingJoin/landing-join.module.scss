@@ -55,12 +55,19 @@
         background-repeat: no-repeat;
     }
 
+    @include max-xlarge {
+        .inner {
+            margin-left: calc((100vw - 1200px) / 3);
+        }
+    }
+
     @include max-large {
         height: auto;
         padding-top: 51px;
         
         .inner {
             width: 100%;
+            margin-left: unset;
 
             .pretitle {
                 font-size: 12px;

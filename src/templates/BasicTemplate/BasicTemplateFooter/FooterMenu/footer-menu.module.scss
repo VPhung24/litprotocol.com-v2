@@ -23,6 +23,11 @@
         }
     }
 
+    @include max-xlarge {
+        margin-right: 30px;
+        margin-left: 40px;
+    }
+
     @include max-large {
         margin-top: 57px;
         margin-left: 0;

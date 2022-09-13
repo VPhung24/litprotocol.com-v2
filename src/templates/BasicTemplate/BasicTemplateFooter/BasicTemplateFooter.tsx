@@ -14,7 +14,7 @@ const BasicTemplateFooter = () => {
         <Logo />
       </div>
         <Subscription />
-        <FooterMenu />
+        <FooterMenu/>
     </Container>
   )
 }
