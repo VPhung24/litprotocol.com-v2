@@ -34,7 +34,7 @@ const CommunityProjects = () => {
     <div className={styles.wrapper}>
       <Container>
         <div className={styles.top}>
-          <div className={styles.title}>Projects<br/> using Lit.</div>
+          <div className={styles.title}>Projects using Lit</div>
 
           <a href="https://airtable.com/shr2NWJbH1Y6Y3kOU">Reach Out To Get Listed</a>
         </div>
