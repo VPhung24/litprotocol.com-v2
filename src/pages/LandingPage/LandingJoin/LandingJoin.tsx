@@ -8,6 +8,7 @@ const LINKS = [
   {
     label: 'Discord',
     href: 'https://litgateway.com/discord',
+    name: 'discord'
   },
   {
     label: 'Community Calendar',
