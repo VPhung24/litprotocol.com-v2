@@ -8,12 +8,12 @@ const CARDS = [
     {
         title: ' Lit   x   Bundlr',
         description: 'Read this guide on how to encrypt data using Lit, upload it to Arweave using Bundlr, fetch the Lit encrypted data, and decrypt!',
-        link: 'https://github.com/LIT-Protocol/lit-bundlr-example'
+        link: 'https://blog.litprotocol.com/?p=lit-x-bundlr-x-arweave-guide'
     },
     {
         title: 'Lit   x   Ceramic',
         description: 'Build a simple web application encrypting and decrypting a string using Lit\'s Ceramic SDK.',
-        link: 'https://github.com/LIT-Protocol/CeramicIntegration'
+        link: 'https://blog.litprotocol.com/?p=lit-protocol-ceramic-network'
     }
 ]
 

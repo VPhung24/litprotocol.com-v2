@@ -4,12 +4,12 @@ import { BlogPreview } from 'src/pages/Blog/components'
 
 import styles from './blog-previews.module.scss'
 
-const BlogPreviews = () => {
+const BlogPreviews = ({blogData}: any) => {
   return (
     <Container className={styles.wrapper}>
         <div className={styles.inner}>
-          {Array.from({ length: 6 }).map((_, i) => (
-              <BlogPreview key={i} />
+          {blogData.posts.map((postData: any, i: number) => (
+              <BlogPreview key={i} postData={postData}/>
           ))}
         </div>
 

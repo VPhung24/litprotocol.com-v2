@@ -49,7 +49,8 @@
     }
 
     .image {
-        height: 134px;
+        height: 6em;
+        width: 6em;
     }
 
     @include min-middle {
@@ -72,13 +73,14 @@
             }
 
             .description {
-                font-size: 9px;
+                font-size: 13px;
                 line-height: 120%;
             }
         }
 
         .image {
-            height: 149px;
+            height: 8em;
+            width: 8em
         }
     }
 

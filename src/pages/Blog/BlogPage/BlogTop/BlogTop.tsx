@@ -15,11 +15,11 @@ const BlogTop = () => {
     <Container className={styles.wrapper}>
         <h1 className={styles.title}>Lit Blog</h1>
 
-        <div className={styles.filters}>
-            {FILTERS.map((filter, i) => (
-                <Button key={i}>{filter.label}</Button>
-            ))}
-        </div>
+        {/*<div className={styles.filters}>*/}
+        {/*    {FILTERS.map((filter, i) => (*/}
+        {/*        <Button key={i}>{filter.label}</Button>*/}
+        {/*    ))}*/}
+        {/*</div>*/}
     </Container>
   )
 }

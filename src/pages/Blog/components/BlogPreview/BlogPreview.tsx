@@ -5,14 +5,16 @@ import { PATHS } from 'src/config'
 
 import styles from './blog-preview.module.scss'
 
-import mockImg from './assets/mock.png'
+import litlogo from './assets/litlogo.png'
+import mock from './assets/mock.png'
 
 interface BlogPreviewProps {
-    className?: string
+  className?: string
+  postData?: any
 }
 
 const BlogPreview = (props: BlogPreviewProps) => {
-  const { className } = props
+  const { className, postData } = props
 
   const postUrl = generatePath( PATHS.BLOG_POST, { slug: 'test-post' })
 
@@ -20,21 +22,25 @@ const BlogPreview = (props: BlogPreviewProps) => {
     <div className={cx(styles.wrapper, className)}>
         <div className={styles.inner}>
             <div className={styles.time}>
-                03.29.22
-                <span>4M read</span>
+              {postData.publishedAt}
+                <span>{postData.readtime}</span>
             </div>
 
             <div className={styles.title}>
-                What is Decentralized Access Control?
+              {postData.title}
             </div>
 
             <div className={styles.description}>
-                Read this guide on how to encrypt data using Lit Protocol, upload it to Arwea...
-                <Link to={postUrl}>Read More</Link>
+              {postData.summary}...
+                <a href={`https://blog.litprotocol.com/?p=${postData.slug}`} style={{color: '#777'}}>Read More</a>
             </div>
         </div>
 
-        <img className={styles.image} src={mockImg} alt="mock" />
+        {/*<img className={styles.image} src={litlogo} alt="litlogo" />*/}
+        {/*<img className={styles.image} src={postData.featuredImage} alt="mock" />*/}
+      {/*<span className={styles.image}*/}
+      {/*      style={{backgroundImage: `url(${postData.featuredImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></span>*/}
+
     </div>
   )
 }
