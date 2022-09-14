@@ -8,10 +8,12 @@ const CARDS = [
     {
         title: ' Lit   x   Bundlr',
         description: 'Read this guide on how to encrypt data using Lit, upload it to Arweave using Bundlr, fetch the Lit encrypted data, and decrypt!',
+        link: 'https://github.com/LIT-Protocol/lit-bundlr-example'
     },
     {
         title: 'Lit   x   Ceramic',
-        description: 'Build a simple web application encrypting and decrypting a string using Lit\'s Ceramic SDK.'
+        description: 'Build a simple web application encrypting and decrypting a string using Lit\'s Ceramic SDK.',
+        link: 'https://github.com/LIT-Protocol/CeramicIntegration'
     }
 ]
 
@@ -24,7 +26,9 @@ const CommunityReady = () => {
 
                 <div className={styles.description}>
                     <div>Learn where to start and how to build with Lit using these<br/>guides. For questions, ask the community in Discord.</div>
+                  <a href={'https://developer.litprotocol.com/'}>
                     <Button className={styles.button}>Start Building</Button>
+                  </a>
                 </div>
             </div>
 

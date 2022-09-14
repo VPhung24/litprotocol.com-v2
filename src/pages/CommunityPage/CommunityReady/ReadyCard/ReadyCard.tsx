@@ -2,11 +2,12 @@ import styles from './ready-card.module.scss'
 
 interface ReadyCardProps {
     title: string
-    description: string
+    description: string,
+    link: string
 }
 
 const ReadyCard = (props: ReadyCardProps) => {
-  const { title, description } = props
+  const { title, description, link } = props
 
   return (
     <div className={styles.wrapper}>
@@ -15,7 +16,7 @@ const ReadyCard = (props: ReadyCardProps) => {
         <div className={styles.inner}>
             <div className={styles.description}>{description}</div>
 
-            <a href="#">Read more</a>
+            <a href={link}>Read more</a>
         </div>
     </div>
   )
