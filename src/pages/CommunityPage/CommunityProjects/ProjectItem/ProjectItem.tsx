@@ -13,12 +13,10 @@ const ProjectItem = (props: ProjectItemProps) => {
   const { name, description, image, link } = props
 
   return (
-    <div className={styles.wrapper}>
+    <a href={link} className={styles.wrapper}>
         <div className={styles.name}>
             {name}
-          <a href={link}>
             <Icons.Arrow />
-          </a>
         </div>
 
         <div className={styles.logo}>
@@ -28,7 +26,7 @@ const ProjectItem = (props: ProjectItemProps) => {
         <div className={styles.description}>
             {description}
         </div>
-    </div>
+    </a>
   )
 }
 
