@@ -10,8 +10,8 @@ const LINKS = [
     href: 'https://litgateway.com/discord',
   },
   {
-    name: PATHS.CALENDAR,
     label: 'Community Calendar',
+    href: 'https://litgateway.com/calendar'
   },
   {
     label: 'Twitter',

@@ -26,8 +26,8 @@ const MENU_ITEMS = [
     href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
   },
   {
-    name: PATHS.CALENDAR,
     label: 'Calendar',
+    href: 'https://litgateway.com/calendar',
   },
   {
     label: 'Contact',
