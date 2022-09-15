@@ -19,7 +19,7 @@ const BlogPreview = (props: BlogPreviewProps) => {
   const postUrl = generatePath( PATHS.BLOG_POST, { slug: 'test-post' })
 
   return (
-    <div className={cx(styles.wrapper, className)}>
+    <a href={`https://blog.litprotocol.com/?p=${postData.slug}`} className={cx(styles.wrapper, className)}>
         <div className={styles.inner}>
             <div className={styles.time}>
               {postData.publishedAt}
@@ -32,7 +32,7 @@ const BlogPreview = (props: BlogPreviewProps) => {
 
             <div className={styles.description}>
               {postData.summary}...
-                <a href={`https://blog.litprotocol.com/?p=${postData.slug}`} style={{color: '#777'}}>Read More</a>
+                <span style={{color: '#777', marginLeft: '0.5em'}}>Read More</span>
             </div>
         </div>
 
@@ -41,7 +41,7 @@ const BlogPreview = (props: BlogPreviewProps) => {
       {/*<span className={styles.image}*/}
       {/*      style={{backgroundImage: `url(${postData.featuredImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></span>*/}
 
-    </div>
+    </a>
   )
 }
 
