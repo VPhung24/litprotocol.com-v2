@@ -31,13 +31,13 @@ const PROJECTS = [
   },
   {
     name: 'Cask',
-    description: 'Cask is a decentralized non-custodial protocol for managing automated money flows in web3.',
+    description: 'Cask is a decentralized non-custodial protocol for managing automated money flows in web3',
     image: CaskImg,
     link: 'https://www.cask.fi'
   },
   {
     name: 'VaynerSports',
-    description: 'Innovative solutions for a high profile collection of the best athletes and brands in the world.',
+    description: 'Innovative solutions for a high profile collection of the best athletes and brands in the world',
     image: VaynerSportsImg,
     link: 'https://vaynersports.com/'
   }
