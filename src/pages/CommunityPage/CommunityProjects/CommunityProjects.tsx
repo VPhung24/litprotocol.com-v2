@@ -7,6 +7,8 @@ import styles from './community-projects.module.scss'
 import OrbisClubImg from './assets/orbis-club.png'
 import HeadlineImg from './assets/headline.png'
 import GathertownImg from './assets/gathertown.png'
+import CaskImg from './assets/cask.svg'
+import VaynerSportsImg from './assets/vaynersports.jpeg'
 
 const PROJECTS = [
   {
@@ -26,6 +28,18 @@ const PROJECTS = [
     description: 'A way to meet online',
     image: GathertownImg,
     link: 'https://www.gather.town/'
+  },
+  {
+    name: 'Cask',
+    description: 'Cask is a decentralized non-custodial protocol for managing automated money flows in web3.',
+    image: CaskImg,
+    link: 'https://www.cask.fi'
+  },
+  {
+    name: 'VaynerSports',
+    description: 'Innovative solutions for a high profile collection of the best athletes and brands in the world.',
+    image: VaynerSportsImg,
+    link: 'https://vaynersports.com/'
   }
 ]
 
