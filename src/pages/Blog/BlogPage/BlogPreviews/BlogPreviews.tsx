@@ -13,7 +13,7 @@ const BlogPreviews = ({blogData}: any) => {
           ))}
         </div>
 
-        <Button className={styles.moreButton}>Load More</Button>
+        {/*<Button className={styles.moreButton}>Load More</Button>*/}
     </Container>
   )
 }
