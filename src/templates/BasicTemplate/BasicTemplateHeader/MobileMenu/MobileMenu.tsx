@@ -21,6 +21,10 @@ const MOBILE_MENU_ITEMS = [
     href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
   },
   {
+    label: 'Developer Docs',
+    href: 'https://developer.litprotocol.com/'
+  },
+  {
     label: 'Contact',
     href: 'https://airtable.com/shr2NWJbH1Y6Y3kOU'
   }
