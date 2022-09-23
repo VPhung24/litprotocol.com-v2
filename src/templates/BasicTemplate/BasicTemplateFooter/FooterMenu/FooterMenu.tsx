@@ -37,6 +37,10 @@ const MENU_ITEMS = [
     label: 'Discord',
     href: 'https://litgateway.com/discord',
   },
+  {
+    label: 'Careers',
+    href: 'https://jobs.lever.co/litprotocol'
+  }
 ]
 
 const FooterMenu = () => {
