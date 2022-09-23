@@ -35,14 +35,27 @@ const MobileMenu = (props: MobileMenuProps) => {
 
   return (
     <Container className={cx(styles.wrapper, show && styles.show)}>
-      {MOBILE_MENU_ITEMS.map((item, i) => (
-        <div className={styles.menuItem} key={i}>
-            <Link to={item.name || '#'}>
-              {item.label}
-              <Icons.Arrow />
-            </Link>
-        </div>
-      ))}
+      {MOBILE_MENU_ITEMS.map((item, i) => {
+        if (item['href']) {
+          return (
+            <div className={styles.menuItem} key={i}>
+              <a href={item['href']}>
+                {item.label}
+                <Icons.Arrow />
+              </a>
+            </div>
+          )
+        } else {
+          return (
+            <div className={styles.menuItem} key={i}>
+              <Link to={item.name || '#'}>
+                {item.label}
+                <Icons.Arrow />
+              </Link>
+            </div>
+          )
+        }
+      })}
     </Container>
   )
 }
