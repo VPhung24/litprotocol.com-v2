@@ -38,7 +38,7 @@ const BasicMenu = (props: BasicMenuProps) => {
         className={cx(styles.button, color && styles[color])}
         href="https://developer.litprotocol.com/"
       >
-        Start Building
+        Documentation
       </Button>
     </Portal.Wrapper>
   )
