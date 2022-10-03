@@ -15,7 +15,7 @@ const PROJECTS = [
     name: 'Orbis Club',
     description: 'A fully decentralized social layer for the internet that any developers can use to build their own social apps or features',
     image: OrbisClubImg,
-    link: 'https://orbis.club/post/kjzl6cwe1jw14a9l1l49tv4u2e8qrj1sql5ox84xn5a7jm3yh3yhlw5a9layd1r'
+    link: 'https://orbis.club/'
   },
   {
     name: 'Headline',
