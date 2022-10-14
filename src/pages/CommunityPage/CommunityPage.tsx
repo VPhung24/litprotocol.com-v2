@@ -10,13 +10,14 @@ import styles from './community-page.module.scss'
 const CommunityPage = () => {
   return (
     <BasicTemplate color="basic">
-      <CommunityProjects/>
+      <h1 className={styles.title}>Lit Community</h1>
 
       <CommunityQuote />
 
-      <CommunityReady />
-      
+      <CommunityProjects/>
+
       <CommunitySlider />
+      <CommunityReady />
     </BasicTemplate>
   )
 }
