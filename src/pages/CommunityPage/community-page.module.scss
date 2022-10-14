@@ -3,8 +3,10 @@
 
 .title {
   font-size: 50px;
-  margin-bottom: 20px;
-  margin-left: 119px;
+  margin: 40.2px auto 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $basicColor;
+  width: calc(100% - 238px);
   color: $basicColor;
 }
 

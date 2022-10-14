@@ -12,12 +12,10 @@ const CommunityPage = () => {
     <BasicTemplate color="basic">
       <h1 className={styles.title}>Lit Community</h1>
 
-      <CommunityQuote />
-
       <CommunityProjects/>
-
-      <CommunitySlider />
+      <CommunityQuote />
       <CommunityReady />
+      <CommunitySlider />
     </BasicTemplate>
   )
 }
