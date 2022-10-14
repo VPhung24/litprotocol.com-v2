@@ -9,6 +9,8 @@ import HeadlineImg from './assets/headline.png'
 import GathertownImg from './assets/gathertown.png'
 import CaskImg from './assets/cask.svg'
 import VaynerSportsImg from './assets/vaynersports.jpeg'
+import CharmverseImg from './assets/charmverse.png';
+import MonaImg from './assets/mona.png';
 
 const PROJECTS = [
   {
@@ -40,6 +42,18 @@ const PROJECTS = [
     description: 'Innovative solutions for a high profile collection of the best athletes and brands in the world',
     image: VaynerSportsImg,
     link: 'https://vaynersports.com/'
+  },
+  {
+    name: 'Charmverse',
+    description: 'Web3 Native All-in-one Workspace',
+    image: CharmverseImg,
+    link: 'https://www.charmverse.io/'
+  },
+  {
+    name: 'Mona',
+    description: 'Build, mint, and sell metaverse worlds',
+    image: MonaImg,
+    link: 'https://monaverse.com/'
   }
 ]
 
