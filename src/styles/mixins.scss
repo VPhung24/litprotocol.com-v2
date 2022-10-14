@@ -16,6 +16,12 @@
     }
 }
 
+@mixin max-middle {
+    @media only screen and (max-width: $md) {
+        @content;
+    }
+}
+
 @mixin max-large {
     @media only screen and (max-width: $lg) {
         @content;
