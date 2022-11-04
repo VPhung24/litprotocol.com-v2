@@ -9,13 +9,16 @@ import { ReactComponent as Logo } from './assets/logo.svg'
 
 const BasicTemplateFooter = () => {
   return (
-    <Container innerClassName={styles.wrapper}>
-      <div className={styles.logo}>
-        <Logo />
-      </div>
+    <>
+      <Container innerClassName={styles.wrapper}>
+        <div className={styles.logo}>
+          <Logo />
+        </div>
         <Subscription />
-        <FooterMenu/>
-    </Container>
+        <FooterMenu />
+      </Container>
+      <div className={styles.bottom}>A product of WorkGraph, Inc.</div>
+    </>
   )
 }
 
