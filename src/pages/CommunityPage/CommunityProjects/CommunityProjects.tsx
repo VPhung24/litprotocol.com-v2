@@ -11,6 +11,8 @@ import CaskImg from './assets/cask.svg'
 import VaynerSportsImg from './assets/vaynersports.jpeg'
 import CharmverseImg from './assets/charmverse.png';
 import MonaImg from './assets/mona.png';
+import LensImg from './assets/lensProtocol.svg';
+import KrebitImg from './assets/krebit.png';
 
 const PROJECTS = [
   {
@@ -54,7 +56,19 @@ const PROJECTS = [
     description: 'Build, mint, and sell metaverse worlds',
     image: MonaImg,
     link: 'https://monaverse.com/'
-  }
+  },
+  {
+    name: 'Lens Protocol',
+    description: 'User-owned, open social graph that any application can plug into.',
+    image: LensImg,
+    link: 'https://www.lens.xyz/'
+  },
+  {
+    name: 'Krebit',
+    description: 'Your reputation passport for better job matching',
+    image: KrebitImg,
+    link: 'https://krebit.id/'
+  },
 ]
 
 const CommunityProjects = () => {
