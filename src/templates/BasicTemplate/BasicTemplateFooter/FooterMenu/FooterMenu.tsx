@@ -40,6 +40,10 @@ const MENU_ITEMS = [
   {
     label: 'Careers',
     href: 'https://jobs.lever.co/litprotocol'
+  },
+  {
+    label: 'Documentation',
+    href: 'https://developer.litprotocol.com/'
   }
 ]
 
