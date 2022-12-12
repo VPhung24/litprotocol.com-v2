@@ -9,8 +9,9 @@ import styles from './mobile-menu.module.scss'
 
 const MOBILE_MENU_ITEMS = [
   {
-      name: PATHS.BLOG,
-      label: 'Blog'
+      // name: PATHS.BLOG,
+      label: 'Blog',
+      href: 'https://spark.litprotocol.com '
   },
   {
       name: PATHS.COMMUNITY,

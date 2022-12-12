@@ -6,8 +6,9 @@ import styles from './footer-menu.module.scss'
 
 const MENU_ITEMS = [
   {
-    name: PATHS.BLOG,
+    // name: PATHS.BLOG,
     label: 'Blog',
+    href: 'https://spark.litprotocol.com '
   },
   {
     label: 'Twitter',
@@ -42,7 +43,7 @@ const MENU_ITEMS = [
     href: 'https://jobs.lever.co/litprotocol'
   },
   {
-    label: 'Documentation',
+    label: 'Docs',
     href: 'https://developer.litprotocol.com/'
   }
 ]

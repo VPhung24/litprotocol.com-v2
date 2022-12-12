@@ -9,8 +9,9 @@ import styles from './basic-menu.module.scss'
 
 const MENU_ITEMS = [
   {
-    name: PATHS.BLOG,
+    // name: PATHS.BLOG,
     label: 'Blog',
+    href: 'https://spark.litprotocol.com '
   },
   {
     name: PATHS.COMMUNITY,
@@ -29,9 +30,13 @@ const BasicMenu = (props: BasicMenuProps) => {
     <Portal.Wrapper id="basicMenu" width={992}>
       {MENU_ITEMS.map((item, i) => (
         <div className={styles.menuItem} key={i}>
-          <Link className={cx(color && styles[color])} to={item.name || '#'}>
-            {item.label}
-          </Link>
+          {item.href ? (
+            <a className={cx(color && styles[color])} href={item.href}>{item.label}</a>
+          ) : (
+            <Link className={cx(color && styles[color])} to={item.name || '#'}>
+              {item.label}
+            </Link>
+          )}
         </div>
       ))}
       <Button
