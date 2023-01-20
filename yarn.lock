@@ -7124,10 +7124,10 @@ lit-js-sdk@^1.1.198, lit-js-sdk@^1.1.242:
     tweetnacl-util "^0.15.1"
     utf-8-validate "^5.0.8"
 
-lit-share-modal-v3@^0.0.94:
-  version "0.0.94"
-  resolved "https://registry.yarnpkg.com/lit-share-modal-v3/-/lit-share-modal-v3-0.0.94.tgz#20c037700e5722949a6528511d89c1a7039fb9b7"
-  integrity sha512-sWa1Tz6uovp9Y0yjXZG7j6aR9mtb1CLhUYH1xDf4I0RPWFA2wEdB08jZQDOlF7pnY/6HBMwLQPg//HAAQq/T5Q==
+lit-share-modal-v3@^0.0.95:
+  version "0.0.95"
+  resolved "https://registry.yarnpkg.com/lit-share-modal-v3/-/lit-share-modal-v3-0.0.95.tgz#93a54c2de4bcd0b8bbc7a7a6c9df2bf188d1dcd9"
+  integrity sha512-POcK9XgDN0QvliSAw0xfPmwg+pIM2fexeMBwfs7TWHn0PQ/XNxdCrGyKRdEC5E1ThBgl5BnCPI+WyOXhqPMSPA==
   dependencies:
     ethers "^5.4.6"
     events "^3.3.0"
