@@ -9,6 +9,10 @@ import styles from './basic-menu.module.scss'
 
 const MENU_ITEMS = [
   {
+    label: 'Use Cases',
+    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
+  },
+  {
     // name: PATHS.BLOG,
     label: 'Blog',
     href: 'https://spark.litprotocol.com '
@@ -17,6 +21,11 @@ const MENU_ITEMS = [
     name: PATHS.COMMUNITY,
     label: 'Community',
   },
+  {
+    label: 'Get In Touch',
+    href: 'https://airtable.com/shr2NWJbH1Y6Y3kOU '
+  },
+
 ]
 
 interface BasicMenuProps {

@@ -66,7 +66,7 @@ const NetworkCode = () => {
           </div>
         </div>
       )}
-      <Button className={styles.action} onClick={() => toggleShowShareModal()}>Create Requirement</Button>
+      {/*<Button className={styles.action} onClick={() => toggleShowShareModal()}>Create Requirement</Button>*/}
     </div>
   )
 }

@@ -8,7 +8,7 @@ const FEATURES = [
   {
     title: 'Programmable + Distributed Cloud Wallets',
     description:
-      'Use Lit as a decentralized serverless function platform to create applications that write data to public state machines like blockchains and storage networks. Create automated agents for user funds and data.',
+      'Lit provides a network for generating programmable MPC wallets with support for web2 authentication. Use your email or Discord account as a method for creating a distributed, web3 wallet.',
     url: {
       label: 'Start With Programmable Key Pairs',
       href: 'https://developer.litprotocol.com/LitActionsAndPKPs/whatAreLitActionsAndPKPs',
@@ -16,27 +16,31 @@ const FEATURES = [
     image: Wallets,
   },
   {
-    title: 'Encryption',
+    title: 'Encryption + Access Control',
     description:
-      'Store private data on the open web and use Lit to provision decentralized keys to users based on on-chain data, like the assets they hold in their wallet.',
-    url: {
-      label: 'Start With Encryption',
-      href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
-    },
+      ' Store private data on the open web and use Lit as an access control layer to provision keys to users who meet your on-chain conditions.',
+    // url: {
+    //   label: 'Start With Encryption',
+    //   href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
+    // },
+      url: {
+        label: 'Start With ACCESS CONTROL',
+        href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
+      },
     image: Encryption,
     reverse: true,
   },
-  {
-    title: 'Access Control',
-    description:
-      'Connect applications up to web3 credentials, like NFTs as e-commerce discounts and token gated metaverse spaces',
-    url: {
-      label: 'Start With ACCESS CONTROL',
-      href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
-    },
-    image: AccessControl,
-    width: 652,
-  },
+  // {
+  //   title: 'Access Control',
+  //   description:
+  //     'Connect applications up to web3 credentials, like NFTs as e-commerce discounts and token gated metaverse spaces',
+  //   url: {
+  //     label: 'Start With ACCESS CONTROL',
+  //     href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
+  //   },
+  //   image: AccessControl,
+  //   width: 652,
+  // },
 ]
 
 const LandingFeatures = () => {

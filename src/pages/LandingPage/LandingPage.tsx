@@ -9,6 +9,7 @@ import LandingFeatures from './LandingFeatures'
 import LandingJoin from './LandingJoin'
 
 import styles from './landing-page.module.scss'
+import LandingPoweredBy from "./LandingPoweredBy/LandingPoweredBy";
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,8 @@ const LandingPage = () => {
       <LandingEvolution />
 
       <LandingNetwork />
+
+      <LandingPoweredBy />
 
       <LandingFeatures />
 

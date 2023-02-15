@@ -25,7 +25,7 @@ const CommunityReady = () => {
                 <div className={styles.title}>Ready to Make<br/> It Happen?</div>
 
                 <div className={styles.description}>
-                    <div>Learn where to start and how to build with Lit using these<br/>guides. For questions, ask the community in Discord.</div>
+                    <div>Get started with Lit using these developer guides.<br/>For technical support, reach out to the team in Discord.</div>
                   <a href={'https://developer.litprotocol.com/'}>
                     <Button className={styles.button}>Start Building</Button>
                   </a>

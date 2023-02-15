@@ -9,12 +9,12 @@ const LandingWorkWith = () => {
     <div className={styles.wrapper}>
         <Container innerClassName={styles.inner}>
             <div className={styles.titleWrapper}>
-                <h2 className={styles.title}>Works With</h2>
+                <h2 className={styles.title}>Native Interoperability</h2>
             </div>
 
             <div className={styles.descriptionWrapper}>
                 <div className={styles.description}>
-                    Using threshold cryptography, Lit provides a key without a key master that works across blockchains, storage networks, and platforms.
+                  Lit is a blockchain-agnostic middleware layer that can be used to read and write data between blockchains and off-chain platforms, powering conditional decryption and programmatic signing.
                 </div>
             </div>
         </Container>

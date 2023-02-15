@@ -1,7 +1,9 @@
 import { Container } from 'src/components'
 
 import NetworkCode from './NetworkCode'
-import NetworkSlider from './NetworkSlider'
+// import NetworkSlider from '../LandingPoweredBy/NetworkSlider'
+import accessControl from './assets/AccessControl.png'
+import cloudSigning from './assets/CloudSigning.png'
 
 import styles from './landing-network.module.scss'
 
@@ -13,15 +15,18 @@ const LandingNetwork = () => {
                 <h2 className={styles.title}>The Lit Network</h2>
 
                 <div className={styles.subtitle}>
-                    Each Lit node has a protected key share for signing and decrypting. They use this key share to produce a signing or decryption share, based on your rules and automations.<br/><br/>
-                    In order to produce a full signature or decryption key, more than a threshold (⅔ of nodes) of the signing or decryption shares must be combined. 
+                  Lit is composed of a decentralized network of nodes, each playing a role in key generation, consensus, and the execution of network actions.
                 </div>
             </div>
 
-            <NetworkCode />
-        </Container> 
+            {/*<NetworkCode />*/}
+        </Container>
+        <div className={styles.readWriteImages}>
+          <img src={accessControl} alt="Access Control" className={styles.readWriteImage} />
+          <img src={cloudSigning} alt="Cloud Signing" className={styles.readWriteImage} />
+        </div>
 
-        <NetworkSlider />
+        {/*<NetworkSlider />*/}
     </div>
   )
 }

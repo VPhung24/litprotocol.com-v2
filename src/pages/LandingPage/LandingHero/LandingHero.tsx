@@ -15,8 +15,8 @@ const LandingHero = () => {
 
         <div className={styles.bottom}>
           <div className={styles.description}>
-            Lit is Decentralized Cryptography for <br />
-            Access Control, Compute, and Encryption
+            Lit is decentralized key management for encryption, <br />
+            compute, and distributed custody.
           </div>
 
           <Button color="white" href="https://developer.litprotocol.com/">
