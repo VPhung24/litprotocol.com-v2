@@ -15,23 +15,28 @@ import { ReactComponent as TrustedSvg } from './assets/trusted.svg'
 const CARDS = [
   {
     title: 'Distributed Key Generation',
-    image: KeysSvg
+    image: KeysSvg,
+    description: 'Lit uses DKG to facilitate the joint computation of private/public key pairs without relying on a trusted 3rd party.'
   },
   {
     title: 'Threshold Secret Sharing',
-    image: ThresholdSvg
+    image: ThresholdSvg,
+    description: 'Lit uses TSS to divide keypairs into multiple shares, where a minimum number of shares (the "threshold") are required to reconstruct the complete key-pair. '
   },
   {
     title: 'Proactive Secret Sharing',
-    image: ProactiveSvg
+    image: ProactiveSvg,
+    description: 'Lit uses PSS to periodically update the key shares stored across the Lit Network to prevent the compromise or leakage or old keys.'
   },
   {
     title: 'Deno',
-    image: DenoSvg
+    image: DenoSvg,
+    description: 'A secure and modern JavaScript runtime that provides Lit with the features and tooling for developing and running server-side applications and scripts.'
   },
   {
     title: 'Trusted Execution Environment',
-    image: TrustedSvg
+    image: TrustedSvg,
+    description: 'All node operations take place inside of a secure enclave, meaning node operators and other external "agents" never have access to the key shares contained within.'
   }
 ]
 

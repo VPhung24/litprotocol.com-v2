@@ -11,30 +11,30 @@ import decentralizedWeb from './assets/decentralizedWeb.png'
 import decentralizedWebWithMoreKeyTypes from './assets/decentralizedWebWithMoreKeyTypes.png'
 
 const CARDS = [
-    {
-      title: 'The Web Today',
-      subtitle: 'Your data is controlled by corporations',
-      image: webToday
-    },
-    {
-      title: 'The Decentralized Web',
-      subtitle: 'Your data and tokens are controlled by your key',
-      image: decentralizedWeb
-    },
-    {
-      title: 'The Decentralized Web with More Key Types',
-      subtitle: 'Custodians are Centralized Key Controllers, Lit is Not',
-      image: decentralizedWebWithMoreKeyTypes
-    }
-]  
+  {
+    title: 'The Web Today',
+    subtitle: 'Your data is controlled by corporations',
+    image: webToday
+  },
+  {
+    title: 'The Decentralized Web',
+    subtitle: 'Your data and tokens are controlled by your key',
+    image: decentralizedWeb
+  },
+  {
+    title: 'The Decentralized Web with More Key Types',
+    subtitle: 'MPC for secure asset management, signing, and encryption',
+    image: decentralizedWebWithMoreKeyTypes
+  }
+]
 
 const EvolutionSlider = () => {
   const windowSize = useWindowSize()
 
   return (
-    <Slider 
-      className={styles.slider} 
-      gap={40} 
+    <Slider
+      className={styles.slider}
+      gap={40}
       color="white"
       disabled={windowSize.width <= Number((styles.breakpoint.replace('px', '')))}
     >

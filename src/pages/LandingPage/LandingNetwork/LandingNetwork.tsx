@@ -1,9 +1,6 @@
 import { Container } from 'src/components'
 
-import NetworkCode from './NetworkCode'
-// import NetworkSlider from '../LandingPoweredBy/NetworkSlider'
-import accessControl from './assets/AccessControl.png'
-import cloudSigning from './assets/CloudSigning.png'
+import litFlowChart from './assets/litflowchart.png'
 
 import styles from './landing-network.module.scss'
 
@@ -19,14 +16,10 @@ const LandingNetwork = () => {
                 </div>
             </div>
 
-            {/*<NetworkCode />*/}
         </Container>
         <div className={styles.readWriteImages}>
-          <img src={accessControl} alt="Access Control" className={styles.readWriteImage} />
-          <img src={cloudSigning} alt="Cloud Signing" className={styles.readWriteImage} />
+          <img src={litFlowChart} alt="Cloud Signing" className={styles.readWriteImage} />
         </div>
-
-        {/*<NetworkSlider />*/}
     </div>
   )
 }

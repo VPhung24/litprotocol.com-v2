@@ -29,15 +29,21 @@
     }
 
     .image {
-        flex: 1;
+        //flex: 1;
+        height: 17em;
         display: flex;
         align-items: center;
     }
 
     .title {
-        margin-bottom: 45px;
+        margin-bottom: 0.25em;
         font-size: 31px;
         line-height: 44px;
+    }
+
+    .description {
+        font-size: 16px;
+        padding: 0 2em 1em;
     }
 
     @include max-large {
@@ -55,7 +61,7 @@
 
         .image {
             justify-content: center;
-            
+
             svg {
                 height: 100%;
                 width: 50%;
@@ -66,6 +72,10 @@
             margin-bottom: 10px;
             font-size: 8px;
             line-height: 10px
+        }
+
+        .description {
+            display: none;
         }
     }
 }
