@@ -16,17 +16,17 @@ const CARDS = [
   {
     title: 'Distributed Key Generation',
     image: KeysSvg,
-    description: 'Lit uses DKG to facilitate the joint computation of private/public key pairs without relying on a trusted 3rd party.'
+    description: 'DKG facilitates the joint computation of private/public key pairs without relying on a trusted 3rd party.'
   },
   {
     title: 'Threshold Secret Sharing',
     image: ThresholdSvg,
-    description: 'Lit uses TSS to divide keypairs into multiple shares, where a minimum number of shares (the "threshold") are required to reconstruct the complete key-pair. '
+    description: 'TSS divides keypairs into multiple shares, where a minimum number of shares (the "threshold") are required to reconstruct the complete key-pair. '
   },
   {
     title: 'Proactive Secret Sharing',
     image: ProactiveSvg,
-    description: 'Lit uses PSS to periodically update the key shares stored across the Lit Network to prevent the compromise or leakage or old keys.'
+    description: 'Key shares are periodically updated using PSS to prevent the compromise or leakage of old keys.'
   },
   {
     title: 'Deno',
@@ -46,10 +46,10 @@ const NetworkSlider = () => {
   return (
     <Slider className={styles.wrapper} gap={windowSize.width > Number(styles.breakpoint.replace('px', '')) ? 25 : 5}>
       {CARDS.map((card, i) => (
-        <NetworkCard 
-          key={i} 
+        <NetworkCard
+          key={i}
           index={i}
-          {...card} 
+          {...card}
         />
       ))}
     </Slider>
