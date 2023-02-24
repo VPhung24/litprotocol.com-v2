@@ -47,7 +47,7 @@ const LandingFeature = (props: LandingFeatureProps) => {
         <span className={styles.linkContainer}>
           {urls.map((url, i) => {
             return (
-              <a key={i} className={styles.link} href={url.href}>
+              <a key={i} className={styles.link} target={"_blank"} href={url.href}>
                 {url.label}
               </a>)
           })
