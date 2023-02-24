@@ -32,17 +32,6 @@ const FEATURES = [
     image: Encryption,
     reverse: true,
   },
-  // {
-  //   title: 'Access Control',
-  //   description:
-  //     'Connect applications up to web3 credentials, like NFTs as e-commerce discounts and token gated metaverse spaces',
-  //   url: {
-  //     label: 'Start With ACCESS CONTROL',
-  //     href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
-  //   },
-  //   image: AccessControl,
-  //   width: 652,
-  // },
 ]
 
 const LandingFeatures = () => {
