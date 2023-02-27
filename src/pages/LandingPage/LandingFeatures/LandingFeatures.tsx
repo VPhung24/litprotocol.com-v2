@@ -8,34 +8,29 @@ const FEATURES = [
   {
     title: 'Programmable + Distributed Cloud Wallets',
     description:
-      'Use Lit as a decentralized serverless function platform to create applications that write data to public state machines like blockchains and storage networks. Create automated agents for user funds and data.',
-    url: {
+      'Lit provides distributed MPC wallets that can be used for DeFi automation, verifiable credential issuance, and native support for web2 authentication (e.g Passkey, Google, Discord oAuth).',
+    urls: [{
       label: 'Start With Programmable Key Pairs',
       href: 'https://developer.litprotocol.com/LitActionsAndPKPs/whatAreLitActionsAndPKPs',
-    },
+    }],
     image: Wallets,
   },
   {
-    title: 'Encryption',
+    title: 'Encryption + Access Control',
     description:
-      'Store private data on the open web and use Lit to provision decentralized keys to users based on on-chain data, like the assets they hold in their wallet.',
-    url: {
-      label: 'Start With Encryption',
-      href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
-    },
+      'Store private data on the open web and use Lit as a secure access control layer to provision keys to users who meet your on-chain conditions.',
+    urls: [
+      // {
+      //   label: 'Start With Encryption',
+      //   href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
+      // },
+      {
+        label: 'Start With ACCESS CONTROL',
+        href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
+      }
+    ],
     image: Encryption,
     reverse: true,
-  },
-  {
-    title: 'Access Control',
-    description:
-      'Connect applications up to web3 credentials, like NFTs as e-commerce discounts and token gated metaverse spaces',
-    url: {
-      label: 'Start With ACCESS CONTROL',
-      href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
-    },
-    image: AccessControl,
-    width: 652,
   },
 ]
 

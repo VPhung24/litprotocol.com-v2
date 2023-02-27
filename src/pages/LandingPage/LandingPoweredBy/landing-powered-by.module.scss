@@ -3,7 +3,7 @@
 @import 'src/styles/mixins.scss';
 
 .wrapper {
-    padding-top: 102px;
+    padding-top: 0;
     padding-bottom: 168px;
 
     .inner {
@@ -29,12 +29,12 @@
         margin-top: 2em;
 
         .readWriteImage {
-            width: 70%;
-            padding: 0;
+            width: 49%;
+            padding: 0 15px;
             box-sizing: border-box;
             border: 3px solid $basicColor;
             border-radius: 10px;
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
     }
 

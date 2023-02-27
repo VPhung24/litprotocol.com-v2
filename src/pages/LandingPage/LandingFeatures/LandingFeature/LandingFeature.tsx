@@ -7,17 +7,19 @@ import styles from './landing-feature.module.scss'
 interface LandingFeatureProps {
   title: string
   description: string
-  url: {
-    label: string
-    href?: string
-  }
+  urls: LandingFeatureUrl[]
   image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
   reverse?: boolean
   width?: number
 }
 
+interface LandingFeatureUrl {
+  label: string
+  href?: string
+}
+
 const LandingFeature = (props: LandingFeatureProps) => {
-  const { title, description, url, image, reverse, width } = props
+  const {title, description, urls, image, reverse, width} = props
 
   const ImageComponent = image
 
@@ -27,24 +29,30 @@ const LandingFeature = (props: LandingFeatureProps) => {
       innerClassName={cx(styles.containerInner, reverse && styles.reverse)}
     >
       <div className={styles.desktopImage}>
-        <ImageComponent />
+        <ImageComponent/>
       </div>
 
       <div
         className={styles.inner}
-        style={{ width: width ? `${width}px` : undefined }}
+        style={{width: width ? `${width}px` : undefined}}
       >
         <h2 className={styles.title}>{title}</h2>
 
         <div className={styles.image}>
-          <ImageComponent />
+          <ImageComponent/>
         </div>
 
         <div className={styles.description}>{description}</div>
 
-        <a className={styles.link} href={url.href}>
-          {url.label}
-        </a>
+        <span className={styles.linkContainer}>
+          {urls.map((url, i) => {
+            return (
+              <a key={i} className={styles.link} target={"_blank"} href={url.href}>
+                {url.label}
+              </a>)
+          })
+          }
+        </span>
       </div>
     </Container>
   )

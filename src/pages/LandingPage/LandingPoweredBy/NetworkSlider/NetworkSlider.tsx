@@ -15,23 +15,28 @@ import { ReactComponent as TrustedSvg } from './assets/trusted.svg'
 const CARDS = [
   {
     title: 'Distributed Key Generation',
-    image: KeysSvg
+    image: KeysSvg,
+    description: 'DKG facilitates the joint computation of private/public key pairs without relying on a trusted 3rd party.'
   },
   {
     title: 'Threshold Secret Sharing',
-    image: ThresholdSvg
+    image: ThresholdSvg,
+    description: 'TSS divides keypairs into multiple shares, where a minimum number of shares (the "threshold") are required to reconstruct the complete key-pair. '
   },
   {
     title: 'Proactive Secret Sharing',
-    image: ProactiveSvg
+    image: ProactiveSvg,
+    description: 'Key shares are periodically updated using PSS to prevent the compromise or leakage of old keys.'
   },
   {
     title: 'Deno',
-    image: DenoSvg
+    image: DenoSvg,
+    description: 'A secure and modern JavaScript runtime that provides Lit with the features and tooling for developing and running server-side applications and scripts.'
   },
   {
     title: 'Trusted Execution Environment',
-    image: TrustedSvg
+    image: TrustedSvg,
+    description: 'All node operations take place inside of a secure enclave, meaning node operators and other external "agents" never have access to the key shares contained within.'
   }
 ]
 
@@ -41,10 +46,10 @@ const NetworkSlider = () => {
   return (
     <Slider className={styles.wrapper} gap={windowSize.width > Number(styles.breakpoint.replace('px', '')) ? 25 : 5}>
       {CARDS.map((card, i) => (
-        <NetworkCard 
-          key={i} 
+        <NetworkCard
+          key={i}
           index={i}
-          {...card} 
+          {...card}
         />
       ))}
     </Slider>
