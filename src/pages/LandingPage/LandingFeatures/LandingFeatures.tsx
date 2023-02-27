@@ -8,7 +8,7 @@ const FEATURES = [
   {
     title: 'Programmable + Distributed Cloud Wallets',
     description:
-      'Lit provides distributed MPC wallets that can be used for DeFi automation, verifiable credential issuance, and users wallets that  web2 authentication (e.g Passkey, Discord, oAuth).',
+      'Lit provides distributed MPC wallets that can be used for DeFi automation, verifiable credential issuance, and native support for web2 authentication (e.g Passkey, Google, Discord oAuth).',
     urls: [{
       label: 'Start With Programmable Key Pairs',
       href: 'https://developer.litprotocol.com/LitActionsAndPKPs/whatAreLitActionsAndPKPs',
@@ -18,12 +18,12 @@ const FEATURES = [
   {
     title: 'Encryption + Access Control',
     description:
-      'Store private data on the open web with Lit as the access control layer to provision keys to users who meet your on-chain conditions for web3 social and data marketplaces.',
+      'Store private data on the open web and use Lit as a secure access control layer to provision keys to users who meet your on-chain conditions.',
     urls: [
-      {
-        label: 'Start With Encryption',
-        href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
-      },
+      // {
+      //   label: 'Start With Encryption',
+      //   href: 'https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/EncryptAndDecrypt/setup',
+      // },
       {
         label: 'Start With ACCESS CONTROL',
         href: 'https://developer.litprotocol.com/AccessControlConditions/intro',
