@@ -72,4 +72,25 @@
       }
     }
   }
+
+  @include min-middle {
+    .readWriteImages {
+      .readWriteImageMobile {
+        display: none;
+      }
+    }
+  }
+
+  @include max-middle {
+    .readWriteImages {
+      .readWriteImage {
+        display: none;
+      }
+
+      .readWriteImageMobile {
+        display: inline;
+        width: 100%;
+      }
+    }
+  }
 }
