@@ -15,8 +15,8 @@ const LandingHero = () => {
 
         <div className={styles.bottom}>
           <div className={styles.description}>
-            Lit is decentralized key management for encryption, <br />
-            compute, and distributed custody.
+            Lit is distributed key management for encryption, <br />
+            signing, and compute.
           </div>
 
           <Button color="white" href="https://developer.litprotocol.com/">
