@@ -1,7 +1,7 @@
 import { Container } from 'src/components'
 
-import litFlowChart from './assets/litflowchart.png'
-import litFlowChartSmall from './assets/litflowchartsmall.png'
+import litFlowChart from './assets/litChartSmall.png'
+import litFlowChartSmall from './assets/litChart.png'
 
 import styles from './landing-network.module.scss'
 
