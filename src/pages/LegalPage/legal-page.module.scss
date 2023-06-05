@@ -1,0 +1,33 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/mixins.scss';
+
+.title {
+  font-size: 3rem;
+  line-height: 1rem;
+  color: $basicColor;
+}
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: $basicColor;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    padding-top: 0.25rem;
+    margin-left: 0.25rem;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

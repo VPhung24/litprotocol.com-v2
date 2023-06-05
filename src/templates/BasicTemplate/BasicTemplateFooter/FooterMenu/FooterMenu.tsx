@@ -8,7 +8,7 @@ const MENU_ITEMS = [
   {
     // name: PATHS.BLOG,
     label: 'Blog',
-    href: 'https://spark.litprotocol.com '
+    href: 'https://spark.litprotocol.com ',
   },
   {
     label: 'Twitter',
@@ -24,28 +24,28 @@ const MENU_ITEMS = [
   },
   {
     label: 'Use Cases',
-    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
+    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864',
   },
   {
     label: 'Calendar',
     href: 'https://litgateway.com/calendar',
   },
-  {
-    label: 'Contact',
-    href: 'https://nut.sh/ell/forms/352580/YEk9vu'
-  },
+  // {
+  //   label: 'Contact',
+  //   href: 'https://nut.sh/ell/forms/352580/YEk9vu',
+  // },
   {
     label: 'Discord',
     href: 'https://litgateway.com/discord',
   },
   {
     label: 'Careers',
-    href: 'https://jobs.lever.co/litprotocol'
+    href: 'https://jobs.lever.co/litprotocol',
   },
   {
     label: 'Docs',
-    href: 'https://developer.litprotocol.com/'
-  }
+    href: 'https://developer.litprotocol.com/',
+  },
 ]
 
 const FooterMenu = () => {

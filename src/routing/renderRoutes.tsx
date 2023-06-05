@@ -3,6 +3,7 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import { privateRoutes, publicRoutes, IRoutes } from './'
 
 import { TemplateWrapper } from 'src/templates'
+import { redirectRoutes } from './routes'
 
 interface IRoutesRendering {
   routes: IRoutes
@@ -15,6 +16,12 @@ const RoutesRendering = (props: IRoutesRendering) => {
   const navigate = useNavigate()
 
   useEffect(() => {
+    redirectRoutes.forEach((route) => {
+      if (location.pathname === route.path) {
+        window.location.href = route.to
+      }
+    })
+
     if (location.pathname === '/') {
       const defaultRoute = routes.find((route) => route.default)
       if (defaultRoute) {

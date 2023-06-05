@@ -9,26 +9,26 @@ import styles from './mobile-menu.module.scss'
 
 const MOBILE_MENU_ITEMS = [
   {
-      // name: PATHS.BLOG,
-      label: 'Blog',
-      href: 'https://spark.litprotocol.com '
+    // name: PATHS.BLOG,
+    label: 'Blog',
+    href: 'https://spark.litprotocol.com ',
   },
   {
-      name: PATHS.COMMUNITY,
-      label: 'Community'
+    name: PATHS.COMMUNITY,
+    label: 'Community',
   },
   {
     label: 'Use Cases',
-    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864'
+    href: 'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864',
   },
   {
     label: 'Developer Docs',
-    href: 'https://developer.litprotocol.com/'
+    href: 'https://developer.litprotocol.com/',
   },
   {
     label: 'Contact',
-    href: 'https://nut.sh/ell/forms/352580/YEk9vu'
-  }
+    href: 'https://nut.sh/ell/forms/352580/YEk9vu',
+  },
 ]
 
 interface MobileMenuProps {

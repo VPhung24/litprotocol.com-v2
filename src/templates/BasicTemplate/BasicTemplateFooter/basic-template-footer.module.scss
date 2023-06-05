@@ -33,8 +33,28 @@
   }
 }
 
-.bottom {
+.footer {
   color: $basicColor;
   text-align: center;
-  height: 50px;
+  padding: 1rem;
+  font-size: 15px;
+  line-height: 1rem;
+
+  &__company {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    color: $basicColor;
+    font-size: 15px;
+    line-height: 1rem;
+    margin: 0 0.125rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
