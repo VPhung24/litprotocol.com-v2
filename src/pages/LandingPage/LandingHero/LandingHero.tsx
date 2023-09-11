@@ -1,31 +1,26 @@
-import { Container, VideoBackground, Button } from 'src/components'
-
-import styles from './landing-hero.module.scss'
+import styles from './landing-hero.module.scss';
+import NodeImg from './assets/nodes-2.png';
 
 const LandingHero = () => {
   return (
-    <Container className={styles.wrapper}>
-      <VideoBackground name="hero" />
+    <section className={styles.container}>
+      <div className={styles['hero-img']}></div>
+      {/* <img src={NodeImg} alt="nodes" className={styles['hero-img']}></img> */}
+      <div className={styles['content-wrapper']}>
+        <h1 className={styles.title}>Secure keys and data with ease</h1>
 
-      <div className={styles.inner}>
-        <h1 className={styles.title}>
-          Automate & <br />
-          Free the Web
-        </h1>
-
-        <div className={styles.bottom}>
-          <div className={styles.description}>
-            Lit is distributed key management for encryption, <br />
-            signing, and compute.
-          </div>
-
-          <Button color="white" href="https://developer.litprotocol.com/">
-            Start Building
-          </Button>
+        <div className={styles['copy-wrapper']}>
+          <p className={styles.subtitle}>
+            Lit is a distributed key network for secure signing, encryption, and
+            compute without centralized keyholders.
+          </p>
+          <a href="/" className={styles['cta-btn']}>
+            Get started
+          </a>
         </div>
       </div>
-    </Container>
-  )
-}
+    </section>
+  );
+};
 
-export default LandingHero
+export default LandingHero;

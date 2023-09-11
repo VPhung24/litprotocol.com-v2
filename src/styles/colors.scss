@@ -1,4 +1,35 @@
-$basicColor: #33257F;
+$basicColor: #33257f;
 $basicWhite: #ffffff;
-$basicCreme: #FFC08E;
-$basicGrey: #F2F3F5;
+$basicCreme: #ffc08e;
+$basicGrey: #f2f3f5;
+
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rbg(0, 0, 0);
+  // --gray-50: rgb(250, 250, 250);
+  // --gray-100: rgb(245, 245, 245);
+  // --gray-200: rgb(229, 229, 229);
+  // --gray-300: rgb(212, 212, 212);
+  // --gray-400: rgb(163, 163, 163);
+  // --gray-500: rgb(115, 115, 115);
+  // --gray-600: rgb(82, 82, 82);
+  // --gray-700: rgb(64, 64, 64);
+  // --gray-800: rgb(38, 38, 38);
+  // --gray-900: rgb(23, 23, 23);
+  // --gray-950: rgb(10, 10, 10);
+  --gray-50: rgb(242, 244, 248);
+  --gray-100: rgb(221, 225, 230);
+  --gray-200: rgb(193, 199, 205);
+  --gray-300: rgb(162, 169, 176);
+  --gray-400: rgb(135, 141, 150);
+  --gray-500: rgb(105, 112, 119);
+  --gray-600: rgb(77, 83, 88);
+  --gray-700: rgb(52, 58, 63);
+  --gray-800: rgb(33, 39, 42);
+  --gray-900: rgb(18, 22, 25);
+  --lit-orange: rgb(255, 132, 79);
+  --lit-blue: rgb(51, 37, 127);
+  --lit-purple: rgb(205, 113, 250);
+  --lit-pink: rgb(247, 108, 165);
+  --lit-yellow: rgb(255, 212, 12);
+}

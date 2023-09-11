@@ -1,33 +1,23 @@
-import { BasicTemplate } from 'src/templates'
-import React from "react";
-
+import { Layout } from 'src/components'
 import LandingHero from './LandingHero'
-import LandingWorkWith from './LandingWorkWith'
-import LandingEvolution from './LandingEvolution'
-import LandingNetwork from './LandingNetwork'
+import LandingProducts from './LandingProducts'
 import LandingFeatures from './LandingFeatures'
-import LandingJoin from './LandingJoin'
-
-import styles from './landing-page.module.scss'
-import LandingPoweredBy from "./LandingPoweredBy/LandingPoweredBy";
+import LandingComparison from './LandingComparison'
+import LandingPartners from './LandingPartners'
+import LandingCta from './LandingCta/LandingCta'
+import LandingBlog from './LandingBlog/LandingBlog'
 
 const LandingPage = () => {
   return (
-    <BasicTemplate innerClassName={styles.template} color="white">
+    <Layout>
       <LandingHero />
-
-      <LandingWorkWith />
-
-      <LandingEvolution />
-
-      <LandingNetwork />
-
-      <LandingPoweredBy />
-
+      <LandingPartners />
+      <LandingProducts />
       <LandingFeatures />
-
-      <LandingJoin />
-    </BasicTemplate>
+      <LandingComparison />
+      <LandingBlog />
+      <LandingCta />
+    </Layout>
   )
 }
 

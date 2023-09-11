@@ -1,0 +1,12 @@
+export { ReactComponent as CollabLandLogo } from './collabland.svg';
+export { ReactComponent as ConsensysLogo } from './consensys.svg';
+export { ReactComponent as EdgeAndNodeLogo } from './edgenode.svg';
+export { ReactComponent as EthGlobalLogo } from './ethglobal.svg';
+export { ReactComponent as GitcoinLogo } from './gitcoin.svg';
+export { ReactComponent as IndexNetworkLogo } from './indexnetwork.svg';
+export { ReactComponent as KrebitLogo } from './krebit.svg';
+export { ReactComponent as LensLogo } from './lens.svg';
+export { ReactComponent as LivepeerLogo } from './livepeer.svg';
+export { ReactComponent as SeiLogo } from './sei.svg';
+export { ReactComponent as StreamrLogo } from './streamr.svg';
+export { ReactComponent as ZerionLogo } from './zerion.svg';

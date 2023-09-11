@@ -1,0 +1,81 @@
+@import 'src/styles/mixins.scss';
+
+:root {
+  --marquee-size: 10rem;
+  --marquee-gap: 1rem;
+  --marquee-duration: 60s;
+  --marquee-scroll-start: 0;
+  --marquee-scroll-end: calc(-100% - var(--marquee-gap));
+}
+
+@include sm {
+  :root {
+    --marquee-size: 15rem;
+  }
+}
+
+.container {
+  padding: 4rem 1rem 0;
+
+  @include sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include md {
+    padding-top: 6rem;
+  }
+
+  @include lg {
+    padding-top: 8rem;
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: var(--marquee-size);
+}
+
+.marquee {
+  height: 4rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--marquee-gap);
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--marquee-gap);
+  min-width: 100%;
+  animation: scroll-x var(--marquee-duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--marquee-scroll-start));
+  }
+  to {
+    transform: translateX(var(--marquee-scroll-end));
+  }
+}

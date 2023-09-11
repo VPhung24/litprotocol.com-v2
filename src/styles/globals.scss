@@ -1,25 +1,130 @@
-@import 'src/styles/mixins.scss';
+@import 'src/styles/normalize';
+@import 'src/styles/colors';
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  font-size: 20px;
+@font-face {
   font-family: 'Favorit';
-
-  @include max-small {
-    font-size: 12px;
-  }
+  src: url('./fonts/ABCFavorit-Regular.woff2') format('woff2'),
+    url('./fonts/ABCFavorit-Regular.woff') format('woff');
 }
 
-body > div {
+@font-face {
+  font-family: 'Favorit';
+  font-weight: 700;
+  src: url('./fonts/ABCFavorit-Bold.woff2') format('woff2'),
+    url('./fonts/ABCFavorit-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Favorit';
+  font-weight: 300;
+  src: url('./fonts/ABCFavorit-Light.woff2') format('woff2'),
+    url('./fonts/ABCFavorit-Light.woff') format('woff');
+}
+
+html {
   height: 100%;
+}
+
+body {
+  font-family: 'Favorit';
+  min-height: 100vh;
+  // background-color: var(--gray-950);
+  background-color: var(--gray-900);
+  color: var(--gray-400);
+  // color: var(--gray-300);
+}
+
+::selection {
+  background-color: rgba(255, 132, 79, 0.1);
+  color: var(--lit-orange);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.legal {
+  padding: 6rem 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.prose {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    color: var(--gray-200);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding-left: 2rem;
+    font-weight: 300;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--gray-100);
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
 }
