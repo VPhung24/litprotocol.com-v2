@@ -116,9 +116,7 @@ const Footer = () => {
         </div>
       </nav>
       <div className={styles.footer__copyright}>
-        <p>
-          A product of WorkGraph, Inc. Copyright © {new Date().getFullYear()}.
-        </p>
+        <p>Lit Foundation. Copyright © {new Date().getFullYear()}.</p>
       </div>
     </footer>
   );

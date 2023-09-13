@@ -5,7 +5,7 @@ import styles from './landing-cta.module.scss';
 const LandingCta = () => {
   return (
     <section className={styles.container}>
-      <div>
+      <div className={styles.header}>
         <h3 className={styles.title}>Build a more open, secure internet</h3>
         <p className={styles.subtitle}>
           Effortlessly sign, encrypt, and compute with Lit.

@@ -3,9 +3,12 @@ import styles from './navmenu.module.scss';
 import { ReactComponent as Logo } from './assets/logo.svg';
 import {
   CONTACT_FORM,
+  DISCORD_LINK,
   DOCS_LINK,
   GITHUB_LINK,
+  LINKEDIN_LINK,
   SPARK_LINK,
+  TWITTER_LINK,
   USE_CASES_LINK,
 } from 'src/constants';
 
@@ -91,6 +94,7 @@ const NavMenu = ({
           </header>
           <nav className={styles.nav}>
             <div className={styles.nav__links}>
+              <h6 className={styles.nav__category}>Resources</h6>
               <a
                 href={USE_CASES_LINK}
                 target="_blank"
@@ -122,6 +126,33 @@ const NavMenu = ({
                 className={styles.footer__link}
               >
                 GitHub
+              </a>
+            </div>
+            <div className={styles.nav__links}>
+              <h6 className={styles.nav__category}>Social</h6>
+              <a
+                href={TWITTER_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.nav__link}
+              >
+                Twitter
+              </a>
+              <a
+                href={DISCORD_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.nav__link}
+              >
+                Discord
+              </a>
+              <a
+                href={LINKEDIN_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.nav__link}
+              >
+                LinkedIn
               </a>
             </div>
             <div className={styles.nav__btns}>

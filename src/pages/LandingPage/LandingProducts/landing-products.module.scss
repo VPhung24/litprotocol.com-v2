@@ -13,19 +13,18 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
-  @include lg {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
 }
 
 .header {
   width: 100%;
-  max-width: 48rem;
+  max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
+
+  @include sm {
+    text-align: center;
+  }
 }
 
 .badge {
@@ -36,7 +35,7 @@
   margin-right: auto;
   margin-bottom: 1rem;
 
-  @include md {
+  @include lg {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
@@ -47,9 +46,13 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: bold;
-  color: var(--gray-50);
-  background-color: var(--gray-50);
-  background-image: linear-gradient(to bottom, var(--gray-50), var(--gray-300));
+  color: var(--lit-gray-50);
+  background-color: var(--lit-gray-50);
+  background-image: linear-gradient(
+    to bottom,
+    var(--lit-gray-50),
+    var(--lit-gray-300)
+  );
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -61,7 +64,7 @@
     line-height: 2.5rem;
   }
 
-  @include md {
+  @include lg {
     font-size: 3rem;
     line-height: 1;
   }
@@ -71,18 +74,20 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
-  margin-top: 0.5rem;
+  max-width: 48rem;
+  margin: 0.5rem auto 0;
 
-  @include md {
+  @include lg {
     font-size: 1.25rem;
     line-height: 1.75rem;
+    max-width: none;
     margin-top: 1rem;
   }
 }
 
 .product {
   max-width: 56rem;
-  min-height: 20rem;
+  min-height: 16rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -92,10 +97,11 @@
 
   @include md {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 
   @include lg {
-    gap: 3rem;
+    min-height: 20rem;
   }
 
   &__img {
@@ -119,21 +125,21 @@
     line-height: 1.75rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: var(--gray-400);
+    color: var(--lit-gray-400);
 
-    @include sm {
+    @include lg {
       font-size: 1.5rem;
       line-height: 2rem;
     }
   }
 
   &__highlight {
-    color: var(--gray-50);
-    background-color: var(--gray-50);
+    color: var(--lit-gray-50);
+    background-color: var(--lit-gray-50);
     background-image: linear-gradient(
       to bottom,
-      var(--gray-50),
-      var(--gray-200)
+      var(--lit-gray-50),
+      var(--lit-gray-200)
     );
     background-size: 100%;
     -webkit-background-clip: text;
@@ -148,7 +154,7 @@
     letter-spacing: 0.025em;
     font-weight: 300;
 
-    @include sm {
+    @include lg {
       font-size: 1rem;
       line-height: 1.5rem;
     }
@@ -156,14 +162,19 @@
 
   &__link {
     display: inline-flex;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: var(--lit-orange);
     transition: opacity 0.15s ease;
 
-    @include sm {
-      margin-top: 1.5rem;
+    // @include sm {
+    //   margin-top: 1.5rem;
+    // }
+
+    @include lg {
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
 
     &:hover {

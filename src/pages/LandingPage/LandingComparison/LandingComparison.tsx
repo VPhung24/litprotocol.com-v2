@@ -30,7 +30,9 @@ const LandingComparison = () => {
           <span>Our Approach</span>
         </div>
         <h2 className={styles.title}>
-          Revolutionizing key management in a trustless way
+          Revolutionizing secret management{' '}
+          <br className={styles['title-break']} />
+          with decentralization
         </h2>
         <p className={styles.subtitle}>
           Lit combines applied cryptography with secure enclaves in a
@@ -41,7 +43,7 @@ const LandingComparison = () => {
       </div>
       <div className={styles.grid}>
         <div className={styles.comparison}>
-          <h3 className={styles.comparison__title}>Traditional KMS</h3>
+          <h3 className={styles.comparison__title}>Traditional MPC</h3>
           <img
             src={TraditionalImg}
             alt="Broken key management"

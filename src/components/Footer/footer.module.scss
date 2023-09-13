@@ -4,7 +4,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 4rem 1rem 0;
-  border-top: 1px solid var(--gray-800);
+  border-top: 1px solid var(--lit-gray-800);
 
   @include sm {
     padding: 4rem 2rem 0;
@@ -38,7 +38,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: bold;
-    color: var(--gray-50);
+    color: var(--lit-gray-200);
   }
 
   &__subtitle {
@@ -66,7 +66,7 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: normal;
-    color: var(--gray-50);
+    color: var(--lit-gray-200);
   }
 
   &__link {
@@ -76,7 +76,7 @@
     transition: color 0.2s ease;
 
     &:hover {
-      color: var(--gray-100);
+      color: var(--lit-gray-100);
     }
   }
 
