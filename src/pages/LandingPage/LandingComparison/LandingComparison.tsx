@@ -31,8 +31,7 @@ const LandingComparison = () => {
         </div>
         <h2 className={styles.title}>
           Revolutionizing secret management{' '}
-          <br className={styles['title-break']} />
-          with decentralization
+          <span className={styles.title__break}>with decentralization</span>
         </h2>
         <p className={styles.subtitle}>
           Lit combines applied cryptography with secure enclaves in a

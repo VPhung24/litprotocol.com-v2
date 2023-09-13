@@ -9,8 +9,10 @@ const LandingFeatures = () => {
           <span>Globally Distributed</span>
         </div>
         <h2 className={styles.title}>
-          Decentralized key management, <br className={styles['title-break']} />
-          powered by applied cryptography
+          Decentralized key management,{' '}
+          <span className={styles.title__break}>
+            powered by applied cryptography
+          </span>
         </h2>
         <p className={styles.subtitle}>
           Currently in developer preview, Lit is a network of 30+ nodes

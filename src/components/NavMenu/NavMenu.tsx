@@ -93,67 +93,69 @@ const NavMenu = ({
             </div>
           </header>
           <nav className={styles.nav}>
-            <div className={styles.nav__links}>
-              <h6 className={styles.nav__category}>Resources</h6>
-              <a
-                href={USE_CASES_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                Use Cases
-              </a>
-              <a
-                href={DOCS_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                Docs
-              </a>
-              <a
-                href={SPARK_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                Blog
-              </a>
-              <a
-                href={GITHUB_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.footer__link}
-              >
-                GitHub
-              </a>
-            </div>
-            <div className={styles.nav__links}>
-              <h6 className={styles.nav__category}>Social</h6>
-              <a
-                href={TWITTER_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                Twitter
-              </a>
-              <a
-                href={DISCORD_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                Discord
-              </a>
-              <a
-                href={LINKEDIN_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav__link}
-              >
-                LinkedIn
-              </a>
+            <div>
+              <div className={styles.nav__links}>
+                <h6 className={styles.nav__category}>Resources</h6>
+                <a
+                  href={USE_CASES_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  Use Cases
+                </a>
+                <a
+                  href={DOCS_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  Docs
+                </a>
+                <a
+                  href={SPARK_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  Blog
+                </a>
+                <a
+                  href={GITHUB_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.footer__link}
+                >
+                  GitHub
+                </a>
+              </div>
+              <div className={styles.nav__links}>
+                <h6 className={styles.nav__category}>Social</h6>
+                <a
+                  href={TWITTER_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  Twitter
+                </a>
+                <a
+                  href={DISCORD_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  Discord
+                </a>
+                <a
+                  href={LINKEDIN_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.nav__link}
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
             <div className={styles.nav__btns}>
               <a
