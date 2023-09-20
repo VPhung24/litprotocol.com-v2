@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     gap: 3rem;
 
-    @include md {
+    @include lg {
       flex-wrap: nowrap;
     }
   }
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include sm {
+    @include md {
       width: auto;
     }
   }
@@ -48,11 +48,12 @@
   &__grid {
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
     gap: 3rem 1.5rem;
 
-    @include sm {
-      max-width: 28rem;
+    @include md {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 42rem;
     }
 
     &__item {

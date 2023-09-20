@@ -1,9 +1,15 @@
+import { useRef } from 'react';
 import { SPARK_LINK } from 'src/constants';
 import styles from './landing-blog.module.scss';
 import IndexImg from './assets/index.png';
 import AdoptionImg from './assets/adoption.png';
 import BackedByImg from './assets/backedby.png';
 import OamoImg from './assets/oamo.png';
+import SessionKeysImg from './assets/session-keys.png';
+import LearningLabImg from './assets/learning-lab.png';
+import AIImg from './assets/ai.png';
+import IgnitePrizeImg from './assets/ignite-prize.png';
+import WalletAbstractionImg from './assets/wallet-abstraction.png';
 
 const posts = [
   {
@@ -31,13 +37,117 @@ const posts = [
     image: OamoImg,
     alt: 'Colorful nodes',
   },
+  {
+    title: 'From Session Keys to Session Signatures: Part 1',
+    slug: 'session-sig-part-1',
+    image: SessionKeysImg,
+    alt: 'Glassy ribbons',
+  },
+  {
+    title: 'Learning Lab @ Lit',
+    slug: 'learning-lab-lit',
+    image: LearningLabImg,
+    alt: '3d grid plane and interconnected nodes',
+  },
+  {
+    title: 'Authenticity in the AI Era',
+    slug: 'authenticity-matters',
+    image: AIImg,
+    alt: 'Yellow light streaks',
+  },
+  {
+    title: 'Introducing The Ignite Prize: A Web3 Hackathon Meta-Bounty',
+    slug: 'the-ignite-prize',
+    image: IgnitePrizeImg,
+    alt: 'Ignite Prize',
+  },
+  {
+    title: 'Wallet Abstraction: Google OAuth x Lit PKP',
+    slug: 'wallet-abstraction-with-google-oauthe',
+    image: WalletAbstractionImg,
+    alt: 'Colorful glassy flame',
+  },
 ];
 
 const LandingBlog = () => {
+  const postsContainer = useRef<HTMLDivElement | null>(null);
+
+  const scrollLeft = () => {
+    const container = postsContainer.current;
+    if (container) {
+      container.scrollBy({
+        left: getPostWidth() * -1,
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    const container = postsContainer.current;
+    if (container) {
+      container.scrollBy({ left: getPostWidth(), top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className={styles.container}>
-      <h3 className={styles.title}>Stay updated</h3>
-      <div className={styles.row}>
+      <div className={styles.header}>
+        <h3 className={styles.title}>Stay updated</h3>
+        <div className={styles['btn-wrapper']}>
+          <button
+            onClick={scrollLeft}
+            className={`${styles['scroll-btn']} ${styles['scroll-btn--left']}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5 12H19"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M12 5L19 12L12 19"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={scrollRight}
+            className={`${styles['scroll-btn']} ${styles['scroll-btn--right']}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M5 12H19"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M12 5L19 12L12 19"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div className={styles.row} ref={postsContainer}>
         {posts.map(post => (
           <div className={styles.post} key={post.slug}>
             <img src={post.image} alt={post.alt} className={styles.post__img} />
@@ -58,5 +168,18 @@ const LandingBlog = () => {
     </section>
   );
 };
+
+function getPostWidth() {
+  const remInPixels = 16;
+
+  const vwWidth = window.innerWidth - 3 * remInPixels;
+  const maxWidth = 20 * remInPixels;
+
+  const postWidth = Math.min(vwWidth, maxWidth);
+
+  const gap = window.innerWidth <= 384 ? 1.5 * remInPixels : 0.75 * remInPixels;
+
+  return postWidth + gap;
+}
 
 export default LandingBlog;

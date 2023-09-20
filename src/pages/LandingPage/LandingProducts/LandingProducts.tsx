@@ -1,6 +1,7 @@
 import EncryptionImg from './assets/encryption.png';
 import ServerlessImg from './assets/serverless.png';
 import WalletImg from './assets/wallet.png';
+import { ProgrammableWallet } from './assets';
 import styles from './landing-products.module.scss';
 
 const LandingProducts = () => {
@@ -12,9 +13,9 @@ const LandingProducts = () => {
         </div>
         <h2 className={styles.title}>Sign. Encrypt. Compute.</h2>
         <p className={styles.subtitle}>
-          Key managed on Lit are distributed and fault tolerant, so no
-          centralized authority can withhold access. Use Lit to build
-          experiences with greater privacy, flexibility, and control.
+          Keys managed on Lit are distributed and fault tolerant, so no
+          centralized authority can ever withhold access. Use Lit to build
+          digital experiences with greater privacy, flexibility, and control.
         </p>
       </div>
       <div className={styles.product}>
@@ -23,6 +24,7 @@ const LandingProducts = () => {
           alt="Auth providers leading to a wallet"
           className={`${styles.product__img} ${styles['product__img--wallet']}`}
         />
+        {/* <ProgrammableWallet /> */}
         <div className={styles.product__description}>
           <div>
             <h3 className={styles.product__title}>

@@ -54,7 +54,7 @@ body {
 
 .legal {
   padding: 6rem 1rem;
-  max-width: 48rem;
+  max-width: 56rem;
   margin: 0 auto;
 }
 
@@ -127,5 +127,29 @@ body {
 
   strong {
     font-weight: bold;
+  }
+
+  table {
+    border: 1px solid var(--lit-gray-800);
+  }
+
+  th {
+    text-align: left;
+    padding: 1rem;
+    border-right: 1px solid var(--lit-gray-800);
+  }
+
+  tr {
+    border-top: 1px solid var(--lit-gray-800);
+  }
+
+  td {
+    text-align: left;
+    padding: 1rem;
+    border-right: 1px solid var(--lit-gray-800);
+
+    &:last-of-type {
+      border-right: none;
+    }
   }
 }

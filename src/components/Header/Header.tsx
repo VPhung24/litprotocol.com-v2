@@ -4,8 +4,8 @@ import {
   CONTACT_FORM,
   DISCORD_LINK,
   DOCS_LINK,
+  MANIFESTO_LINK,
   SPARK_LINK,
-  USE_CASES_LINK,
 } from 'src/constants';
 
 const Header = ({
@@ -24,12 +24,12 @@ const Header = ({
         </a>
         <nav className={styles.header__nav}>
           <a
-            href={USE_CASES_LINK}
+            href={MANIFESTO_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.header__link}
           >
-            Use Cases
+            Our Mission
           </a>
           <a
             href={DISCORD_LINK}

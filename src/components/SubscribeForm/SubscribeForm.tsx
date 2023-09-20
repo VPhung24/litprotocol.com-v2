@@ -1,18 +1,27 @@
 import { useState } from 'react';
 import styles from './form.module.scss';
-// import { addMember } from 'src/utils/ghost';
 
 const SubscribeForm = () => {
   const [email, setEmail] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<Error>();
 
   async function handleSubscribe(event: any) {
     event.preventDefault();
     setLoading(true);
     try {
-      // await addMember(email);
+      const result = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      });
     } catch (err) {
       console.error('Failed to subscribe', err);
+      setError(new Error('An error has occurred. Please try again.'));
     }
     setLoading(false);
   }

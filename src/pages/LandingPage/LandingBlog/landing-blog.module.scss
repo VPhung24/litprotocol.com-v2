@@ -22,6 +22,40 @@
   }
 }
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--lit-gray-800);
+
+  &:hover {
+    background-color: var(--lit-gray-900);
+    border-color: var(--lit-gray-700);
+    color: var(--lit-gray-200);
+  }
+}
+
+.scroll-btn--left {
+  transform: rotate(180deg);
+}
+
 .title {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -54,7 +88,7 @@
   display: flex;
   align-items: stretch;
   gap: 0.75rem;
-  overflow-x: auto;
+  overflow: hidden;
   margin-top: 3rem;
   padding-bottom: 2rem;
 
@@ -62,18 +96,20 @@
     gap: 1.5rem;
   }
 
-  &::-webkit-scrollbar {
-    background-color: var(--lit-gray-900);
-    height: 0.5rem;
-  }
+  // &::-webkit-scrollbar {
+  //   background-color: var(--lit-gray-900);
+  //   height: 0.5rem;
+  // }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--lit-gray-800);
-    border-radius: 999px;
-  }
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: var(--lit-gray-800);
+  //   border-radius: 999px;
+  // }
 }
 
 .post {
+  display: flex;
+  flex-direction: column;
   width: calc(100vw - 3rem);
   max-width: 20rem;
   flex-shrink: 0;
@@ -100,6 +136,10 @@
   }
 
   &__copy {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1.5rem;
   }
 
@@ -127,10 +167,20 @@
 }
 
 .post:hover {
-  transition: all 0.15s ease;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
 
   &:hover {
     color: var(--lit-gray-50);
-    border-color: rgba(255, 132, 79, 0.5);
+    background-color: rgba(18, 22, 25, 0.5);
+    background: linear-gradient(
+      45deg,
+      rgba(33, 39, 42, 0.12),
+      rgba(33, 39, 42, 0)
+    );
+    border-color: var(--lit-gray-700);
   }
 }

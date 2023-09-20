@@ -1,6 +1,13 @@
+// @ts-ignore
 import { ComponentClass, FunctionComponent } from 'react';
 
-import { LandingPage, LicensePage, PrivacyPage, TermsPage } from 'src/pages';
+import {
+  LandingPage,
+  LicensePage,
+  PrivacyPage,
+  TermsPage,
+  SecurityPage,
+} from 'src/pages';
 
 import { PUBLIC_PATHS } from 'src/config';
 import { SPARK_LINK } from 'src/constants';
@@ -23,6 +30,7 @@ export const publicRoutes: IRoutes = [
   { path: PUBLIC_PATHS.LICENSE, component: LicensePage },
   { path: PUBLIC_PATHS.PRIVACY, component: PrivacyPage },
   { path: PUBLIC_PATHS.TERMS, component: TermsPage },
+  { path: PUBLIC_PATHS.SECURITY, component: SecurityPage },
 ];
 
 export const redirectRoutes: RedirectRoutes = [

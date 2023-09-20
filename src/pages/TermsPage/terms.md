@@ -1,5 +1,7 @@
 # Terms of Service
 
+Last Updated: June 5, 2023
+
 Lit Association and our affiliates ("Lit" "we" and "us") welcome you. We
 invite you to access and use our website located at
 Litprotocol.com (the "Website"), and our products, services

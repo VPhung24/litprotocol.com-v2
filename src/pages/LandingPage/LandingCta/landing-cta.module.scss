@@ -118,10 +118,12 @@
   width: 100%;
   transition:
     border-color 0.15s ease-in,
+    background-color 0.15s ease-in,
     background 0.15s ease-in;
 
   &:hover {
-    border-color: rgba(255, 132, 79, 0.5);
+    border-color: var(--lit-gray-700);
+    background-color: rgba(18, 22, 25, 0.5);
     background: linear-gradient(
       45deg,
       rgba(33, 39, 42, 0.12),
@@ -189,7 +191,7 @@
 }
 
 .card:hover .card__arrow {
-  fill: var(--lit-orange);
+  fill: var(--lit-gray-200);
 }
 
 .card__link::after {

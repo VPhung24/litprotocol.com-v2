@@ -7,9 +7,9 @@ import {
   DOCS_LINK,
   GITHUB_LINK,
   LINKEDIN_LINK,
+  MANIFESTO_LINK,
   SPARK_LINK,
   TWITTER_LINK,
-  USE_CASES_LINK,
 } from 'src/constants';
 
 const NavMenu = ({
@@ -97,12 +97,12 @@ const NavMenu = ({
               <div className={styles.nav__links}>
                 <h6 className={styles.nav__category}>Resources</h6>
                 <a
-                  href={USE_CASES_LINK}
+                  href={MANIFESTO_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.nav__link}
                 >
-                  Use Cases
+                  Our Mission
                 </a>
                 <a
                   href={DOCS_LINK}

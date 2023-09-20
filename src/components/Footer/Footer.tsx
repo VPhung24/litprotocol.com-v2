@@ -6,6 +6,7 @@ import {
   DOCS_LINK,
   GITHUB_LINK,
   LINKEDIN_LINK,
+  MANIFESTO_LINK,
   SPARK_LINK,
   TWITTER_LINK,
 } from 'src/constants';
@@ -20,6 +21,7 @@ const Footer = () => {
           <a href="/" className={styles.footer__title}>
             Lit Protocol
           </a>
+          {/* <p>Decentralized key management network</p> */}
           {/* <SubscribeForm /> */}
         </div>
         <div className={styles.footer__grid}>
@@ -96,6 +98,14 @@ const Footer = () => {
           <div className={styles.footer__grid__item}>
             <h6 className={styles.footer__category}>Company</h6>
             <a
+              href={MANIFESTO_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.footer__link}
+            >
+              Our Mission
+            </a>
+            <a
               href={CAREERS_LINK}
               target="_blank"
               rel="noopener noreferrer"
@@ -103,6 +113,9 @@ const Footer = () => {
             >
               Careers
             </a>
+          </div>
+          <div className={styles.footer__grid__item}>
+            <h6 className={styles.footer__category}>Legal</h6>
             <a href="/legal/privacy-policy" className={styles.footer__link}>
               Privacy Policy
             </a>
@@ -111,6 +124,12 @@ const Footer = () => {
             </a>
             <a href="/legal/developer-license" className={styles.footer__link}>
               Developer License
+            </a>
+            <a
+              href="/legal/security-commitments"
+              className={styles.footer__link}
+            >
+              Security Commitments
             </a>
           </div>
         </div>

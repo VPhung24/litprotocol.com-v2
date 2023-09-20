@@ -26,9 +26,10 @@ const LandingFeatures = () => {
           <div>
             <h3 className={styles.feature__title}>Distributed trust</h3>
             <p className={styles.feature__copy}>
-              Harnessing multi-party threshold secret sharing cryptography, Lit
-              distributes encrypted key shares across the Lit network. Neither
-              you nor your users need to store any private key material.{' '}
+              Harnessing multi-party computation (MPC) and threshold secret
+              schemes (TSS), Lit distributes encrypted key shares across the Lit
+              network. Neither you nor your users need to store any private key
+              material.{' '}
               <span className={styles.feature__highlight}>
                 No party ever possesses the entire key.
               </span>
@@ -40,8 +41,8 @@ const LandingFeatures = () => {
           <div>
             <h3 className={styles.feature__title}>Embedded security</h3>
             <p className={styles.feature__copy}>
-              Lit leverages trusted execution environments to ensure that node
-              operators never have access to key shares or computations
+              Lit leverages trusted execution environments (TEEs) to ensure that
+              node operators never have access to key shares or computations
               processed within the nodes.{' '}
               <span className={styles.feature__highlight}>
                 Your keys and data remains private and untouched.

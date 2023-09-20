@@ -3,7 +3,7 @@ import TraditionalImg from './assets/traditional.png';
 import styles from './landing-comparison.module.scss';
 
 const traditional = [
-  'Centralized control',
+  'Centralized controllers',
   'Single points of failure',
   'Service denials',
   'Data silos',

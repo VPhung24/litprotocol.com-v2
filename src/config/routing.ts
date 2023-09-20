@@ -8,6 +8,7 @@ export const PUBLIC_PATHS = {
   TERMS: '/legal/terms-of-service',
   LICENSE: '/legal/developer-license',
   PRIVACY: '/legal/privacy-policy',
+  SECURITY: '/legal/security-commitments',
 };
 
 export const PATHS = {
