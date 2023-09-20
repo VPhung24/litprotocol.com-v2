@@ -318,13 +318,11 @@ const LandingHero = () => {
     <section className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles['content-wrapper']}>
-          <h1 className={styles.title}>
-            Decentralized trust. Remove single controllers.
-          </h1>
+          <h1 className={styles.title}>Decentralized trust</h1>
           <div>
             <p className={styles.subtitle}>
-              Lit is a decentralized key network for signing, encryption, and
-              compute.
+              Remove single controllers with Lit, a decentralized key network
+              for signing, encryption, and compute.
             </p>
             <a href={DOCS_LINK} className={styles['cta-btn']}>
               Get started
