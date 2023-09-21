@@ -79,15 +79,15 @@
   justify-content: center;
   background-color: var(--lit-orange);
   color: var(--lit-gray-900);
-  border: transparent;
   border-radius: 999px;
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.625rem 1rem 0.5rem;
-  transition: opacity 0.15s ease;
+  transition: all 0.4s ease;
 
   &:hover {
-    opacity: 0.8;
+    background-color: var(--lit-orange-hover);
+    box-shadow: 0 0 12px rgba(255, 112, 51, 0.5);
   }
 }
 

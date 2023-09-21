@@ -44,6 +44,11 @@
   height: 2.5rem;
   border-radius: 999px;
   border: 1px solid var(--lit-gray-800);
+  background-color: var(--lit-black);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 
   &:hover {
     background-color: var(--lit-gray-900);

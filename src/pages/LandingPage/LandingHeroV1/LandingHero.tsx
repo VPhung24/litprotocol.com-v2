@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { KeyImg } from './assets';
 import styles from './landing-hero.module.scss';
-import { DOCS_LINK } from 'src/constants';
+import { CONTACT_FORM, DOCS_LINK } from 'src/constants';
 
 const coords = [
   { x: '418', y: '111', count: 2 },
@@ -321,12 +321,24 @@ const LandingHero = () => {
           <h1 className={styles.title}>Decentralized trust</h1>
           <div>
             <p className={styles.subtitle}>
-              Remove single controllers with Lit, a decentralized key network
-              for signing, encryption, and compute.
+              Lit is a distributed key network for signing, encryption, and
+              compute. Build secure applications without single points of
+              failure.
             </p>
-            <a href={DOCS_LINK} className={styles['cta-btn']}>
-              Get started
-            </a>
+            <div className={styles['btn-wrapper']}>
+              <a
+                href={DOCS_LINK}
+                className={`${styles['cta-btn']} ${styles['cta-btn--primary']}`}
+              >
+                Get started
+              </a>
+              <a
+                href={CONTACT_FORM}
+                className={`${styles['cta-btn']} ${styles['cta-btn--outline']}`}
+              >
+                Reach out
+              </a>
+            </div>
           </div>
         </div>
         <div

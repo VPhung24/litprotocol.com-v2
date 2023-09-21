@@ -12,6 +12,7 @@ import LandingBlog from './LandingBlog/LandingBlog';
 const LandingPage = () => {
   return (
     <Layout>
+      <div className="gradient-bg"></div>
       <LandingHero />
       <LandingPartners />
       <LandingProducts />

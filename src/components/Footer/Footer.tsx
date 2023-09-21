@@ -16,6 +16,7 @@ import SubscribeForm from '../SubscribeForm/SubscribeForm';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <div className={styles.footer__divider}></div>
       <nav className={styles.footer__nav}>
         <div className={styles.footer__company}>
           <a href="/" className={styles.footer__title}>

@@ -30,14 +30,6 @@ const NavMenu = ({
                 <Logo className={styles.header__logo} />
               </a>
               <div className={styles.header__btns}>
-                <a
-                  href={DOCS_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.header__cta}
-                >
-                  Get started
-                </a>
                 <button onClick={toggleMenu} className={styles['menu-btn']}>
                   {menuOpen ? (
                     <svg
@@ -93,7 +85,7 @@ const NavMenu = ({
             </div>
           </header>
           <nav className={styles.nav}>
-            <div>
+            <div className={styles.nav__wrapper}>
               <div className={styles.nav__links}>
                 <h6 className={styles.nav__category}>Resources</h6>
                 <a
@@ -124,7 +116,7 @@ const NavMenu = ({
                   href={GITHUB_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.footer__link}
+                  className={styles.nav__link}
                 >
                   GitHub
                 </a>
