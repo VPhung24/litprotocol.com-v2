@@ -100,16 +100,6 @@
   @include xs {
     gap: 1.5rem;
   }
-
-  // &::-webkit-scrollbar {
-  //   background-color: var(--lit-gray-900);
-  //   height: 0.5rem;
-  // }
-
-  // &::-webkit-scrollbar-thumb {
-  //   background-color: var(--lit-gray-800);
-  //   border-radius: 999px;
-  // }
 }
 
 .post {
@@ -181,10 +171,10 @@
   &:hover {
     color: var(--lit-gray-50);
     background-color: rgba(18, 22, 25, 0.5);
-    background: linear-gradient(
-      45deg,
-      rgba(33, 39, 42, 0.12),
-      rgba(33, 39, 42, 0)
+    background: radial-gradient(
+      84.05% 84.05% at 50% 46.55%,
+      var(--lit-black) 46.46%,
+      var(--lit-gray-900) 100%
     );
     border-color: var(--lit-gray-700);
   }

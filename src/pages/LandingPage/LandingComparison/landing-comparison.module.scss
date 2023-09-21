@@ -175,13 +175,13 @@
 }
 
 .comparison--lit {
-  background-color: rgba(18, 22, 25, 0.5);
-  background: linear-gradient(
-    to bottom,
-    rgba(33, 39, 42, 0.12),
-    rgba(33, 39, 42, 0)
+  background-color: var(--lit-black);
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    var(--lit-black) 0%,
+    rgba(18, 22, 25, 1) 100%
   );
-  border-color: var(--lit-gray-600);
+  border-color: var(--lit-gray-700);
 }
 
 .comparison--lit .comparison__title {

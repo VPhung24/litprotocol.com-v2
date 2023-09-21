@@ -1,66 +1,27 @@
 @import '../../../styles/mixins.scss';
 
 .container {
-  display: flex;
-  flex-direction: column-reverse;
-  position: relative;
-  max-width: 96rem;
-  height: auto;
-  padding-top: 4rem;
-  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 1rem 0;
 
-  // @include md {
-  //   align-items: center;
-  // }
-
-  @include xxl {
-    height: auto;
-  }
-
-  @media (min-height: 568px) {
-    display: block;
-    min-height: clamp(568px, 100vh, 1024px);
+  @include sm {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
-.hero-img {
-  width: 100%;
-  height: 400px;
-  background-image: url(./assets/nodes-3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  @media (min-height: 568px) {
-    height: clamp(240px, 50vh, 720px);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-  }
-
-  @media (min-height: 1024px) {
-    min-height: clamp(320px, calc(100vh - 4rem), 960px);
-  }
-
-  @include sm {
-    height: clamp(400px, 50vh, 720px);
-    background-image: url(./assets/nodes-2.png);
-  }
-
-  @include md {
-    height: clamp(400px, 80vh, 960px);
-    background-image: url(./assets/nodes-2.png);
-  }
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
 
   @include lg {
-    background-image: url(./assets/nodes.png);
-    height: clamp(400px, calc(100vh - 4rem), 960px);
-  }
-
-  @include xxl {
-    height: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 42rem;
   }
 }
 
@@ -71,31 +32,17 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  max-width: 36rem;
-  padding: 3rem 1rem 0;
-
-  @include sm {
-    padding: 4rem 2rem 0;
-  }
-
-  @include md {
-    max-width: 40rem;
-  }
+  text-align: center;
+  max-width: 42rem;
 
   @include lg {
-    height: calc(100vh - 4rem);
-    justify-content: center;
-    max-width: 40rem;
+    text-align: left;
+    max-width: 32rem;
+    flex-shrink: 0;
   }
 
   @include xl {
-    max-width: 48rem;
-    padding: 4rem;
-  }
-
-  @include xxl {
-    min-height: 50rem;
-    height: calc(100vh - 20rem);
+    max-width: 42rem;
   }
 }
 
@@ -108,7 +55,8 @@
   background-image: linear-gradient(
     to bottom,
     var(--lit-gray-50),
-    var(--lit-gray-300)
+    var(--lit-gray-200),
+    var(--lit-gray-400)
   );
   background-size: 100%;
   -webkit-background-clip: text;
@@ -116,54 +64,173 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 
-  @include xs {
+  @include sm {
     font-size: 3rem;
   }
 
   @include md {
-    font-size: 3.5rem;
-  }
-
-  @include lg {
     font-size: 4rem;
   }
 
-  // @include xl {
-  //   font-size: 5rem;
-  // }
+  @include lg {
+    font-size: 3.5rem;
+  }
+
+  @include xl {
+    font-size: 4.5rem;
+  }
 }
 
-.copy-wrapper {
-  max-width: 48rem;
+.subtitle {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 0.5rem;
+  font-weight: 300;
+  margin-top: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32rem;
 
-  @include md {
+  @include sm {
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-top: 1rem;
   }
+
+  @include md {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: none;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+
+  @media only screen and (min-width: 448px) {
+    flex-wrap: nowrap;
+  }
+
+  @include lg {
+    justify-content: flex-start;
+  }
 }
 
 .cta-btn {
-  margin-top: 1rem;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
-  padding: 0.625rem 1rem 0.5rem;
   background-color: var(--lit-orange);
   color: var(--lit-gray-900);
-  border: transparent;
   border-radius: 999px;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  transition: opacity 0.2s ease;
+  padding: 0.625rem 1rem 0.5rem;
+  transition: all 0.4s ease;
 
-  &:hover {
-    opacity: 0.8;
+  @media only screen and (min-width: 448px) {
+    width: auto;
   }
 
   @include sm {
-    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.cta-btn--primary {
+  &:hover {
+    background-color: var(--lit-orange-hover);
+    box-shadow: 0 0 12px rgba(255, 112, 51, 0.5);
+  }
+}
+
+.cta-btn--outline {
+  background-color: var(--lit-black);
+  border: 1px solid var(--lit-gray-600);
+  color: var(--lit-gray-200);
+
+  &:hover {
+    background-color: var(--lit-gray-900);
+    border-color: var(--lit-gray-400);
+    color: var(--lit-gray-50);
+  }
+}
+
+.hero-img {
+  max-height: clamp(12rem, calc(50vh - 4rem), 20rem);
+  width: 100%;
+
+  @include xs {
+    max-height: clamp(20rem, calc(50vh - 4rem), 28rem);
+  }
+
+  @include sm {
+    max-height: clamp(28rem, 50vh, 42rem);
+  }
+
+  @include lg {
+    max-height: none;
+  }
+}
+
+// .hero-bg {
+//   background-image: url(./assets/bg.png);
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+
+//   @include lg {
+//     background-image: url(./assets/bg.png);
+//   }
+// }
+
+.hero-key {
+  // transform: rotate(45deg);
+
+  // @include lg {
+  //   transform: none;
+  // }
+}
+
+[data-shape='key'] {
+  position: relative;
+  color: var(--lit-gray-100);
+  opacity: 0.05;
+  transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
+}
+
+[data-shape='key'][data-reveal='true'] {
+  opacity: 1;
+  animation: fadeInOut var(--animation-duration) ease-in-out infinite alternate
+    var(--animation-delay);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-key:hover [data-shape='key'][data-reveal='true'] {
+  animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
   }
 }
