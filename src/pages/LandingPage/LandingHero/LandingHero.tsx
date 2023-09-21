@@ -318,7 +318,7 @@ const LandingHero = () => {
     <section className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles['content-wrapper']}>
-          <h1 className={styles.title}>Decentralized trust</h1>
+          <h1 className={styles.title}>Decentralized Key Management Network</h1>
           <div>
             <p className={styles.subtitle}>
               Lit is a distributed key network for signing, encryption, and
