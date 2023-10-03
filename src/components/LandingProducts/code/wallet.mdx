@@ -1,0 +1,21 @@
+```js
+// Send OTP code to user
+const sendResponse = await stytchClient
+  .otps
+  .sms
+  .loginOrCreate(phoneNumber);
+
+// Validate OTP code
+const response = await stytchClient.otps.authenticate(
+  code,
+  sendResponse.methodId
+);
+
+// Mint a Lit wallet with the session JWT
+const authMethod = await litOtpProvider.authenticate({
+  accessToken: response.session_jwt,
+  userId: response.user_id,
+});
+const txHash = await litOtpProvider
+  .mintPKPThroughRelayer(authMethod);
+```

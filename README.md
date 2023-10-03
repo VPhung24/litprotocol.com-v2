@@ -4,4 +4,4 @@ Website for Lit Protocol
 
 ## Scripts
 
-`npm start`
+`yarn dev`

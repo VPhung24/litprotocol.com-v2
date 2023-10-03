@@ -1,0 +1,97 @@
+@import '../../styles/mixins.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.section {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+
+  @include md {
+    padding: 6rem 1.5rem;
+  }
+
+  @include lg {
+    // padding: 8rem 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.header {
+  max-width: 56rem;
+}
+
+.header--centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.badge {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--lit-orange);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+
+  @include sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  color: var(--lit-gray-50);
+  background-color: var(--lit-gray-50);
+  background-image: linear-gradient(
+    to bottom,
+    var(--lit-gray-50),
+    var(--lit-gray-300)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  @include xs {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  @include sm {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &__break {
+    display: inline;
+
+    @include md {
+      display: block;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  margin-top: 0.75rem;
+
+  @include sm {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+  }
+}

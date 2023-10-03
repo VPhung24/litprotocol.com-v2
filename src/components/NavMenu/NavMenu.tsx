@@ -1,6 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import styles from './navmenu.module.scss';
-import { ReactComponent as Logo } from './assets/logo.svg';
 import {
   CONTACT_FORM,
   DISCORD_LINK,
@@ -10,7 +9,8 @@ import {
   MANIFESTO_LINK,
   SPARK_LINK,
   TWITTER_LINK,
-} from 'src/constants';
+} from '@/utils/constants';
+import LitLogo from '../LitLogo/LitLogo';
 
 const NavMenu = ({
   menuOpen,
@@ -27,7 +27,7 @@ const NavMenu = ({
           <header className={styles.header}>
             <div className={styles.header__wrapper}>
               <a href="/">
-                <Logo className={styles.header__logo} />
+                <LitLogo className={styles.header__logo} />
               </a>
               <div className={styles.header__btns}>
                 <button onClick={toggleMenu} className={styles['menu-btn']}>

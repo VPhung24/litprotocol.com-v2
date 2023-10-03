@@ -1,13 +1,13 @@
+import { useEffect, useRef } from 'react';
 import styles from './header.module.scss';
-import { ReactComponent as Logo } from './assets/logo.svg';
 import {
   CONTACT_FORM,
   DISCORD_LINK,
   DOCS_LINK,
   MANIFESTO_LINK,
   SPARK_LINK,
-} from 'src/constants';
-import { useEffect, useRef } from 'react';
+} from '@/utils/constants';
+import LitLogo from '../LitLogo/LitLogo';
 
 const Header = ({
   menuOpen,
@@ -55,7 +55,7 @@ const Header = ({
         <div className={styles.header__background}></div>
         <div className={styles.header__wrapper}>
           <a href="/">
-            <Logo className={styles.header__logo} />
+            <LitLogo className={styles.header__logo} />
           </a>
           <nav className={styles.header__nav}>
             <a

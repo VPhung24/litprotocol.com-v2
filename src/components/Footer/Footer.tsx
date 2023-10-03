@@ -9,9 +9,8 @@ import {
   MANIFESTO_LINK,
   SPARK_LINK,
   TWITTER_LINK,
-} from 'src/constants';
+} from '@/utils/constants';
 import styles from './footer.module.scss';
-import SubscribeForm from '../SubscribeForm/SubscribeForm';
 
 const Footer = () => {
   return (

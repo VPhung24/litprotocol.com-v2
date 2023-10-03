@@ -1,0 +1,21 @@
+```js
+// Use fetch to sign if the temperature is above 60
+const litActionCode = `
+  const go = async () => {
+    const url =
+      'https://api.weather.gov/gridpoints/TOP/31,80/forecast';
+    const resp = await fetch(url)
+      .then(response => response.json());
+    const temp = resp.properties.periods[0].temperature;
+    if (temp < 60) {
+      return;
+    }
+    // Requests a signature share from the Lit Node
+    const sigShare = await LitActions.signEcdsa({ 
+      toSign, 
+      publicKey, 
+      sigName });
+  };
+  go();
+`;
+```
