@@ -2,8 +2,8 @@ import GhostAdminAPI from '@tryghost/admin-api';
 import { NextResponse } from 'next/server';
 
 const admin = new GhostAdminAPI({
-  url: process.env.GHOST_API_URL,
-  key: process.env.GHOST_ADMIN_API_KEY,
+  url: process.env.GHOST_API_URL || 'https://spark.ghost.io',
+  key: process.env.GHOST_ADMIN_API_KEY || '',
   version: 'v5.0',
 });
 
