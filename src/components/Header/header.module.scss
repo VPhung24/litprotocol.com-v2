@@ -91,6 +91,10 @@
   }
 }
 
+.header[data-scroll='false'] {
+  border-color: transparent;
+}
+
 .header[data-scroll='true'] {
   background: linear-gradient(
     to bottom,
