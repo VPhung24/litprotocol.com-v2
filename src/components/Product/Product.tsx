@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './product.module.scss';
 import { ComponentType } from 'react';
 
@@ -33,7 +32,12 @@ const Product = ({
           <span className={styles.product__badge}>{badge}</span>
           <h3 className={styles.product__title}>{title}</h3>
           <p className={styles.product__description}>{description}</p>
-          <a href={cta.link} className={styles['product__link']}>
+          <a
+            href={cta.link}
+            className={styles['product__link']}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {cta.text}{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +71,12 @@ const Product = ({
                 {feature.description}
               </p>
             </div>
-            <a href={feature.link} className={styles.feature__link}>
+            <a
+              href={feature.link}
+              className={styles.feature__link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Learn more{' '}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

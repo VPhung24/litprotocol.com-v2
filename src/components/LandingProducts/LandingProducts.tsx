@@ -81,7 +81,7 @@ const LandingProducts = () => {
           'Write serverless function logic in your preferred language to drive event-based signing, encryption, and identity management. Ship and iterate faster without the burden of scaling key infrastructure.'
         }
         cta={{
-          link: 'https://developer.litprotocol.com/v2/LitActions/intro',
+          link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
           text: 'Dive into Lit Actions',
         }}
         features={[
@@ -89,7 +89,7 @@ const LandingProducts = () => {
             title: 'Conditional signing',
             description:
               'Write immutable logic to generate signatures when your specified on-chain conditions are met.',
-            link: 'https://developer.litprotocol.com/v2/LitActions/workingWithActions/conditionalSigning',
+            link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
           },
           {
             title: 'Off-chain fetching',
