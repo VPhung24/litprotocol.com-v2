@@ -4,6 +4,16 @@
   position: relative;
   width: 100%;
   padding: 4rem 1rem 0;
+
+  // @include md {
+  //   padding-left: 1.5rem;
+  //   padding-right: 1.5rem;
+  // }
+
+  // @include lg {
+  //   padding-left: 2rem;
+  //   padding-right: 2rem;
+  // }
 }
 
 .wrapper {
@@ -33,7 +43,7 @@
 
   @include lg {
     text-align: left;
-    max-width: 32rem;
+    max-width: 40rem;
     flex-shrink: 0;
   }
 
@@ -126,7 +136,6 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding: 0.625rem 1rem 0.5rem;
-  transition: all 0.4s ease;
 
   @media only screen and (min-width: 448px) {
     width: auto;
@@ -139,6 +148,8 @@
 }
 
 .cta-btn--primary {
+  transition: background-color 0.2s ease, box-shadow 0.2 ease;
+
   &:hover {
     background-color: var(--lit-orange-hover);
     box-shadow: 0 0 12px rgba(255, 112, 51, 0.5);
@@ -149,6 +160,7 @@
   background-color: var(--lit-black);
   border: 1px solid var(--lit-gray-600);
   color: var(--lit-gray-200);
+  transition: background-color 0.2s ease, border 0.2 ease, color 0.2s ease;
 
   &:hover {
     background-color: var(--lit-gray-900);
@@ -158,20 +170,21 @@
 }
 
 .hero-img {
-  max-height: clamp(12rem, calc(50vh - 4rem), 20rem);
+  // max-height: clamp(12rem, calc(50vh - 4rem), 20rem);
+  // width: 100%;
+
+  // @include xs {
+  //   max-height: clamp(20rem, calc(50vh - 4rem), 28rem);
+  // }
+
+  // @include sm {
+  //   max-height: clamp(28rem, 50vh, 42rem);
+  // }
+
+  // @include lg {
+  //   max-height: none;
+  // }
   width: 100%;
-
-  @include xs {
-    max-height: clamp(20rem, calc(50vh - 4rem), 28rem);
-  }
-
-  @include sm {
-    max-height: clamp(28rem, 50vh, 42rem);
-  }
-
-  @include lg {
-    max-height: none;
-  }
 }
 
 // [data-shape='key'] {
@@ -199,15 +212,15 @@
 //   }
 // }
 
-// .hero-key:hover [data-shape='key'][data-reveal='true'] {
-//   animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);
-// }
+.hero-key:hover [data-shape='key'][data-reveal='true'] {
+  animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);
+}
 
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0.2;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

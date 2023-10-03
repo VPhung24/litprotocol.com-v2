@@ -2,14 +2,14 @@ import styles from './landing-usecases.module.scss';
 
 const cases = [
   {
-    title: 'Intuitive wallet management',
+    title: 'Intuitive wallet onboarding & recovery',
     copy: 'Enable users to secure and back up their wallets—EOA, MPC, or AA—using social recovery, passkeys, or other user-friendly authentication methods.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -29,7 +29,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -49,7 +49,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -69,7 +69,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -89,7 +89,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -109,7 +109,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={1}
         stroke="currentColor"
         className={styles.item__icon}
       >

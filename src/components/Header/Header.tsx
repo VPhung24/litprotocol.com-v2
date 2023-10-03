@@ -51,7 +51,7 @@ const Header = ({
   return (
     <>
       <div ref={watcherRef}></div>
-      <header className={styles.header} ref={headerRef}>
+      <header className={styles.header} data-scroll="false" ref={headerRef}>
         <div className={styles.header__background}></div>
         <div className={styles.header__wrapper}>
           <a href="/">

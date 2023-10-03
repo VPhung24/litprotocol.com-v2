@@ -6,7 +6,7 @@ const Key = () => {
       viewBox="0 0 532 564"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`${styles['hero-img']} ${styles['hero-key']}`}
+      className={`${styles['hero-key']}`}
     >
       <mask
         id="mask1_1899_178144"
