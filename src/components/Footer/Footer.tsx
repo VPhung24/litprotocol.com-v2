@@ -11,6 +11,7 @@ import {
   TWITTER_LINK,
 } from '@/utils/constants';
 import styles from './footer.module.scss';
+import SubscribeForm from '../SubscribeForm/SubscribeForm';
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
             Lit Protocol
           </a>
           {/* <p>Decentralized key management network</p> */}
-          {/* <SubscribeForm /> */}
+          <SubscribeForm />
         </div>
         <div className={styles.footer__grid}>
           <div className={styles.footer__grid__item}>

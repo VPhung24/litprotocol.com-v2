@@ -16,9 +16,15 @@ async function addMember(email: string) {
 
 export async function POST(req: Request) {
   const { email } = await req.json();
-  const res = await addMember(email);
 
-  const data = await res.json();
-
-  return NextResponse.json(data);
+  try {
+    const res = await addMember(email);
+    return NextResponse.json(res);
+  } catch (err: any) {
+    const context = err?.context ? err.context : 'Unknown error';
+    if (context.includes('already exists')) {
+      return NextResponse.json({ status: 200 });
+    }
+    return NextResponse.json({ error: err.message }, { status: 400 });
+  }
 }

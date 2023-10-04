@@ -46,7 +46,7 @@ const LandingProducts = () => {
           'Store private data on the open web with flexible access control'
         }
         description={
-          'Define conditional rules to control access to confidential data, stored anywhere. Lit will validate your rules and grant decryption capabilities, without ever accessing the private data.'
+          'Define conditional rules to control access to private data, stored anywhere. The Lit network will validate your rules and grant decryption capabilities only when your defined conditions are met, without ever accessing the private data.'
         }
         cta={{
           link: 'https://developer.litprotocol.com/v3/sdk/access-control/intro',
@@ -62,7 +62,7 @@ const LandingProducts = () => {
           {
             title: 'Access control conditions',
             description:
-              'Easily mix and match conditions, deciding which on-chain or off-chain data can unlock your private content.',
+              'Easily mix and match conditions on-chain or off-chain data with boolean logic to define flexible access control rules.',
             link: 'https://developer.litprotocol.com/v3/sdk/access-control/condition-types/unified-access-control-conditions',
           },
           {
@@ -78,7 +78,7 @@ const LandingProducts = () => {
         badge={'Serverless Functions'}
         title={'Scale your apps with serverless automations'}
         description={
-          'Write serverless function logic in your preferred language to drive event-based signing, encryption, and identity management. Ship and iterate faster without the burden of scaling key infrastructure.'
+          'Create immutable serverless functions for event-based signing, encryption, and identity management. Add advanced functionality to your apps and iterate faster, all without the burden of scaling key infrastructure.'
         }
         cta={{
           link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
@@ -88,13 +88,13 @@ const LandingProducts = () => {
           {
             title: 'Conditional signing',
             description:
-              'Write immutable logic to generate signatures when your specified on-chain conditions are met.',
+              'Write immutable JavaScript logic to generate signatures when your specified on-chain or off-chain conditions are met.',
             link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
           },
           {
-            title: 'Off-chain fetching',
+            title: 'Fetch off-chain data',
             description:
-              'Read and write off-chain data via HTTP requests, natively supported in Lit Actions, eliminating the need for third party oracles.',
+              'Lit Actions natively support fetching off-chain data, eliminating the need to integrate a trusted third party oracle.',
             link: 'https://developer.litprotocol.com/v2/LitActions/workingWithActions/usingFetch',
           },
           {

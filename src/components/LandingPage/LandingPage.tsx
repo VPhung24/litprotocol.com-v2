@@ -68,13 +68,12 @@ const LandingPage = () => {
             <div className={styles.badge}>
               <span>Limitless Possibilities</span>
             </div>
-            <h2 className={styles.title}>
-              Versatile tooling for your use case
-            </h2>
+            <h2 className={styles.title}>Versatile tooling for any use case</h2>
             <p className={styles.subtitle}>
-              Lit is designed for swift, flexible integration into your existing
-              stack, enabling a diverse range of novel use cases from gaming to
-              &lsquo;Wallet as a Service&lsquo; infrastructure.
+              Lit is designed to seamlessly integrate into your existing stack,
+              enabling a diverse range of use cases from DeFi automation to
+              private web3 social and &lsquo;wallet as a service&lsquo;
+              infrastructure.
             </p>
           </div>
           <LandingUseCases />

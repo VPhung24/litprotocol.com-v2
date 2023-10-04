@@ -3,13 +3,13 @@ import styles from './landing-usecases.module.scss';
 const cases = [
   {
     title: 'Intuitive wallet onboarding & recovery',
-    copy: 'Enable users to secure and back up their wallets—EOA, MPC, or AA—using social recovery, passkeys, or other user-friendly authentication methods.',
+    copy: 'Enable users to create and back up their wallets⁠—EOA, MPC, or AA⁠—using social recovery, passkeys, and other user-friendly authentication methods.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -29,7 +29,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -49,7 +49,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -63,13 +63,13 @@ const cases = [
   },
   {
     title: 'Streamlined DeFi automation',
-    copy: 'Unlock new DeFi experiences, such as limit orders and liquidity loss prevention, using condition-based triggers for both on-chain and off-chain data',
+    copy: 'Unlock new DeFi experiences, such as limit orders and liquidity loss prevention, with conditional transaction execution and off-chain triggers.',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -89,7 +89,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
@@ -109,7 +109,7 @@ const cases = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1}
+        strokeWidth={1.2}
         stroke="currentColor"
         className={styles.item__icon}
       >
