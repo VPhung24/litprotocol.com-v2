@@ -88,14 +88,14 @@ const NavMenu = ({
             <div className={styles.nav__wrapper}>
               <div className={styles.nav__links}>
                 <h6 className={styles.nav__category}>Resources</h6>
-                <a
+                {/* <a
                   href={MANIFESTO_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.nav__link}
                 >
                   Our Mission
-                </a>
+                </a> */}
                 <a
                   href={DOCS_LINK}
                   target="_blank"

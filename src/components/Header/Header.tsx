@@ -58,14 +58,14 @@ const Header = ({
             <LitLogo className={styles.header__logo} />
           </a>
           <nav className={styles.header__nav}>
-            <a
+            {/* <a
               href={MANIFESTO_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.header__link}
             >
               Our Mission
-            </a>
+            </a> */}
             <a
               href={DISCORD_LINK}
               target="_blank"

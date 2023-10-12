@@ -9,18 +9,14 @@ const traditional = [
   'Service denials',
   'Data silos',
   'Vendor lock-in',
-  'Opaque practices',
-  'Privacy concerns',
 ];
 
 const lit = [
   'Decentralized network',
   'Fault-tolerant design',
+  'Programmable',
   'Scalable',
-  'Interoperable',
   'Permissionless',
-  'Open-source code',
-  'Enhanced privacy',
 ];
 
 const LandingComparison = () => {

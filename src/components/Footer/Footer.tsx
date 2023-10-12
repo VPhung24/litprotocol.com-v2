@@ -98,14 +98,14 @@ const Footer = () => {
           </div>
           <div className={styles.footer__grid__item}>
             <h6 className={styles.footer__category}>Company</h6>
-            <a
+            {/* <a
               href={MANIFESTO_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.footer__link}
             >
               Our Mission
-            </a>
+            </a> */}
             <a
               href={CAREERS_LINK}
               target="_blank"
