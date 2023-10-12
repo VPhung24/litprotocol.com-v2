@@ -67,6 +67,14 @@ const Header = ({
               Our Mission
             </a> */}
             <a
+              href={DOCS_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.header__link}
+            >
+              Docs
+            </a>
+            <a
               href={DISCORD_LINK}
               target="_blank"
               rel="noopener noreferrer"
