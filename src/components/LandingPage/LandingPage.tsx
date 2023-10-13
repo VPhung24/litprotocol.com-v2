@@ -56,8 +56,7 @@ const LandingPage = () => {
             <p className={styles.subtitle}>
               Lit combines applied cryptography with secure enclaves in a
               peer-to-peer network to ensure censorship-resistant key access and
-              complete data privacy. With Lit, you don&apos;t need to trust any
-              authority with keys or key shares.
+              complete data privacy.
             </p>
           </div>
           <LandingComparison />
