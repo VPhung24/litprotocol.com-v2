@@ -13,16 +13,15 @@ const LandingProducts = () => {
           <p className={styles.subtitle}>
             Keys managed on Lit are distributed and fault tolerant, so no
             centralized authority can ever withhold access. Use Lit to build
-            digital experiences with greater privacy, flexibility, and control.
+            digital ownership experiences with greater privacy, flexibility, and
+            control.
           </p>
         </div>
         <Product
-          badge={'Programmable Wallets'}
-          title={
-            'Streamline user experience with programmable, distributed wallets'
-          }
+          badge={'Distributed Wallets'}
+          title={'Streamline user experience with distributed wallets'}
           description={
-            'Empower your users with multi-party computation (MPC) wallets secured by intuitive authentication like social logins and passkeys. Deliver seamless onboarding, easy recovery, and user-centric security features—all without worrying about managing private keys.'
+            'Empower your users with wallets secured by their existing authentication like social logins and passkeys. Deliver seamless onboarding, easy recovery, and user-centric security features—all without worrying about managing private keys.'
           }
           cta={{
             link: 'https://developer.litprotocol.com/v3/sdk/wallets/intro',
@@ -91,7 +90,7 @@ const LandingProducts = () => {
         <hr className={styles.divider}></hr>
         <Product
           badge={'Serverless Functions'}
-          title={'Scale your apps with serverless automations'}
+          title={'Power your apps with serverless signing automations'}
           description={
             'Create immutable serverless functions for event-based signing, encryption, and identity management. Add advanced functionality to your apps and iterate faster, all without the burden of scaling key infrastructure.'
           }

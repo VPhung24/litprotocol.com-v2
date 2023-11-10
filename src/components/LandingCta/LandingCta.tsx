@@ -73,7 +73,7 @@ const LandingCta = () => {
               className={styles.card__img}
             />
             <div className={styles.card__content}>
-              <h4 className={styles.card__title}>Join our community</h4>
+              <h4 className={styles.card__title}>Join the ecosystem</h4>
               <p className={styles.card__description}>
                 Connect with other builders, and help shape the future of Lit.
               </p>

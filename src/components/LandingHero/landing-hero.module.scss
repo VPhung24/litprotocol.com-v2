@@ -3,7 +3,7 @@
 .container {
   // position: relative;
   width: 100%;
-  padding: 0 1rem 4rem;
+  padding: 0 1rem 3rem;
   background-color: var(--lit-white);
 
   // @include md {
@@ -18,9 +18,11 @@
 
   @include lg {
     min-height: calc(100vh - 4rem);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
-  @include xl {
+  @include xxl {
     min-height: auto;
   }
 }
@@ -36,7 +38,7 @@
   @include lg {
     flex-wrap: nowrap;
     justify-content: space-between;
-    min-height: 42rem;
+    // min-height: 42rem;
   }
 }
 

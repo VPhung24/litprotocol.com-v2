@@ -324,8 +324,8 @@ const LandingHero = () => {
           <div>
             <p className={styles.subtitle}>
               Lit is a key management network for decentralized signing and
-              encryption apps and wallets. Use secrets without single points of
-              failure.
+              encryption. Create apps and wallets that use secrets without
+              single points of failure.
             </p>
             <div className={styles['btn-wrapper']}>
               <a
