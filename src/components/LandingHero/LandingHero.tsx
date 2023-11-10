@@ -334,7 +334,7 @@ const LandingHero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get started &#8594;
+                Get started
               </a>
               <a
                 href={CONTACT_FORM}

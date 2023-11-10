@@ -125,15 +125,31 @@ const cases = [
 
 const LandingUseCases = () => {
   return (
-    <div className={styles.grid}>
-      {cases.map((item, index) => (
-        <div className={styles.item} key={index}>
-          {item.icon}
-          <h6 className={styles.item__title}>{item.title}</h6>
-          <p className={styles.item__copy}>{item.copy}</p>
+    <section className={styles.section}>
+      <div className={styles.wrapper}>
+        <div className={styles.header}>
+          {/* <div className={styles.badge}>
+                <span>Limitless Possibilities</span>
+              </div> */}
+          <h2 className={styles.title}>Versatile tooling for any use case</h2>
+          <p className={styles.subtitle}>
+            Lit is designed to seamlessly integrate into your existing stack,
+            enabling a diverse range of use cases from DeFi automation to
+            private web3 social and &lsquo;wallet as a service&lsquo;
+            infrastructure.
+          </p>
         </div>
-      ))}
-    </div>
+        <div className={styles.grid}>
+          {cases.map((item, index) => (
+            <div className={styles.item} key={index}>
+              {item.icon}
+              <h6 className={styles.item__title}>{item.title}</h6>
+              <p className={styles.item__copy}>{item.copy}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

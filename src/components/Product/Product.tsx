@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from 'next/image';
 import styles from './product.module.scss';
 import { ComponentType } from 'react';
 
@@ -14,7 +15,10 @@ interface ProductProps {
     description: string;
     link: string;
   }[];
-  CodeBlock: ComponentType;
+  // CodeBlock: ComponentType;
+  imgSrc: StaticImageData;
+  altText: string;
+  reverse?: boolean;
 }
 
 const Product = ({
@@ -23,7 +27,9 @@ const Product = ({
   description,
   cta,
   features,
-  CodeBlock,
+  imgSrc,
+  altText,
+  reverse,
 }: ProductProps) => {
   return (
     <div className={styles.container}>
@@ -55,11 +61,12 @@ const Product = ({
             </svg>
           </a>
         </div>
-        <div className={styles['code-block']}>
-          <h6 className={styles['code-block__title']}>JavaScript</h6>
-          <div className={styles['code-block__code']}>
-            <CodeBlock />
-          </div>
+        <div
+          className={`${styles['img-wrapper']} ${
+            reverse && styles['img-wrapper--reverse']
+          }`}
+        >
+          <Image src={imgSrc} alt={altText} className={styles.product__img} />
         </div>
       </div>
       <div className={styles['feature-grid']}>

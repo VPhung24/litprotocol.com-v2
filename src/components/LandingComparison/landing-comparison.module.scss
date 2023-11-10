@@ -1,5 +1,101 @@
 @import '../../styles/mixins.scss';
 
+.section {
+  width: 100%;
+  background-color: var(--lit-black);
+  background: linear-gradient(
+    180deg,
+    var(--lit-black) 85%,
+    var(--lit-gray-900) 100%
+  );
+  color: var(--lit-gray-400);
+}
+
+.wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+
+  @include sm {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include lg {
+    padding: 8rem 4rem;
+  }
+}
+
+.header {
+  max-width: 56rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.badge {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--lit-orange);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+
+  @include lg {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  color: var(--lit-gray-50);
+  background-color: var(--lit-gray-50);
+  background-image: linear-gradient(
+    to bottom,
+    var(--lit-gray-50),
+    var(--lit-gray-300)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  @include xs {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  @include lg {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  &__break {
+    display: inline;
+
+    @include md {
+      display: block;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.75rem;
+
+  @include lg {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -81,13 +177,8 @@
 }
 
 .comparison--lit {
-  background-color: var(--lit-black);
-  background: radial-gradient(
-    100% 100% at 50% 0%,
-    var(--lit-black) 0%,
-    rgba(18, 22, 25, 1) 100%
-  );
-  border-color: var(--lit-gray-700);
+  background-color: var(--lit-gray-900);
+  border-color: var(--lit-gray-600);
   grid-column: span 12;
 
   @include md {

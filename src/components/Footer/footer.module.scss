@@ -1,15 +1,16 @@
 @import '../../styles/mixins.scss';
 
 .footer {
-  position: relative;
+  // position: relative;
   width: 100%;
   margin: 0 auto;
   padding: 4rem 1rem 0;
   background-image: linear-gradient(
     to bottom,
-    rgba(18, 22, 25, 0.4),
+    var(--lit-gray-900),
     var(--lit-black)
   );
+  color: var(--lit-gray-400);
 
   @include sm {
     padding: 4rem 2rem 0;
@@ -47,7 +48,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     @include md {
       width: auto;
@@ -55,14 +55,16 @@
   }
 
   &__title {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
     font-weight: bold;
-    color: var(--lit-gray-200);
+    color: var(--lit-gray-50);
   }
 
   &__subtitle {
-    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
   }
 
   &__grid {

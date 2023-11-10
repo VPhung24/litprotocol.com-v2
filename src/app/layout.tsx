@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Lit Protocol',
   description:
-    'Lit is a distributed key management network for secure signing, encryption, and compute without centralized keyholders.',
+    'Lit is a key management network for decentralized signing and encryption. Create apps and wallets that use secrets without single points of failure.',
   openGraph: {
     title: 'Lit Protocol',
     description:
-      'Lit is a distributed key management network for secure signing, encryption, and compute without centralized keyholders.',
+      'Lit is a key management network for decentralized signing and encryption. Create apps and wallets that use secrets without single points of failure.',
     url: 'https://litprotocol.com',
     siteName: 'Lit Protocol',
     images: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Lit Protocol',
     description:
-      'Lit is a distributed key management network for secure signing, encryption, and compute without centralized keyholders.',
+      'Lit is a key management network for decentralized signing and encryption. Create apps and wallets that use secrets without single points of failure.',
     creator: '@LitProtocol',
     images: {
       url: '/twitter-image.png',

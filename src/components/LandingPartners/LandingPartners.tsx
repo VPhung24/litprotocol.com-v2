@@ -67,7 +67,7 @@ const logos = [
 const LandingPartners = () => {
   return (
     <section className={styles.section}>
-      <h6 className={styles.title}>Partnered with world-class builders</h6>
+      {/* <h6 className={styles.title}>Partnered with world-class builders</h6> */}
       <div className={styles.marquee}>
         <div className={styles.marquee__group}>
           {Object.values(logos).map((logo, i) => (

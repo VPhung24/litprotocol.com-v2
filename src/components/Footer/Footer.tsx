@@ -1,4 +1,5 @@
 import {
+  BRAND_LINK,
   CALENDAR_LINK,
   CAREERS_LINK,
   CONTACT_FORM,
@@ -11,7 +12,7 @@ import {
   TWITTER_LINK,
 } from '@/utils/constants';
 import styles from './footer.module.scss';
-import SubscribeForm from '../SubscribeForm/SubscribeForm';
+// import SubscribeForm from '../SubscribeForm/SubscribeForm';
 
 const Footer = () => {
   return (
@@ -22,8 +23,9 @@ const Footer = () => {
           <a href="/" className={styles.footer__title}>
             Lit Protocol
           </a>
-          {/* <p>Decentralized key management network</p> */}
-          <SubscribeForm />
+          {/* <p className={styles.footer__subtitle}>
+            Decentralized key management network for web3
+          </p> */}
         </div>
         <div className={styles.footer__grid}>
           <div className={styles.footer__grid__item}>
@@ -113,6 +115,14 @@ const Footer = () => {
               className={styles.footer__link}
             >
               Careers
+            </a>
+            <a
+              href={BRAND_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.footer__link}
+            >
+              Brand Kit
             </a>
           </div>
           <div className={styles.footer__grid__item}>

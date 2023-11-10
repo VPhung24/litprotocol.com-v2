@@ -1,9 +1,10 @@
 @import '../../styles/mixins.scss';
 
 .container {
-  position: relative;
+  // position: relative;
   width: 100%;
-  padding: 4rem 1rem 0;
+  padding: 0 1rem 4rem;
+  background-color: var(--lit-white);
 
   // @include md {
   //   padding-left: 1.5rem;
@@ -14,6 +15,14 @@
   //   padding-left: 2rem;
   //   padding-right: 2rem;
   // }
+
+  @include lg {
+    min-height: calc(100vh - 4rem);
+  }
+
+  @include xl {
+    min-height: auto;
+  }
 }
 
 .wrapper {
@@ -32,7 +41,7 @@
 }
 
 .content-wrapper {
-  position: relative;
+  // position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -56,19 +65,7 @@
   font-size: 2.25rem;
   line-height: 1;
   font-weight: bold;
-  color: var(--lit-gray-50);
-  background-color: var(--lit-gray-50);
-  background-image: linear-gradient(
-    to bottom,
-    var(--lit-gray-50),
-    var(--lit-gray-200),
-    var(--lit-gray-400)
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: var(--lit-gray-900);
 
   @include sm {
     font-size: 3rem;
@@ -91,6 +88,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
+  color: var(--lit-gray-600);
   margin-top: 0.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -130,8 +128,9 @@
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  background-color: var(--lit-orange);
-  color: var(--lit-gray-900);
+  background-color: var(--lit-gray-900);
+  color: var(--lit-gray-50);
+  border: 1px solid var(--lit-gray-900);
   border-radius: 999px;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -148,24 +147,21 @@
 }
 
 .cta-btn--primary {
-  transition: background-color 0.2s ease, box-shadow 0.2 ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    background-color: var(--lit-orange-hover);
-    box-shadow: 0 0 12px rgba(255, 112, 51, 0.5);
+    background-color: var(--lit-orange);
+    border-color: var(--lit-orange);
   }
 }
 
 .cta-btn--outline {
-  background-color: var(--lit-black);
-  border: 1px solid var(--lit-gray-600);
-  color: var(--lit-gray-200);
-  transition: background-color 0.2s ease, border 0.2 ease, color 0.2s ease;
+  background-color: transparent;
+  color: var(--lit-gray-900);
+  transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: var(--lit-gray-900);
-    border-color: var(--lit-gray-400);
-    color: var(--lit-gray-50);
+    background-color: var(--lit-gray-50);
   }
 }
 
