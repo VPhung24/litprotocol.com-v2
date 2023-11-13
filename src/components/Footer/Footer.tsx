@@ -133,15 +133,6 @@ const Footer = () => {
             <a href="/legal/terms-of-service" className={styles.footer__link}>
               Terms of Service
             </a>
-            <a href="/legal/developer-license" className={styles.footer__link}>
-              Developer License
-            </a>
-            <a
-              href="/legal/security-commitments"
-              className={styles.footer__link}
-            >
-              Security Commitments
-            </a>
           </div>
         </div>
       </nav>

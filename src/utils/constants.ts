@@ -11,7 +11,7 @@ export const GITHUB_LINK = 'https://github.com/LIT-Protocol';
 
 // Social
 export const TWITTER_LINK = 'https://twitter.com/litprotocol';
-export const DISCORD_LINK = 'https://litgateway.com/discord';
+export const DISCORD_LINK = 'https://getlit.dev/chat';
 export const LINKEDIN_LINK = 'https://www.linkedin.com/company/lit-protocol';
 
 // Company

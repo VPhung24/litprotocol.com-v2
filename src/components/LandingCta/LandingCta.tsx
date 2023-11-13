@@ -16,9 +16,9 @@ const LandingCta = () => {
             internet
           </h3>
           <p className={styles.subtitle}>
-            Lit&apos;s decentralized key network enables non-custodial
-            progressive self custody, powering the next generation of identity
-            management on the open web.
+            Lit&apos;s decentralized key network enables progressive self
+            custody, powering the next generation of identity management on the
+            open web.
           </p>
           <a
             href={DOCS_LINK}
