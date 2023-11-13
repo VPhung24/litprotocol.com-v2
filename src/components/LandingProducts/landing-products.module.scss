@@ -8,7 +8,7 @@
     var(--lit-black) 85%,
     var(--lit-gray-900) 100%
   );
-  color: var(--lit-gray-400);
+  color: var(--lit-gray-300);
 }
 
 .wrapper {
@@ -51,11 +51,11 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: bold;
-  color: var(--lit-gray-50);
-  background-color: var(--lit-gray-50);
+  color: var(--lit-white);
+  background-color: var(--lit-white);
   background-image: linear-gradient(
     to bottom,
-    var(--lit-gray-50),
+    var(--lit-white),
     var(--lit-gray-300)
   );
   background-size: 100%;

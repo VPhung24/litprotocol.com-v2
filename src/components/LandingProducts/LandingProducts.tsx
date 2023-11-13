@@ -37,7 +37,7 @@ const LandingProducts = () => {
             {
               title: 'Session keys',
               description:
-                'Create temporary, permissioned session keys, enabling users to interact with your platform in a frictionless, secure way.',
+                'Use session keys to enable a range of authorized actions—from signing to decryption—without repeated authentication.',
               link: 'https://developer.litprotocol.com/v3/sdk/authentication/session-sigs/intro',
             },
             {

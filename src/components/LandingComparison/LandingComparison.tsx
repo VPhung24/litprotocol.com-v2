@@ -25,7 +25,7 @@ const LandingComparison = () => {
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <div className={styles.badge}>
-            <span>Our Approach</span>
+            <span className={styles.badge__copy}>Our Approach</span>
           </div>
           <h2 className={styles.title}>
             Revolutionizing secret management{' '}
