@@ -3,10 +3,10 @@
 .container {
   padding: 4rem 0;
 
-  // @include md {
-  //   padding-top: 5rem;
-  //   padding-bottom: 5rem;
-  // }
+  @include md {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .container:last-of-type {
