@@ -168,8 +168,8 @@ body {
 
 [data-shape='key'] {
   position: relative;
-  color: var(--lit-gray-500);
-  opacity: 0.05;
+  color: var(--lit-gray-300);
+  opacity: 0;
   transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
 }
 
@@ -190,16 +190,3 @@ body {
     opacity: 1;
   }
 }
-
-// .hero-key:hover [data-shape='key'][data-reveal='true'] {
-//   animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);
-// }
-
-// @keyframes fadeIn {
-//   0% {
-//     opacity: 0.2;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }

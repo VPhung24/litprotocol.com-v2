@@ -318,8 +318,8 @@ const LandingHero = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles['content-wrapper']}>
+      <div className={styles['content-wrapper']}>
+        <div className={styles['hero-copy']}>
           <h1 className={styles.title}>Build apps that put users in control</h1>
           <div>
             <p className={styles.subtitle}>
@@ -347,11 +347,7 @@ const LandingHero = () => {
             </div>
           </div>
         </div>
-        <div
-          ref={svgContainerRef}
-          className={`${styles['hero-img']} ${styles['hero-bg']}`}
-        >
-          {/* <KeyImg className={`${styles['hero-img']} ${styles['hero-key']}`} /> */}
+        <div ref={svgContainerRef} className={`${styles['img-wrapper']}`}>
           <Key />
         </div>
       </div>

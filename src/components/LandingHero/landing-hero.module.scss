@@ -1,49 +1,44 @@
 @import '../../styles/mixins.scss';
 
 .container {
-  // position: relative;
+  overflow: hidden;
+  position: relative;
   width: 100%;
-  padding: 0 1rem 3rem;
+  padding: 0 1rem 4rem;
   background-color: var(--lit-white);
-
-  // @include md {
-  //   padding-left: 1.5rem;
-  //   padding-right: 1.5rem;
-  // }
-
-  // @include lg {
-  //   padding-left: 2rem;
-  //   padding-right: 2rem;
-  // }
-
-  @include lg {
-    min-height: calc(100vh - 4rem);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  @include xxl {
-    min-height: auto;
-  }
-}
-
-.wrapper {
-  max-width: 80rem;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   @include lg {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    // min-height: 42rem;
+    min-height: clamp(32rem, 60vw, 48rem);
+    padding-top: 4rem;
+  }
+
+  @include xl {
+    min-height: 48rem;
+    padding-top: 0;
   }
 }
 
 .content-wrapper {
-  // position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+
+  @include lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.hero-copy {
+  position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -167,48 +162,43 @@
   }
 }
 
-.hero-img {
-  max-height: clamp(12rem, calc(50vh - 4rem), 20rem);
-  width: 100%;
-
-  @include xs {
-    max-height: clamp(20rem, calc(50vh - 4rem), 28rem);
-  }
+.img-wrapper {
+  width: auto;
+  height: clamp(12rem, 50vh, 28rem);
+  transform: rotate(45deg);
+  margin: -2rem 0;
 
   @include sm {
-    max-height: clamp(28rem, 50vh, 42rem);
+    height: clamp(28rem, 50vh, 42rem);
+    margin: -2rem 0 -4rem;
+  }
+
+  @include md {
+    height: clamp(28rem, 60vh, 48rem);
+    margin: -4rem 0;
   }
 
   @include lg {
-    max-height: none;
+    position: absolute;
+    top: 50%;
+    right: -10vw;
+    transform: translate(0, -50%);
+    width: clamp(32rem, 60vw, 56rem);
+    height: auto;
+    margin: 0;
   }
-  // width: 100%;
+
+  @include xxxl {
+    width: auto;
+    height: 48rem;
+    right: 0;
+  }
 }
 
-// [data-shape='key'] {
-//   position: relative;
-//   color: var(--lit-gray-100);
-//   opacity: 0.05;
-//   transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
-// }
-
-// [data-shape='key'][data-reveal='true'] {
-//   opacity: 1;
-//   animation: fadeInOut var(--animation-duration) ease-in-out infinite alternate
-//     var(--animation-delay);
-// }
-
-// @keyframes fadeInOut {
-//   0% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.2;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+.hero-img {
+  width: auto;
+  height: 100%;
+}
 
 .hero-key:hover [data-shape='key'][data-reveal='true'] {
   animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);
