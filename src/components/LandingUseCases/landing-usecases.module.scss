@@ -3,7 +3,7 @@
 .section {
   width: 100%;
   background-color: var(--lit-white);
-  color: var(--lit-gray-600);
+  color: var(--lit-gray-700);
 }
 
 .wrapper {
@@ -111,7 +111,6 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
   margin-top: 3rem;
 
   @include sm {
@@ -126,14 +125,13 @@
 .item {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  border: 1px solid var(--lit-gray-100);
-  border-radius: 0.375rem;
-  padding: 1.5rem;
+  border-top: 1px solid var(--lit-gray-100);
+  padding: 1.5rem 1rem;
 
   @include lg {
     font-size: 1rem;
     line-height: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
   &__title {
