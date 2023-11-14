@@ -103,9 +103,9 @@
     display: inline-flex;
     justify-content: center;
     padding: 0.625rem 1rem 0.5rem;
-    background-color: var(--lit-gray-900);
+    background-color: var(--lit-pink);
     color: var(--lit-gray-50);
-    border: 1px solid var(--lit-gray-900);
+    border: 1px solid var(--lit-pink);
     border-radius: 999px;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -114,8 +114,8 @@
 
     &--primary {
       &:hover {
-        border-color: var(--lit-orange);
-        background-color: var(--lit-orange);
+        border-color: var(--lit-pink-dark);
+        background-color: var(--lit-pink-dark);
       }
     }
 

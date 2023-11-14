@@ -169,7 +169,7 @@ body {
 
 [data-shape='key'] {
   position: relative;
-  color: var(--lit-gray-300);
+  color: var(--lit-pink);
   opacity: 0;
   transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
 }
@@ -188,7 +188,7 @@ body {
     opacity: 1;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
