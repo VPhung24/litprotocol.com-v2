@@ -26,7 +26,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -59,7 +59,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -92,7 +92,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -125,7 +125,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -158,7 +158,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -201,7 +201,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_554_22369"
@@ -213,7 +213,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_554_22369"
@@ -225,7 +225,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_554_22369"
@@ -237,7 +237,7 @@ const cases = [
           >
             <stop stopColor="#FFAA7F" />
             <stop offset="0.489583" stopColor="#FF844F" />
-            <stop offset="1" stopColor="#E52802" />
+            <stop offset="1" stopColor="#FF4205" />
           </linearGradient>
         </defs>
       </svg>
@@ -250,9 +250,9 @@ const LandingUseCases = () => {
     <section className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.header}>
-          {/* <div className={styles.badge}>
-                <span>Limitless Possibilities</span>
-              </div> */}
+          <div className={styles.badge}>
+            <span className={styles.badge__copy}>Limitless Possibilities</span>
+          </div>
           <h2 className={styles.title}>Versatile tooling for any use case</h2>
           <p className={styles.subtitle}>
             Lit is designed to seamlessly integrate into your existing stack,

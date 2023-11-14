@@ -43,7 +43,18 @@
 }
 
 .emphasis {
-  color: var(--lit-orange);
+  color: var(--lit-pink);
+  background-color: var(--lit-pink);
+  background-image: linear-gradient(
+    to bottom,
+    var(--lit-orange) 50%,
+    var(--lit-pink)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .subtitle {
@@ -146,7 +157,6 @@
     @include lg {
       font-size: 1rem;
       line-height: 1.5rem;
-      // margin-bottom: 1.5rem;
     }
   }
 
@@ -217,13 +227,13 @@
 
 .card--dark .card__link {
   background-color: var(--lit-gray-900);
-  border-color: var(--lit-gray-600);
+  border-color: var(--lit-gray-700);
   color: var(--lit-gray-200);
 
   &:hover {
     background-color: var(--lit-gray-800);
-    border-color: var(--lit-gray-300);
-    color: var(--lit-gray-50);
+    border-color: var(--lit-gray-600);
+    color: var(--lit-white);
   }
 }
 

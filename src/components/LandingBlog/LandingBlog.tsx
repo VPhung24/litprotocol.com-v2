@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { SPARK_LINK } from '@/utils/constants';
 import styles from './landing-blog.module.scss';
 import IndexImg from './assets/index.png';
@@ -74,22 +74,24 @@ const posts = [
 
 const LandingBlog = () => {
   const postsContainer = useRef<HTMLDivElement | null>(null);
+  const [transformX, setTransformX] = useState<number>(0);
 
   const scrollLeft = () => {
     const container = postsContainer.current;
     if (container) {
-      container.scrollBy({
-        left: getPostWidth() * -1,
-        top: 0,
-        behavior: 'smooth',
-      });
+      const newTransformX = Math.min(transformX + getPostWidth(), 0);
+      setTransformX(newTransformX);
+      container.style.transform = `translateX(${newTransformX}px)`;
     }
   };
 
   const scrollRight = () => {
     const container = postsContainer.current;
     if (container) {
-      container.scrollBy({ left: getPostWidth(), top: 0, behavior: 'smooth' });
+      const maxWidth = getPostWidth() * posts.length - container.clientWidth;
+      const newTransformX = Math.max(transformX - getPostWidth(), -maxWidth);
+      setTransformX(newTransformX);
+      container.style.transform = `translateX(${newTransformX}px)`;
     }
   };
 
@@ -151,29 +153,28 @@ const LandingBlog = () => {
             </button>
           </div>
         </div>
-        <div className={styles.scrollable} ref={postsContainer}>
-          <div className={styles.row}>
-            {posts.map(post => (
-              <div className={styles.post} key={post.slug}>
-                <Image
-                  src={post.image}
-                  alt={post.alt}
-                  className={styles.post__img}
-                />
-                <div className={styles.post__copy}>
-                  <h4 className={styles.post__title}>{post.title}</h4>
-                  <a
-                    href={`${SPARK_LINK}/${post.slug}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.post__link}
-                  >
-                    Read more
-                  </a>
-                </div>
+
+        <div className={styles.row} ref={postsContainer}>
+          {posts.map(post => (
+            <div className={styles.post} key={post.slug}>
+              <Image
+                src={post.image}
+                alt={post.alt}
+                className={styles.post__img}
+              />
+              <div className={styles.post__copy}>
+                <h4 className={styles.post__title}>{post.title}</h4>
+                <a
+                  href={`${SPARK_LINK}/${post.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.post__link}
+                >
+                  Read more
+                </a>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

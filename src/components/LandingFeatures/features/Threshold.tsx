@@ -58,7 +58,7 @@ const Threshold = () => {
         >
           <stop stopColor="#FFAA7F" />
           <stop offset="0.489583" stopColor="#FF4205" />
-          <stop offset="1" stopColor="#E52802" />
+          <stop offset="1" stopColor="#FF4205" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1301_1644"
@@ -70,7 +70,7 @@ const Threshold = () => {
         >
           <stop stopColor="#FFAA7F" />
           <stop offset="0.489583" stopColor="#FF4205" />
-          <stop offset="1" stopColor="#E52802" />
+          <stop offset="1" stopColor="#FF4205" />
         </linearGradient>
       </defs>
     </svg>
