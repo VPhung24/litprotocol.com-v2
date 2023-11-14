@@ -1,4 +1,17 @@
-$basicColor: #33257F;
-$basicWhite: #ffffff;
-$basicCreme: #FFC08E;
-$basicGrey: #F2F3F5;
+:root {
+  --lit-white: rgb(255, 255, 255);
+  --lit-black: rgb(11, 13, 15);
+  --lit-gray-50: rgb(242, 244, 248);
+  --lit-gray-100: rgb(221, 225, 230);
+  --lit-gray-200: rgb(193, 199, 205);
+  --lit-gray-300: rgb(162, 169, 176);
+  --lit-gray-400: rgb(135, 141, 150);
+  --lit-gray-500: rgb(105, 112, 119);
+  --lit-gray-600: rgb(77, 83, 88);
+  --lit-gray-700: rgb(52, 58, 63);
+  --lit-gray-800: rgb(33, 39, 42);
+  --lit-gray-900: rgb(18, 22, 25);
+  --lit-orange: rgb(255, 66, 5);
+  --lit-orange-light: rgb(255, 132, 79);
+  --lit-pink: rgb(170, 17, 85);
+}

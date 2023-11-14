@@ -1,59 +1,50 @@
-@import 'src/styles/sizes.scss';
+// --- Breakpoints ---
+$breakpoint-xs: 384px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+$breakpoint-3xl: 1920px;
 
-@mixin max-small {
-    @media only screen and (max-width: $sm) {
-        @content;
-
-        .csw-substack-gradient-custom {
-            width: 65vw !important;
-        }
-    }
+@mixin xs {
+  @media (min-width: $breakpoint-xs) {
+    @content;
+  }
 }
 
-@mixin min-middle {
-    @media only screen and (min-width: $md) {
-        @content;
-    }
+@mixin sm {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
 }
 
-@mixin max-middle {
-    @media only screen and (max-width: $md) {
-        @content;
-    }
+@mixin md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
 }
 
-@mixin max-large {
-    @media only screen and (max-width: $lg) {
-        @content;
-    }
+@mixin lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
 }
 
-@mixin min-large {
-    @media only screen and (min-width: $lg) {
-        @content;
-    }
+@mixin xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
 }
 
-@mixin max-xlarge {
-    @media only screen and (max-width: $xl) {
-        @content;
-    }
+@mixin xxl {
+  @media (min-width: $breakpoint-2xl) {
+    @content;
+  }
 }
 
-@mixin min-xlarge {
-    @media only screen and (min-width: $xl) {
-        @content;
-    }
-}
-
-@mixin min-huge {
-    @media only screen and (min-width: $hg) {
-        @content;
-    }    
-}
-
-@mixin min-max {
-    @media only screen and (min-width: $mx) {
-        @content;
-    }    
+@mixin xxxl {
+  @media (min-width: $breakpoint-3xl) {
+    @content;
+  }
 }
