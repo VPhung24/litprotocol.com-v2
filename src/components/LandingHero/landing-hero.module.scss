@@ -184,15 +184,15 @@
     top: 50%;
     right: -10vw;
     transform: translate(0, -50%);
-    width: clamp(32rem, 60vw, 56rem);
+    width: clamp(32rem, 55vw, 56rem);
     height: auto;
-    margin: 0;
+    margin: -1rem 0;
   }
 
   @include xxxl {
+    right: -8rem;
     width: auto;
-    height: 48rem;
-    right: 0;
+    height: 56rem;
   }
 }
 
