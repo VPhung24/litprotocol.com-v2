@@ -1,5 +1,27 @@
 @import 'src/styles/mixins.scss';
 
+.section {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--lit-gray-50);
+  color: var(--lit-gray-500);
+}
+
+.wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+
+  @include sm {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include lg {
+    padding: 8rem 4rem;
+  }
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -21,15 +43,15 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 999px;
-  border: 1px solid var(--lit-gray-800);
-  background-color: var(--lit-black);
+  border: 1px solid var(--lit-gray-600);
+  background-color: var(--lit-gray-50);
   transition: background-color 0.15s ease, border-color 0.15s ease,
     color 0.15s ease;
 
   &:hover {
-    background-color: var(--lit-gray-900);
-    border-color: var(--lit-gray-700);
-    color: var(--lit-gray-200);
+    background-color: var(--lit-gray-100);
+    border-color: var(--lit-gray-500);
+    color: var(--lit-gray-700);
   }
 }
 
@@ -41,12 +63,12 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: bold;
-  color: var(--lit-gray-50);
-  background-color: var(--lit-gray-50);
+  color: var(--lit-gray-900);
+  background-color: var(--lit-gray-900);
   background-image: linear-gradient(
     to bottom,
-    var(--lit-gray-50),
-    var(--lit-gray-300)
+    var(--lit-gray-900),
+    var(--lit-gray-700)
   );
   background-size: 100%;
   -webkit-background-clip: text;
@@ -69,11 +91,13 @@
   display: flex;
   align-items: stretch;
   gap: 0.75rem;
-  overflow-x: hidden;
+  overflow-x: visible;
   margin-top: 3rem;
+  will-change: transform;
+  transition: transform 0.3s ease;
 
   @include xs {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
 
@@ -83,10 +107,11 @@
   width: calc(100vw - 3rem);
   max-width: 20rem;
   flex-shrink: 0;
-  border: 1px solid var(--lit-gray-800);
+  border: 1px solid var(--lit-gray-100);
   border-radius: 0.375rem;
   position: relative;
-  color: var(--lit-gray-200);
+  background-color: var(--lit-white);
+  transition: color 0.15s ease, border-color 0.15s ease;
 
   &__img {
     height: 10rem;
@@ -99,6 +124,7 @@
   &__title {
     font-size: 1rem;
     line-height: 1.5rem;
+    color: var(--lit-gray-900);
 
     @include lg {
       font-size: 1.125rem;
@@ -117,7 +143,6 @@
     display: inline-flex;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: var(--lit-orange);
     text-decoration: none;
     margin-top: 1rem;
 
@@ -137,17 +162,6 @@
 }
 
 .post:hover {
-  transition: color 0.15s ease, background 0.15s ease,
-    background-color 0.15s ease, border-color 0.15s ease;
-
-  &:hover {
-    color: var(--lit-gray-50);
-    background-color: rgba(18, 22, 25, 0.5);
-    background: radial-gradient(
-      84.05% 84.05% at 50% 46.55%,
-      var(--lit-black) 46.46%,
-      var(--lit-gray-900) 100%
-    );
-    border-color: var(--lit-gray-700);
-  }
+  color: var(--lit-orange);
+  border-color: var(--lit-gray-200);
 }

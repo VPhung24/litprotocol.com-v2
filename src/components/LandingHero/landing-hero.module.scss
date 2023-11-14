@@ -1,37 +1,43 @@
 @import '../../styles/mixins.scss';
 
 .container {
+  overflow: hidden;
   position: relative;
   width: 100%;
-  padding: 4rem 1rem 0;
-
-  // @include md {
-  //   padding-left: 1.5rem;
-  //   padding-right: 1.5rem;
-  // }
-
-  // @include lg {
-  //   padding-left: 2rem;
-  //   padding-right: 2rem;
-  // }
-}
-
-.wrapper {
-  max-width: 80rem;
-  margin: 0 auto;
+  padding: 0 1rem 4rem;
+  background-color: var(--lit-white);
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   @include lg {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    min-height: 42rem;
+    min-height: clamp(32rem, 60vw, 48rem);
+    padding-top: 4rem;
+  }
+
+  @include xl {
+    min-height: 48rem;
+    padding-top: 0;
   }
 }
 
 .content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+
+  @include lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.hero-copy {
   position: relative;
   z-index: 2;
   display: flex;
@@ -45,6 +51,7 @@
     text-align: left;
     max-width: 40rem;
     flex-shrink: 0;
+    padding-bottom: 2rem;
   }
 
   @include xl {
@@ -56,19 +63,7 @@
   font-size: 2.25rem;
   line-height: 1;
   font-weight: bold;
-  color: var(--lit-gray-50);
-  background-color: var(--lit-gray-50);
-  background-image: linear-gradient(
-    to bottom,
-    var(--lit-gray-50),
-    var(--lit-gray-200),
-    var(--lit-gray-400)
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: var(--lit-gray-900);
 
   @include sm {
     font-size: 3rem;
@@ -91,6 +86,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
+  color: var(--lit-gray-600);
   margin-top: 0.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -130,8 +126,9 @@
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  background-color: var(--lit-orange);
-  color: var(--lit-gray-900);
+  background-color: var(--lit-gray-900);
+  color: var(--lit-gray-50);
+  border: 1px solid var(--lit-gray-900);
   border-radius: 999px;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -148,69 +145,61 @@
 }
 
 .cta-btn--primary {
-  transition: background-color 0.2s ease, box-shadow 0.2 ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    background-color: var(--lit-orange-hover);
-    box-shadow: 0 0 12px rgba(255, 112, 51, 0.5);
+    background-color: var(--lit-orange);
+    border-color: var(--lit-orange);
   }
 }
 
 .cta-btn--outline {
-  background-color: var(--lit-black);
-  border: 1px solid var(--lit-gray-600);
-  color: var(--lit-gray-200);
-  transition: background-color 0.2s ease, border 0.2 ease, color 0.2s ease;
+  background-color: transparent;
+  color: var(--lit-gray-900);
+  transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: var(--lit-gray-900);
-    border-color: var(--lit-gray-400);
-    color: var(--lit-gray-50);
+    background-color: var(--lit-gray-50);
+  }
+}
+
+.img-wrapper {
+  width: auto;
+  height: clamp(12rem, 50vh, 28rem);
+  transform: rotate(45deg);
+  margin: -2rem 0;
+
+  @include sm {
+    height: clamp(28rem, 50vh, 42rem);
+    margin: -2rem 0 -4rem;
+  }
+
+  @include md {
+    height: clamp(28rem, 60vh, 48rem);
+    margin: -4rem 0;
+  }
+
+  @include lg {
+    position: absolute;
+    top: 50%;
+    right: -10vw;
+    transform: translate(0, -50%);
+    width: clamp(32rem, 55vw, 56rem);
+    height: auto;
+    margin: -1rem 0;
+  }
+
+  @include xxxl {
+    right: -8rem;
+    width: auto;
+    height: 56rem;
   }
 }
 
 .hero-img {
-  max-height: clamp(12rem, calc(50vh - 4rem), 20rem);
-  width: 100%;
-
-  @include xs {
-    max-height: clamp(20rem, calc(50vh - 4rem), 28rem);
-  }
-
-  @include sm {
-    max-height: clamp(28rem, 50vh, 42rem);
-  }
-
-  @include lg {
-    max-height: none;
-  }
-  // width: 100%;
+  width: auto;
+  height: 100%;
 }
-
-// [data-shape='key'] {
-//   position: relative;
-//   color: var(--lit-gray-100);
-//   opacity: 0.05;
-//   transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
-// }
-
-// [data-shape='key'][data-reveal='true'] {
-//   opacity: 1;
-//   animation: fadeInOut var(--animation-duration) ease-in-out infinite alternate
-//     var(--animation-delay);
-// }
-
-// @keyframes fadeInOut {
-//   0% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.2;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
 
 .hero-key:hover [data-shape='key'][data-reveal='true'] {
   animation: fadeIn 1.2s ease-in-out calc(var(--animation-order, 1) * 30ms);

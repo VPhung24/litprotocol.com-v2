@@ -285,6 +285,7 @@ const LandingHero = () => {
   useEffect(() => {
     const fadeInKey = () => {
       if (svgContainerRef.current) {
+        // Reveal dots
         coords.forEach((coord, index) => {
           const order = index + 1;
           for (let i = 0; i < coord.count; i++) {
@@ -305,6 +306,12 @@ const LandingHero = () => {
 
               dot.style.setProperty('--animation-order', order.toString());
               dot.setAttribute('data-reveal', 'true');
+
+              // Shimmer dots on all browsers except Firefox
+              const isFirefox = navigator.userAgent.includes('Firefox');
+              if (!isFirefox) {
+                dot.setAttribute('data-shimmer', 'true');
+              }
             }
           }
         });
@@ -318,14 +325,14 @@ const LandingHero = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles['content-wrapper']}>
+      <div className={styles['content-wrapper']}>
+        <div className={styles['hero-copy']}>
           <h1 className={styles.title}>Build apps that put users in control</h1>
           <div>
             <p className={styles.subtitle}>
               Lit is a key management network for decentralized signing and
-              encryption apps and wallets. Use secrets without single points of
-              failure.
+              encryption. Create apps and wallets that use secrets without
+              single points of failure.
             </p>
             <div className={styles['btn-wrapper']}>
               <a
@@ -334,7 +341,7 @@ const LandingHero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get started &#8594;
+                Get started
               </a>
               <a
                 href={CONTACT_FORM}
@@ -347,11 +354,7 @@ const LandingHero = () => {
             </div>
           </div>
         </div>
-        <div
-          ref={svgContainerRef}
-          className={`${styles['hero-img']} ${styles['hero-bg']}`}
-        >
-          {/* <KeyImg className={`${styles['hero-img']} ${styles['hero-key']}`} /> */}
+        <div ref={svgContainerRef} className={`${styles['img-wrapper']}`}>
           <Key />
         </div>
       </div>

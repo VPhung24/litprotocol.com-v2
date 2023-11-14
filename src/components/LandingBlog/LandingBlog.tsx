@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { SPARK_LINK } from '@/utils/constants';
 import styles from './landing-blog.module.scss';
 import IndexImg from './assets/index.png';
@@ -74,105 +74,110 @@ const posts = [
 
 const LandingBlog = () => {
   const postsContainer = useRef<HTMLDivElement | null>(null);
+  const [transformX, setTransformX] = useState<number>(0);
 
   const scrollLeft = () => {
     const container = postsContainer.current;
     if (container) {
-      container.scrollBy({
-        left: getPostWidth() * -1,
-        top: 0,
-        behavior: 'smooth',
-      });
+      const newTransformX = Math.min(transformX + getPostWidth(), 0);
+      setTransformX(newTransformX);
+      container.style.transform = `translateX(${newTransformX}px)`;
     }
   };
 
   const scrollRight = () => {
     const container = postsContainer.current;
     if (container) {
-      container.scrollBy({ left: getPostWidth(), top: 0, behavior: 'smooth' });
+      const maxWidth = getPostWidth() * posts.length - container.clientWidth;
+      const newTransformX = Math.max(transformX - getPostWidth(), -maxWidth);
+      setTransformX(newTransformX);
+      container.style.transform = `translateX(${newTransformX}px)`;
     }
   };
 
   return (
-    <>
-      <div className={styles.header}>
-        <h3 className={styles.title}>Stay updated</h3>
-        <div className={styles['btn-wrapper']}>
-          <button
-            onClick={scrollLeft}
-            className={`${styles['scroll-btn']} ${styles['scroll-btn--left']}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
+    <section className={styles.section}>
+      <div className={styles.wrapper}>
+        <div className={styles.header}>
+          <h3 className={styles.title}>Stay updated</h3>
+          <div className={styles['btn-wrapper']}>
+            <button
+              onClick={scrollLeft}
+              className={`${styles['scroll-btn']} ${styles['scroll-btn--left']}`}
             >
-              <path
-                d="M5 12H19"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M12 5L19 12L12 19"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            onClick={scrollRight}
-            className={`${styles['scroll-btn']} ${styles['scroll-btn--right']}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 12H19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12 5L19 12L12 19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={scrollRight}
+              className={`${styles['scroll-btn']} ${styles['scroll-btn--right']}`}
             >
-              <path
-                d="M5 12H19"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinejoin="round"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 12H19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12 5L19 12L12 19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.row} ref={postsContainer}>
+          {posts.map(post => (
+            <div className={styles.post} key={post.slug}>
+              <Image
+                src={post.image}
+                alt={post.alt}
+                className={styles.post__img}
               />
-              <path
-                d="M12 5L19 12L12 19"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+              <div className={styles.post__copy}>
+                <h4 className={styles.post__title}>{post.title}</h4>
+                <a
+                  href={`${SPARK_LINK}/${post.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.post__link}
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className={styles.row} ref={postsContainer}>
-        {posts.map(post => (
-          <div className={styles.post} key={post.slug}>
-            <Image
-              src={post.image}
-              alt={post.alt}
-              className={styles.post__img}
-            />
-            <div className={styles.post__copy}>
-              <h4 className={styles.post__title}>{post.title}</h4>
-              <a
-                href={`${SPARK_LINK}/${post.slug}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.post__link}
-              >
-                Read more
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
+    </section>
   );
 };
 
