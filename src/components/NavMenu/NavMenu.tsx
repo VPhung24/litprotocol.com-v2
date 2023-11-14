@@ -11,6 +11,7 @@ import {
   TWITTER_LINK,
 } from '@/utils/constants';
 import LitLogo from '../LitLogo/LitLogo';
+import Banner from '../Banner/Banner';
 
 const NavMenu = ({
   menuOpen,
@@ -24,6 +25,7 @@ const NavMenu = ({
       <Dialog.Portal>
         <Dialog.Overlay className={styles.overlay} />
         <Dialog.Content className={styles.modal}>
+          <Banner />
           <header className={styles.header}>
             <div className={styles.header__wrapper}>
               <a href="/">
