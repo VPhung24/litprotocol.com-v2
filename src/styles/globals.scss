@@ -176,6 +176,9 @@ body {
 
 [data-shape='key'][data-reveal='true'] {
   opacity: 1;
+}
+
+[data-shape='key'][data-shimmer='true'] {
   animation: fadeInOut var(--animation-duration) ease-in-out infinite alternate
     var(--animation-delay);
 }

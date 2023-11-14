@@ -285,6 +285,7 @@ const LandingHero = () => {
   useEffect(() => {
     const fadeInKey = () => {
       if (svgContainerRef.current) {
+        // Reveal dots
         coords.forEach((coord, index) => {
           const order = index + 1;
           for (let i = 0; i < coord.count; i++) {
@@ -305,6 +306,12 @@ const LandingHero = () => {
 
               dot.style.setProperty('--animation-order', order.toString());
               dot.setAttribute('data-reveal', 'true');
+
+              // Shimmer dots on all browsers except Firefox
+              const isFirefox = navigator.userAgent.includes('Firefox');
+              if (!isFirefox) {
+                dot.setAttribute('data-shimmer', 'true');
+              }
             }
           }
         });
