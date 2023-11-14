@@ -102,6 +102,7 @@ const LandingCta = () => {
             </div>
           </div>
           <div
+            id="subscribe"
             className={`${styles.card} ${styles['card--full']} ${styles['card--primary']}`}
             style={{
               backgroundImage: `url(${Dots.src})`,
