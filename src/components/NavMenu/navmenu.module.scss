@@ -103,9 +103,9 @@
     display: inline-flex;
     justify-content: center;
     padding: 0.625rem 1rem 0.5rem;
-    background-color: var(--lit-gray-900);
-    color: var(--lit-gray-50);
-    border: 1px solid var(--lit-gray-900);
+    background-color: var(--lit-orange);
+    color: var(--lit-white);
+    border: 1px solid var(--lit-orange);
     border-radius: 999px;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -114,14 +114,15 @@
 
     &--primary {
       &:hover {
-        border-color: var(--lit-orange);
-        background-color: var(--lit-orange);
+        border-color: var(--lit-orange-dark);
+        background-color: var(--lit-orange-dark);
       }
     }
 
     &--outline {
       background-color: transparent;
       color: var(--lit-gray-900);
+      border-color: var(--lit-gray-900);
       transition: background-color 0.2s ease;
 
       &:hover {

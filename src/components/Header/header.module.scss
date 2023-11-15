@@ -72,15 +72,15 @@
     display: inline-flex;
     justify-content: center;
     padding: 0.625rem 1rem 0.5rem;
-    background-color: var(--lit-gray-900);
-    color: var(--lit-gray-50);
+    background-color: var(--lit-orange);
+    color: var(--lit-white);
     border-radius: 999px;
     font-size: 0.875rem;
     line-height: 1.25rem;
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      background-color: var(--lit-orange);
+      background-color: var(--lit-orange-dark);
     }
   }
 }
