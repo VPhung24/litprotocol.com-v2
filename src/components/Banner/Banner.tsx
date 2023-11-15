@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className={styles.banner}>
       <p>
-        Cayenne testnet is live! Sign up for updates{' '}
+        The Cayenne testnet is live! Sign up for updates{' '}
         <a href="#subscribe" className={styles.banner__link}>
           here.
         </a>
