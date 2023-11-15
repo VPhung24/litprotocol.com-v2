@@ -64,6 +64,17 @@
   line-height: 1;
   font-weight: bold;
   color: var(--lit-gray-900);
+  background-color: var(--lit-gray-900);
+  background-image: linear-gradient(
+    to bottom,
+    var(--lit-gray-900),
+    var(--lit-black)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 
   @include sm {
     font-size: 3rem;
@@ -126,9 +137,9 @@
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  background-color: var(--lit-pink);
-  color: var(--lit-gray-50);
-  border: 1px solid var(--lit-pink);
+  background-color: var(--lit-orange);
+  color: var(--lit-white);
+  border: 1px solid var(--lit-orange);
   border-radius: 999px;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -148,8 +159,8 @@
   transition: background-color 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    background-color: var(--lit-pink-dark);
-    border-color: var(--lit-pink-dark);
+    background-color: var(--lit-orange-dark);
+    border-color: var(--lit-orange-dark);
   }
 }
 
@@ -168,16 +179,16 @@
   width: auto;
   height: clamp(12rem, 50vh, 28rem);
   transform: rotate(45deg);
-  margin: -2rem 0;
+  margin: -2rem -2rem -2rem 0;
 
   @include sm {
     height: clamp(28rem, 50vh, 42rem);
-    margin: -2rem 0 -4rem;
+    margin: -2rem -2rem -4rem 0;
   }
 
   @include md {
     height: clamp(28rem, 60vh, 48rem);
-    margin: -5rem 0;
+    margin: -5rem -2rem -5rem 0;
   }
 
   @include lg {

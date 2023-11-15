@@ -1,5 +1,6 @@
 @import 'src/styles/normalize';
 @import 'src/styles/colors';
+@import 'src/styles/mixins';
 
 @font-face {
   font-family: 'Favorit';
@@ -169,9 +170,13 @@ body {
 
 [data-shape='key'] {
   position: relative;
-  color: var(--lit-pink);
+  color: var(--lit-gray-500);
   opacity: 0;
   transition: opacity 300ms ease-in-out calc(var(--animation-order, 1) * 25ms);
+
+  @include lg {
+    color: var(--lit-gray-400);
+  }
 }
 
 [data-shape='key'][data-reveal='true'] {
@@ -188,7 +193,7 @@ body {
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
