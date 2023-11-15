@@ -177,17 +177,16 @@
 
 .img-wrapper {
   width: auto;
-  height: clamp(12rem, 50vh, 28rem);
+  height: clamp(20rem, 50vh, 32rem);
   transform: rotate(45deg);
   margin: -2rem -2rem -2rem 0;
 
   @include sm {
-    height: clamp(28rem, 50vh, 42rem);
     margin: -2rem -2rem -4rem 0;
   }
 
   @include md {
-    height: clamp(28rem, 60vh, 48rem);
+    height: clamp(32rem, 60vh, 48rem);
     margin: -5rem -2rem -5rem 0;
   }
 
