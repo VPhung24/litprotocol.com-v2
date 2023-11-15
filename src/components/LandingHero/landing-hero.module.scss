@@ -51,7 +51,7 @@
     text-align: left;
     max-width: 40rem;
     flex-shrink: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
   }
 
   @include xl {
@@ -97,7 +97,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
-  color: var(--lit-gray-600);
+  color: var(--lit-gray-700);
   margin-top: 0.75rem;
   margin-left: auto;
   margin-right: auto;
