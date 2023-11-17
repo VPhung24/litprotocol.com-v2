@@ -1,5 +1,6 @@
 import '../styles/globals.scss';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Lit Protocol',
@@ -35,8 +36,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <Script
+        defer
+        data-domain="litprotocol.com"
+        src="https://plausible.io/js/script.js"
+      ></Script>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </>
   );
 }
