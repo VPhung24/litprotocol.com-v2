@@ -5,7 +5,7 @@ export const MANIFESTO_LINK =
 export const USE_CASES_LINK =
   'https://litprotocol.notion.site/Lit-Protocol-Use-Cases-a94916becdc0411f848c3095722c7864';
 export const SPARK_LINK = 'https://spark.litprotocol.com';
-export const CONTACT_FORM = 'https://nut.sh/ell/forms/352580/YEk9vu';
+export const CONTACT_FORM = 'https://forms.gle/n4WKtsyxaduEz8dDA';
 export const CALENDAR_LINK = 'https://litgateway.com/calendar';
 export const GITHUB_LINK = 'https://github.com/LIT-Protocol';
 
