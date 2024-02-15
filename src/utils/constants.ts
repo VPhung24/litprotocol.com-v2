@@ -15,5 +15,5 @@ export const DISCORD_LINK = 'https://getlit.dev/chat';
 export const LINKEDIN_LINK = 'https://www.linkedin.com/company/lit-protocol';
 
 // Company
-export const CAREERS_LINK = 'https://jobs.lever.co/litprotocol';
+export const CAREERS_LINK = 'https://jobs.litprotocol.com';
 export const BRAND_LINK = 'https://github.com/LIT-Protocol/Brand-Kit';
