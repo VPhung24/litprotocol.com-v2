@@ -1,5 +1,6 @@
 // Resources
 export const DOCS_LINK = 'https://developer.litprotocol.com';
+export const BANNER_LINK = 'https://spark.litprotocol.com/introducing-decentralized-key-management-with-lit-v0/';
 export const MANIFESTO_LINK =
   'https://spark.litprotocol.com/mass-adoption-of-digital-ownership-and-progressive-self-custody/';
 export const USE_CASES_LINK =
