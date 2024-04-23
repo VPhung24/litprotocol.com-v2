@@ -3,6 +3,7 @@ import {
   CALENDAR_LINK,
   CAREERS_LINK,
   CONTACT_FORM,
+  TELEGRAM_LINK,
   DISCORD_LINK,
   DOCS_LINK,
   GITHUB_LINK,
@@ -10,6 +11,7 @@ import {
   MANIFESTO_LINK,
   SPARK_LINK,
   TWITTER_LINK,
+  WHITEPAPER_LINK,
 } from '@/utils/constants';
 import styles from './footer.module.scss';
 
@@ -49,6 +51,14 @@ const Footer = () => {
               className={styles.footer__link}
             >
               Docs
+            </a>
+            <a
+              href={WHITEPAPER_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.footer__link}
+            >
+              Whitepaper
             </a>
             <a
               href={GITHUB_LINK}
@@ -91,7 +101,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={styles.footer__link}
             >
-              Twitter
+              X
+            </a>
+            <a
+              href={TELEGRAM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.footer__link}
+            >
+              Telegram
             </a>
             <a
               href={DISCORD_LINK}
