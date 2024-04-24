@@ -12,7 +12,7 @@ const LandingCta = () => {
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <h3 className={styles.title}>
-            Let's Build the <span className={styles.emphasis}>User-Owned</span>{' '}
+            Let&rsquo;s Build the <span className={styles.emphasis}>User-Owned</span>{' '}
             Web, Together
           </h3>
           <p className={styles.subtitle}>

@@ -253,7 +253,7 @@ const LandingUseCases = () => {
           <h2 className={styles.title}>Versatile and Simple Tools for Any Use Case</h2>
           <p className={styles.subtitle}>
             Lit is designed to seamlessly integrate into your existing stack,
-            enabling a diverse range of use cases, from private web3 social to DeFi automation to "Wallet-as-a-Service" infrastructure and beyond.
+            enabling a diverse range of use cases, from private web3 social to DeFi automation to &rdquo;Wallet-as-a-Service&rdquo; infrastructure and beyond.
           </p>
         </div>
         <div className={styles.grid}>
