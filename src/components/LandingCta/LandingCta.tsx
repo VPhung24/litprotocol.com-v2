@@ -1,4 +1,4 @@
-import { DISCORD_LINK, DOCS_LINK } from '@/utils/constants';
+import { DISCORD_LINK, DOCS_LINK, WHITEPAPER_LINK } from '@/utils/constants';
 import styles from './landing-cta.module.scss';
 import SubscribeForm from '../SubscribeForm/SubscribeForm';
 import DocsImg from './assets/docs.png';
@@ -12,13 +12,11 @@ const LandingCta = () => {
       <div className={styles.wrapper}>
         <div className={styles.header}>
           <h3 className={styles.title}>
-            Build a more <span className={styles.emphasis}>open, secure</span>{' '}
-            internet
+            Let&rsquo;s Build the <span className={styles.emphasis}>User-Owned</span>{' '}
+            Web, Together
           </h3>
           <p className={styles.subtitle}>
-            Lit&apos;s decentralized key network enables progressive self
-            custody, powering the next generation of identity management on the
-            open web.
+            Lit and ecosystem partners are building the next generation of identity and machine intelligence protocols and applications, all running on the open web.
           </p>
           <a
             href={DOCS_LINK}

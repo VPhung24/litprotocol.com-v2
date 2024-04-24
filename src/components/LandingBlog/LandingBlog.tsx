@@ -46,24 +46,24 @@ const posts = [
     image: SessionKeysImg,
     alt: 'Glassy ribbons',
   },
-  {
-    title: 'Learning Lab @ Lit',
-    slug: 'learning-lab-lit',
-    image: LearningLabImg,
-    alt: '3d grid plane and interconnected nodes',
-  },
+  // {
+  //   title: 'Learning Lab @ Lit',
+  //   slug: 'learning-lab-lit',
+  //   image: LearningLabImg,
+  //   alt: '3d grid plane and interconnected nodes',
+  // },
   {
     title: 'Authenticity in the AI Era',
     slug: 'authenticity-matters',
     image: AIImg,
     alt: 'Yellow light streaks',
   },
-  {
-    title: 'Introducing The Ignite Prize: A Web3 Hackathon Meta-Bounty',
-    slug: 'the-ignite-prize',
-    image: IgnitePrizeImg,
-    alt: 'Ignite Prize',
-  },
+  // {
+  //   title: 'Introducing The Ignite Prize: A Web3 Hackathon Meta-Bounty',
+  //   slug: 'the-ignite-prize',
+  //   image: IgnitePrizeImg,
+  //   alt: 'Ignite Prize',
+  // },
   {
     title: 'Wallet Abstraction: Google OAuth x Lit PKP',
     slug: 'wallet-abstraction-with-google-oauthe',

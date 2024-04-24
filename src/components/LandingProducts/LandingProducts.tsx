@@ -9,22 +9,19 @@ const LandingProducts = () => {
     <section className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Sign. Encrypt. Compute.</h2>
+          <h2 className={styles.title}>An Integrated Network and Developer Platform for Digital Ownership and AI</h2>
           <p className={styles.subtitle}>
-            Keys managed on Lit are distributed and fault tolerant, so no
-            centralized authority can ever withhold access. Use Lit to build
-            digital ownership experiences with greater privacy, flexibility, and
-            control.
+            Craft seamless onboarding experiences, control access, compute over private data, sign transactions, and train AIs confidentially, all without trusted middlemen or custodians.
           </p>
         </div>
         <Product
-          badge={'Distributed Wallets'}
-          title={'Streamline user experience with distributed wallets'}
+          badge={'User Wallets'}
+          title={'Intuitive web3 onboarding that keeps users in control'}
           description={
             'Empower your users with wallets secured by their existing authentication like social logins and passkeys. Deliver seamless onboarding, easy recovery, and user-centric security features—all without worrying about managing private keys.'
           }
           cta={{
-            link: 'https://developer.litprotocol.com/v3/sdk/wallets/intro',
+            link: 'https://developer.litprotocol.com/v3/sdk/wallets/quick-start',
             text: 'Build with Lit wallets',
           }}
           features={[
@@ -32,7 +29,7 @@ const LandingProducts = () => {
               title: 'Claimable wallets',
               description:
                 'Effortlessly provision wallets that are pre-generated from human-readable identities, such as emails or phone numbers.',
-              link: 'https://developer.litprotocol.com/v3/concepts/claimable-keys',
+              link: 'https://developer.litprotocol.com/v3/sdk/wallets/claimable-keys/intro',
             },
             {
               title: 'Session keys',
@@ -60,7 +57,7 @@ const LandingProducts = () => {
             'Define conditional rules to control access to private data, stored anywhere. The Lit network will validate your rules and grant decryption capabilities only when your defined conditions are met, without ever accessing the private data.'
           }
           cta={{
-            link: 'https://developer.litprotocol.com/v3/sdk/access-control/intro',
+            link: 'https://developer.litprotocol.com/v3/sdk/access-control/quick-start',
             text: 'Integrate access control',
           }}
           features={[
@@ -68,13 +65,13 @@ const LandingProducts = () => {
               title: 'Identity-based encryption',
               description:
                 'Safeguard private data with client-side encryption, and grant decryption keys only when defined conditions are met.',
-              link: 'https://developer.litprotocol.com/v3/sdk/access-control/encryption',
+              link: 'https://developer.litprotocol.com/v3/sdk/access-control/intro',
             },
             {
               title: 'Access control conditions',
               description:
                 'Easily mix and match conditions on-chain or off-chain data with boolean logic to define flexible access control rules.',
-              link: 'https://developer.litprotocol.com/v3/sdk/access-control/condition-types/unified-access-control-conditions',
+              link: 'https://developer.litprotocol.com/v3/sdk/access-control/evm/basic-examples',
             },
             {
               title: 'JWT signing',
@@ -89,13 +86,13 @@ const LandingProducts = () => {
         />
         <hr className={styles.divider}></hr>
         <Product
-          badge={'Serverless Functions'}
-          title={'Power your apps with serverless signing automations'}
+          badge={'Decentralized Compute'}
+          title={'Power your apps with serverless signing and compute'}
           description={
-            'Create immutable serverless functions for event-based signing, encryption, and identity management. Add advanced functionality to your apps and iterate faster, all without the burden of scaling key infrastructure.'
+            'Use Lit Actions to build protocols for cross-chain messaging, privacy-preserving AI, transaction automation, and more.'
           }
           cta={{
-            link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
+            link: 'https://developer.litprotocol.com/v3/sdk/serverless-signing/quick-start',
             text: 'Dive into Lit Actions',
           }}
           features={[
@@ -103,13 +100,13 @@ const LandingProducts = () => {
               title: 'Conditional signing',
               description:
                 'Write immutable JavaScript logic to generate signatures when your specified on-chain or off-chain conditions are met.',
-              link: 'https://developer.litprotocol.com/v3/sdk/wallets/conditional-signing',
+              link: 'https://developer.litprotocol.com/v3/sdk/serverless-signing/conditional-signing',
             },
             {
               title: 'Fetch off-chain data',
               description:
                 'Lit Actions natively support fetching off-chain data, eliminating the need to integrate a trusted third party oracle.',
-              link: 'https://developer.litprotocol.com/v2/LitActions/workingWithActions/usingFetch',
+              link: 'https://developer.litprotocol.com/v3/sdk/serverless-signing/fetch',
             },
             {
               title: 'Secure infrastructure',

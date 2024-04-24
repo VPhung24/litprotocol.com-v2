@@ -1,9 +1,20 @@
 @import '@/styles/mixins.scss';
 
+// .section {
+//   width: 100%;
+//   background-color: var(--lit-white);
+//   color: var(--lit-gray-700);
+// }
+
 .section {
   width: 100%;
-  background-color: var(--lit-white);
-  color: var(--lit-gray-700);
+  background-color: var(--lit-black);
+  background: linear-gradient(
+    180deg,
+    var(--lit-black) 85%,
+    var(--lit-gray-900) 100%
+  );
+  color: var(--lit-gray-300);
 }
 
 .wrapper {
@@ -39,12 +50,12 @@
   &__copy {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: var(--lit-pink);
-    background-color: var(--lit-pink);
+    color: var(--lit-orange-light);
+    background-color: var(--lit-orange-light);
     background-image: linear-gradient(
       to bottom,
-      var(--lit-orange),
-      var(--lit-pink)
+      var(--lit-orange-light) 50%,
+      var(--lit-orange)
     );
     background-size: 100%;
     -webkit-background-clip: text;
@@ -63,12 +74,12 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: bold;
-  color: var(--lit-gray-900);
-  background-color: var(--lit-gray-900);
+  color: var(--lit-gray-50);
+  background-color: var(--lit-gray-50);
   background-image: linear-gradient(
     to bottom,
-    var(--lit-gray-900),
-    var(--lit-gray-700)
+    var(--lit-gray-50),
+    var(--lit-gray-300)
   );
   background-size: 100%;
   -webkit-background-clip: text;
@@ -94,6 +105,74 @@
     }
   }
 }
+
+// .badge {
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 1rem;
+
+//   @include lg {
+//     margin-bottom: 1.5rem;
+//   }
+
+//   &__copy {
+//     font-size: 0.875rem;
+//     line-height: 1.25rem;
+//     color: var(--lit-pink);
+//     background-color: var(--lit-pink);
+//     background-image: linear-gradient(
+//       to bottom,
+//       var(--lit-orange),
+//       var(--lit-pink)
+//     );
+//     background-size: 100%;
+//     -webkit-background-clip: text;
+//     -moz-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     -moz-text-fill-color: transparent;
+
+//     @include lg {
+//       font-size: 1rem;
+//       line-height: 1.5rem;
+//     }
+//   }
+// }
+
+// .title {
+//   font-size: 1.875rem;
+//   line-height: 2.25rem;
+//   font-weight: bold;
+//   color: var(--lit-gray-900);
+//   background-color: var(--lit-gray-900);
+//   background-image: linear-gradient(
+//     to bottom,
+//     var(--lit-gray-900),
+//     var(--lit-gray-700)
+//   );
+//   background-size: 100%;
+//   -webkit-background-clip: text;
+//   -moz-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   -moz-text-fill-color: transparent;
+
+//   @include xs {
+//     font-size: 2.25rem;
+//     line-height: 2.5rem;
+//   }
+
+//   @include lg {
+//     font-size: 3rem;
+//     line-height: 1;
+//   }
+
+//   &__break {
+//     display: inline;
+
+//     @include md {
+//       display: block;
+//     }
+//   }
+// }
 
 .subtitle {
   font-size: 1rem;
@@ -135,7 +214,7 @@
   }
 
   &__title {
-    color: var(--lit-gray-900);
+    color: var(--lit-gray-50);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
