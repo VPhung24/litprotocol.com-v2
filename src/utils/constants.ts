@@ -14,7 +14,7 @@ export const WHITEPAPER_LINK = 'https://github.com/LIT-Protocol/whitepaper';
 // Social
 export const TWITTER_LINK = 'https://twitter.com/litprotocol';
 export const DISCORD_LINK = 'https://getlit.dev/chat';
-export const TELEGRAM_LINK = 'https://https://t.me/+aa73FAF9Vp82ZjJh';
+export const TELEGRAM_LINK = 'https://t.me/+aa73FAF9Vp82ZjJh';
 export const LINKEDIN_LINK = 'https://www.linkedin.com/company/lit-protocol';
 
 // Company
