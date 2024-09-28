@@ -327,10 +327,10 @@ const LandingHero = () => {
     <section className={styles.container}>
       <div className={styles['content-wrapper']}>
         <div className={styles['hero-copy']}>
-          <h1 className={styles.title}>The Digital Ownership Cloud. That&rsquo;s Lit.</h1>
+          <h1 className={styles.title}>Programmable, Decentralized Keys.</h1>
           <div>
             <p className={styles.subtitle}>
-              Builders of apps, wallets, protocols, and AI agents use the Lit network for decentralized signing, encryption, and compute.
+              Developers use Lit networks to build uncapturable apps, protocols, and AI agents with decentralized signing, encryption, and blind compute.
             </p>
             <div className={styles['btn-wrapper']}>
               <a
