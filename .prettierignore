@@ -2,3 +2,4 @@ node_modules/
 dist/
 .prettierrc
 *.mdx
+src/**/page.tsx
