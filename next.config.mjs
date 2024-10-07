@@ -4,6 +4,7 @@ import createMDX from '@next/mdx';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   experimental: {
     mdxRs: false,
   },
@@ -23,4 +24,5 @@ const withMDX = createMDX({
     // providerImportSource: "@mdx-js/react",
   },
 });
+
 export default withMDX(nextConfig);
