@@ -48,7 +48,6 @@ const LandingFeatures = () => {
           >
             Learn More
           </a>
-          <div></div>
           <a
             href={AUDIT_LINK}
             target="_blank"
