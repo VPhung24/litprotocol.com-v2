@@ -40,22 +40,23 @@ const LandingFeatures = () => {
             Lit is a decentralized key management and compute network that leverages cutting-edge cryptography, sealed confidential hardware, and peer-to-peer networking to securely generate and manage keys and execute private and immutable programs.
           </p>
           <div></div>
-          <a
-            href={WHITEPAPER_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles['cta-btn']}
-          >
-            Learn More
-          </a>
-          <a
-            href={AUDIT_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles['cta-btn']}
-          >
-            Review Audits
-          </a>
+          <div className={styles['btn-wrapper']}>
+              <a
+                href={WHITEPAPER_LINK}
+                className={`${styles['cta-btn']} ${styles['cta-btn--primary']}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn More
+              </a>
+              <a
+                href={AUDIT_FORM}
+                className={`${styles['cta-btn']} ${styles['cta-btn--primary']}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Review Audits
+              </a>
         </div>
         <div className={styles.grid}>
           {features.map(feature => (
