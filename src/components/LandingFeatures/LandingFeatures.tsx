@@ -47,6 +47,15 @@ const LandingFeatures = () => {
           >
             Learn More
           </a>
+          <div></div>
+          <a
+            href={AUDIT_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles['cta-btn']}
+          >
+            Review Audits
+          </a>
         </div>
         <div className={styles.grid}>
           {features.map(feature => (
