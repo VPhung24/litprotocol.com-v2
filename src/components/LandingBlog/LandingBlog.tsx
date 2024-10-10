@@ -3,6 +3,10 @@
 import { useRef, useState } from 'react';
 import { SPARK_LINK } from '@/utils/constants';
 import styles from './landing-blog.module.scss';
+import SignDecryptImg from './assets/signAndDecrypt.png';
+import BtcImg from './assets/btc.png',
+import DatilImg from './assets/datil.png',
+import GlobalImg from './assets/globalComp.png',
 import IndexImg from './assets/index.png';
 import AdoptionImg from './assets/adoption.png';
 import BackedByImg from './assets/backedby.png';
@@ -15,37 +19,58 @@ import WalletAbstractionImg from './assets/wallet-abstraction.png';
 import Image from 'next/image';
 
 const posts = [
+  {title: 'Programming Bitcoin',
+   slug: 'programming-bitcoin',
+   image: BtcImg,
+   alt: 'Morse code',
+  },
+  {title: 'Introducing the Lit Mainnet Beta: Datil',
+   slug: 'datil-mainnet-is-live',
+   image: DatilImg,
+   alt: 'Hexagons',
+  },
+  {title: 'Building the Global Computer',
+   slug: 'the-global-computer-and-evolution-of-key-management',
+   image: GlobalImg,
+   alt: 'Futuristic',
+  },
   {
     title: 'Enabling Decentralized Discovery with Index Network and Lit',
     slug: 'decentralized-content-discovery-with-lit-and-index',
     image: IndexImg,
     alt: 'Splattered paint',
   },
-  {
-    title: 'Mass Adoption of Digital Ownership and Progressive Self Custody',
-    slug: 'mass-adoption-of-digital-ownership-and-progressive-self-custody',
-    image: AdoptionImg,
-    alt: 'Light paint',
+  {title: 'Sign and Decrypt in Lit Actions',
+   slug: 'unlocking-new-possibilities-with-lit-actions',
+   image: SignDecryptImg,
+   alt: 'Solid blue',
   },
-  {
-    title:
-      'BackedBy X Lit: Decentralized Tools to Empower Web3 Content Creators',
-    slug: 'backedby-x-lit',
-    image: BackedByImg,
-    alt: 'Glass wave',
-  },
-  {
-    title: 'Oamo x Lit: Data Brokerage with Built-in Privacy and Permissioning',
-    slug: 'oamo-privacy-n-permissioning',
-    image: OamoImg,
-    alt: 'Colorful nodes',
-  },
-  {
-    title: 'From Session Keys to Session Signatures: Part 1',
-    slug: 'session-sig-part-1',
-    image: SessionKeysImg,
-    alt: 'Glassy ribbons',
-  },
+  
+  //{
+  //  title: 'Mass Adoption of Digital Ownership and Progressive Self Custody',
+  //  slug: 'mass-adoption-of-digital-ownership-and-progressive-self-custody',
+  //  image: AdoptionImg,
+  //  alt: 'Light paint',
+  // },
+  //{
+  //  title:
+  //    'BackedBy X Lit: Decentralized Tools to Empower Web3 Content Creators',
+  //  slug: 'backedby-x-lit',
+  //  image: BackedByImg,
+  //  alt: 'Glass wave',
+  // },
+  //{
+  //  title: 'Oamo x Lit: Data Brokerage with Built-in Privacy and Permissioning',
+  //  slug: 'oamo-privacy-n-permissioning',
+  //  image: OamoImg,
+  //  alt: 'Colorful nodes',
+  // },
+  //{
+  //  title: 'From Session Keys to Session Signatures: Part 1',
+  //  slug: 'session-sig-part-1',
+  //  image: SessionKeysImg,
+  //  alt: 'Glassy ribbons',
+  //},
   // {
   //   title: 'Learning Lab @ Lit',
   //   slug: 'learning-lab-lit',
@@ -64,12 +89,12 @@ const posts = [
   //   image: IgnitePrizeImg,
   //   alt: 'Ignite Prize',
   // },
-  {
-    title: 'Wallet Abstraction: Google OAuth x Lit PKP',
-    slug: 'wallet-abstraction-with-google-oauthe',
-    image: WalletAbstractionImg,
-    alt: 'Colorful glassy flame',
-  },
+  // {
+  //  title: 'Wallet Abstraction: Google OAuth x Lit PKP',
+  //  slug: 'wallet-abstraction-with-google-oauthe',
+  //  image: WalletAbstractionImg,
+   // alt: 'Colorful glassy flame',
+ // },
 ];
 
 const LandingBlog = () => {
