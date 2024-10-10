@@ -9,7 +9,7 @@ const LandingProducts = () => {
     <section className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Universal Composability for Digital Ownership and Autonomous AI</h2>
+          <h2 className={styles.title}>Limitless Composability for Digital Ownership and Autonomous AI</h2>
           <p className={styles.subtitle}>
             Deploy private agents and programs that run across all blockchains and web2 systems — all without trusted intermediaries.
           </p>
