@@ -47,7 +47,8 @@ const LandingFeatures = () => {
             className={styles['cta-btn']}
           >
             Learn More
-          </a> 
+          </a>
+          <br></br>
           <a
             href={AUDIT_LINK}
             target="_blank"
