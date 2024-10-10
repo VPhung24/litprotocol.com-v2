@@ -1,4 +1,5 @@
 import {WHITEPAPER_LINK } from '@/utils/constants';
+import {AUDIT_LINK } from '@/utils/constants';
 import styles from './landing-features.module.scss';
 import { ComponentType } from 'react';
 import Enclave from './features/Enclave';
