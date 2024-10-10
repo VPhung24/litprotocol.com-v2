@@ -16,7 +16,7 @@ const LandingProducts = () => {
         </div>
         <Product
           badge={'Wallets on Any Chain'}
-          title={'Intuitive onboarding that keeps users in control'}
+          title={'Universal onboarding that keeps users in control'}
           description={
             'Let users, agents, and smart devices access wallets across chains, secured by familiar authentication methods like social logins, passkeys, or any custom integrations. Deliver effortless onboarding, recovery, and user-centric security—all without users managing private keys.'
           }
