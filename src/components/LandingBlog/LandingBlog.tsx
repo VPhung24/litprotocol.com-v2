@@ -4,9 +4,9 @@ import { useRef, useState } from 'react';
 import { SPARK_LINK } from '@/utils/constants';
 import styles from './landing-blog.module.scss';
 import SignDecryptImg from './assets/signAndDecrypt.png';
-import BtcImg from './assets/btc.png',
-import DatilImg from './assets/datil.png',
-import GlobalImg from './assets/globalComp.png',
+import BtcImg from './assets/btc.png';
+import DatilImg from './assets/datil.png';
+import GlobalImg from './assets/globalComp.png';
 import IndexImg from './assets/index.png';
 import AdoptionImg from './assets/adoption.png';
 import BackedByImg from './assets/backedby.png';
