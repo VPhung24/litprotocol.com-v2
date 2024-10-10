@@ -9,22 +9,22 @@ const features = [
   {
     title: 'Distributed Trust',
     description:
-      'Harnessing multi-party computation (MPC) and threshold secret schemes (TSS), Lit distributes encrypted key shares across the Lit network. Neither you nor your users need to store any private key material.',
-    highlight: 'No party ever possesses the entire key.',
+      'Harnessing multi-party computation (MPC) and threshold signature schemes (TSS), Lit distributes encrypted key shares across the Lit network. Neither you nor your users need to store any private key material.',
+    highlight: 'Keys never exist in their entirety.',
     Icon: Threshold,
   },
   {
     title: 'Embedded Security',
     description:
-      'Lit leverages trusted execution environments (TEEs) to ensure that node operators never have access to key shares or computations processed within the nodes.',
-    highlight: 'Your keys and data remains private and untouched.',
+      'Lit leverages sealed trusted execution environments (TEEs) to ensure that node operators never have access to key shares or data processed within each node.',
+    highlight: 'Your keys and data remain private and untouched.',
     Icon: Enclave,
   },
   {
     title: 'Native Interoperability',
     description:
       'The keys managed on Lit can read and write data across blockchains, storage networks, and state machines—bridging previously disconnected ecosystems.',
-    highlight: 'Build experiences that span web2 and web3.',
+    highlight: 'Build experiences that span the entire internet.',
     Icon: Interoperability,
   },
 ];
@@ -36,7 +36,7 @@ const LandingFeatures = () => {
         <div className={styles.header}>
           <h2 className={styles.title}>The Lit Network</h2>
           <p className={styles.subtitle}>
-            Lit is a decentralized network that utilizes cutting-edge cryptography, sealed confidential hardware, and peer-to-peer networking to securely generate and manage non-custodial keys and execute private and immutable programs.
+            Lit is a decentralized key management and compute network that leverages cutting-edge cryptography, sealed confidential hardware, and peer-to-peer networking to securely generate and manage keys and execute private and immutable programs.
           </p>
           <div></div>
           <a
