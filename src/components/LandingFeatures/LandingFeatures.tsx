@@ -54,7 +54,7 @@ const LandingFeatures = () => {
             rel="noopener noreferrer"
             className={styles['cta-btn']}
           >
-            Review Audits
+            Audit Reports
           </a>
         </div>
         <div className={styles.grid}>
