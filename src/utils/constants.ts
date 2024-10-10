@@ -10,6 +10,7 @@ export const CONTACT_FORM = 'https://forms.gle/n4WKtsyxaduEz8dDA';
 export const CALENDAR_LINK = 'https://litgateway.com/calendar';
 export const GITHUB_LINK = 'https://github.com/LIT-Protocol';
 export const WHITEPAPER_LINK = 'https://github.com/LIT-Protocol/whitepaper';
+export const AUDIT_LINK = 'https://drive.google.com/drive/folders/1Rrht88iUkzpofwl1CvP9gEjqY60BKyFn';
 
 // Social
 export const TWITTER_LINK = 'https://twitter.com/litprotocol';
